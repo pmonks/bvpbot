@@ -19,10 +19,9 @@
 (ns bvpbot.http
   (:require [clojure.tools.logging :as log]
             [mount.core            :as mnt :refer [defstate]]
-            [java-time             :as tm]
             [org.httpkit.server    :as http]
-            [bot.config            :as cfg]
-            [discljord-utils.util  :as u]))
+            [bvpbot.config         :as cfg]
+            [bvpbot.util           :as u]))
 
 (defn- http-status-handler
   [_]
@@ -30,8 +29,8 @@
    :headers {"Content-Type" "text/html"}
    :body    (str "<!DOCTYPE html>
 <html>
-  <head><title>bvpbot</title></head>
-  <body>bvpbot Discord bot up for " (u/human-readable-date-diff cfg/boot-time (tm/instant)) ".</body>
+  <head><title>bvpbot status</title></head>
+  <body><p style='font-family:sans-serif'>bvpbot Discord bot up for " (u/runtime-info) ".<p></body>
 </html>")})
 
 (defstate http-status-port
