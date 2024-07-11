@@ -1,2 +1,4 @@
-{:hash "a04e9559974d64e057ab6c4a49ada5c7869f3b06",
- :date #inst "2024-07-11T00:20:06.153-00:00"}
+{:hash "d42bf0e327ae5d99bdd831c975b0421652cf0187",
+ :date #inst "2024-07-11T22:12:23.004-00:00",
+ :repo "https://github.com/pmonks/bvpbot.git",
+ :tag "0.0.20240711"}
