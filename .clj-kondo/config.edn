@@ -1,5 +1,5 @@
 {:linters {:mount/defstate {:level :warning}}
- :hooks   {:analyze-call {mount.core/defstate      hooks.defstate/defstate
+ :hooks   {:analyze-call {mount.core/defstate      hooks.mount/defstate
                           slash.command/handler    hooks.slash/handler
                           slash.command/defhandler hooks.slash/defhandler
                           slash.command/group      hooks.slash/group

@@ -32,4 +32,5 @@
                             :licenses         [:license   {:name "Apache-2.0" :url "http://www.apache.org/licenses/LICENSE-2.0.html"}]
                             :developers       [:developer {:id "pmonks" :name "Peter Monks" :email "pmonks+bvpbot@gmail.com"}]
                             :scm              {:url "https://github.com/pmonks/bvpbot" :connection "scm:git:git://github.com/pmonks/bvpbot.git" :developer-connection "scm:git:ssh://git@github.com/pmonks/bvpbot.git"}
-                            :issue-management {:system "github" :url "https://github.com/pmonks/bvpbot/issues"}}))
+                            :issue-management {:system "github" :url "https://github.com/pmonks/bvpbot/issues"}}
+         :antq             {:transitive false}))

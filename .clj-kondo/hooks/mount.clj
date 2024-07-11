@@ -1,4 +1,5 @@
-(ns hooks.defstate
+; Note: this is NOT the original hook as published by mount, but the corrected version from here: https://github.com/tolitius/mount/pull/133
+(ns hooks.mount
   (:require [clj-kondo.hooks-api :as api]))
 
 (defn defstate [{:keys [:node]}]
@@ -32,8 +33,10 @@
          :col     (:col (meta n))})
       :else
       {:node (api/list-node
-                  (list*
-                    (api/token-node 'fn*)
-                    (api/vector-node [n])
+                  (list
+                    (api/token-node 'def)
                     n
-                    args))})))
+                    (api/list-node
+                      (list*
+                        (api/token-node 'do)
+                        args))))})))

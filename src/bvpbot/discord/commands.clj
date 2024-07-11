@@ -26,8 +26,6 @@
             [bvpbot.discord.message-util :as mu]
             [bvpbot.source.ist           :as ist]))
 
-;####TODO: CONFIGURE CLJ-KONDO TO USE MOUNT'S EXPORTS FOR defhandler & defpaths: https://github.com/JohnnyJayJay/slash/tree/main/.clj-kondo
-
 (def ist-command
   (scs/command
    "ist"

@@ -66,7 +66,6 @@
     (throw (ex-info (str "Config key '"(name k)"' not provided") {}))))
 
 
-(declare config)  ; Hokey hack to appease clj-kondo
 (defstate config
   :start (if-let [config-file (:config-file (mnt/args))]
            (a/read-config config-file)

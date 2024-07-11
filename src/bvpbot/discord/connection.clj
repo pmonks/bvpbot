@@ -31,16 +31,13 @@
             [bvpbot.discord.commands     :as cmd]
             [bvpbot.discord.message-util :as mu]))
 
-(declare api-token)  ; Hokey hack to appease clj-kondo
 (defstate api-token
   :start (cfg/ensure-config-value cfg/config :discord-api-token))
 
-(declare rest-conn)  ; Hokey hack to appease clj-kondo
 (defstate rest-conn
   :start (dmsg/start-connection! api-token)
   :stop  (dmsg/stop-connection! rest-conn))
 
-(declare event-channel)  ; Hokey hack to appease clj-kondo
 (defstate event-channel
   :start (a/chan (get cfg/config :discord-event-channel-size 100))
   :stop  (a/close! event-channel))
@@ -49,7 +46,6 @@
   :start (dconn/connect-bot! api-token event-channel :intents #{})
   :stop  (dconn/disconnect-bot! gateway-conn))
 
-(declare application-id)  ; Hokey hack to appease clj-kondo
 (defstate application-id
   :start (:id (mu/get-current-application-information! rest-conn)))
 
