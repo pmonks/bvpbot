@@ -24,6 +24,7 @@
          :uber-file        "./target/bvpbot-standalone.jar"
          :main             'bvpbot.main
          :deploy-info-file "./resources/deploy-info.edn"
+         :prod-branch      "release"
          :write-pom        true
          :validate-pom     true
          :pom              {:description      "A Discord bot."
