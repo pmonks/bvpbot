@@ -52,7 +52,7 @@
   [_]
   (rsp/ephemeral
     (rsp/channel-message {:embeds [(assoc (mu/embed-template)
-                                          :description "[bvpbot's privacy policy is available here](https://github.com/pmonks/bvpbot/blob/main/PRIVACY.md)")]})))
+                                          :description "[bvpbot's privacy policy is available here](https://github.com/pmonks/bvpbot/blob/release/PRIVACY.md)")]})))
 
 (def status-command
   (scs/command
