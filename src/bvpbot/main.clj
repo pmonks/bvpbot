@@ -16,6 +16,7 @@
 ; SPDX-License-Identifier: Apache-2.0
 ;
 
+#_{:clj-kondo/ignore [:unused-namespace]}
 (ns bvpbot.main
   (:require [CLJ-2253]
             [clojure.string            :as s]
@@ -25,6 +26,7 @@
             [mount.core                :as mnt]
             [java-time                 :as tm]
             [bvpbot.config             :as cfg]
+            [bvpbot.http               :as http]
             [bvpbot.util               :as u]
             [bvpbot.discord.connection :as bdc])
   (:gen-class))
