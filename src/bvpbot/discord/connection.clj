@@ -24,7 +24,6 @@
             [discljord.connections       :as dconn]
             [discljord.events            :as de]
             [slash.core                  :as sc]
-            [slash.command               :as scmd]
             [slash.gateway               :as sg]
             [embroidery.api              :as e]
             [bvpbot.config               :as cfg]
@@ -65,39 +64,31 @@
              (mu/bulk-overwrite-global-application-commands! rest-conn application-id cmd/command-definitions))
            (log/info "Skipped overwriting of command definitions")))
 
-;####TEST!!!!
-(require '[clojure.pprint :as pp])
-(defn- debug-print
-  [msg & args]
-  (println msg)
-  (run! #(do (pp/pprint %) (println)) args)
-  (flush))
-
 (def ^:private interaction-create-handlers
   (assoc sg/gateway-defaults
-         :application-command (partial scmd/dispatch cmd/command-paths)
+         :application-command cmd/command-paths
          ; Other interaction sub-types (:application-command-autocomplete, etc.) would go here
          ))
 
-(defn- create-interaction-dispatcher
-  [event-type event-data]
-;####TEST!!!!
-(debug-print "ℹ️ create-interaction-dispatcher:" event-type event-data)
+(defn- interaction-create-dispatcher
+  ":interaction-create event dispatcher"
+  [_event-type event-data]
   (when-let [handler-result (sc/route-interaction interaction-create-handlers event-data)]
     (mu/create-interaction-response! rest-conn (:id event-data) (:token event-data) (:type handler-result) :data (:data handler-result))))
 
 (def ^:private event-handlers
-  {:interaction-create [create-interaction-dispatcher]
+  {:interaction-create [interaction-create-dispatcher]
    ; Other Discord events (:message-create, etc.) would go here
   })
 
 (defn- event-dispatcher
+  "Global event dispatcher"
   [event-type event-data]
-;####TEST!!!!
-(debug-print "ℹ️ event-dispatcher:" event-type event-data)
-;  (e/future*
-    (de/dispatch-handlers event-handlers event-type event-data))
-;)
+  (e/future*
+    (try
+      (de/dispatch-handlers event-handlers event-type event-data)
+      (catch Exception e
+        (u/log-exception e "Unhandled exception in event dispatcher")))))
 
 (defn start-message-pump!
   "Start the Discord message pump.
@@ -105,19 +96,3 @@
   Note: blocks the calling thread until the event-channel is closed."
   []
   (de/message-pump! event-channel event-dispatcher))
-
-
-
-
-(comment
-(defn start-message-pump!
-  "Start the Discord message pump.
-
-  Note: blocks the calling thread until the event-channel is closed."
-  []
-  (let [event-handler (-> sc/route-interaction
-                          (partial (assoc sg/gateway-defaults :application-command cmd/command-paths))
-                          (sg/wrap-response-return (fn [id token {:keys [type data]}]
-                                                       (mu/create-interaction-response! rest-conn id token type :data data))))]
-    (de/message-pump! event-channel (partial de/dispatch-handlers {:interaction-create [#(event-handler %2)]}))))
-)

@@ -26,7 +26,7 @@
             [bvpbot.discord.message-util :as mu]
             [bvpbot.source.ist           :as ist]))
 
-;####TODO: CONFIGURE CLJ-KONDO TO USE MOUNT'S EXPORTS FOR defstate: https://github.com/tolitius/mount/tree/master/resources/clj-kondo.exports
+;####TODO: CONFIGURE CLJ-KONDO TO USE MOUNT'S EXPORTS FOR defhandler & defpaths: https://github.com/JohnnyJayJay/slash/tree/main/.clj-kondo
 
 (def ist-command
   (scs/command
@@ -54,9 +54,10 @@
 (defhandler privacy-handler
   ["privacy"]
   _interaction
-  _inputs
-  (rsp/ephemeral {:embeds [(assoc (mu/embed-template)
-                                  :description "[bvpbot's privacy policy is available here](https://github.com/pmonks/bvpbot/blob/main/PRIVACY.md).")]}))
+  [_]
+  (rsp/ephemeral
+    (rsp/channel-message {:embeds [(assoc (mu/embed-template)
+                                          :description "[bvpbot's privacy policy is available here](https://github.com/pmonks/bvpbot/blob/main/PRIVACY.md)")]})))
 
 (def status-command
   (scs/command
@@ -68,17 +69,18 @@
 (defhandler status-handler
   ["status"]
   _interaction
-  _inputs
-  (rsp/ephemeral {:embeds [(assoc (mu/embed-template)
-                                  :fields [
-                                    {:name "Running for"            :value (mu/discord-escape (u/runtime-info))}
-                                    {:name "Built at"               :value (mu/discord-escape cfg/build-info)}
-                                    {:name "Clojure"                :value (mu/discord-escape u/clojure-info)}
-                                    {:name "JVM"                    :value (mu/discord-escape u/jvm-info)}
-                                    {:name "OS"                     :value (mu/discord-escape u/os-info)}
-                                    {:name "Heap memory"            :value (mu/discord-escape (u/heap-mem-info))}
-                                    {:name "Non-heap memory"        :value (mu/discord-escape (u/non-heap-mem-info))}
-                                  ])]}))
+  [_]
+  (rsp/ephemeral
+    (rsp/channel-message {:embeds [(assoc (mu/embed-template)
+                                   :fields [
+                                     {:name "Running for"            :value (mu/discord-escape (u/runtime-info))}
+                                     {:name "Built at"               :value (mu/discord-escape cfg/build-info)}
+                                     {:name "Clojure"                :value (mu/discord-escape u/clojure-info)}
+                                     {:name "JVM"                    :value (mu/discord-escape u/jvm-info)}
+                                     {:name "OS"                     :value (mu/discord-escape u/os-info)}
+                                     {:name "Heap memory"            :value (mu/discord-escape (u/heap-mem-info))}
+                                     {:name "Non-heap memory"        :value (mu/discord-escape (u/non-heap-mem-info))}
+                                   ])]})))
 
 (def command-definitions [
   ist-command
@@ -88,5 +90,5 @@
 #_{:clj-kondo/ignore [:unresolved-symbol]}
 (defpaths command-paths
   #'ist-handler
-  #'privacy-handler
-  #'status-handler)
+  #'status-handler
+  #'privacy-handler)

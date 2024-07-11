@@ -78,7 +78,8 @@
     (throw (RuntimeException. "deploy-info.edn classpath resource not found."))))
 
 (def git-tag
-  (s/trim (:tag build-config)))
+  (when (:tag build-config)
+    (s/trim (:tag build-config))))
 
 (def git-url
   (when-not (s/blank? git-tag)
