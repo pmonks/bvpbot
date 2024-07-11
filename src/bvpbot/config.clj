@@ -17,15 +17,13 @@
 ;
 
 (ns bvpbot.config
-  (:require [clojure.java.io        :as io]
-            [clojure.string         :as s]
-            [clojure.edn            :as edn]
-            [java-time              :as tm]
-            [aero.core              :as a]
-            [mount.core             :as mnt :refer [defstate]]
-            [org.httpkit.client     :as http]
-            [org.httpkit.sni-client :as sni-client]
-            [bvpbot.util            :as u]))
+  (:require [clojure.java.io :as io]
+            [clojure.string  :as s]
+            [clojure.edn     :as edn]
+            [java-time       :as tm]
+            [aero.core       :as a]
+            [mount.core      :as mnt :refer [defstate]]
+            [bvpbot.util     :as u]))
 
 ; Because java.util.logging is a hot mess
 (org.slf4j.bridge.SLF4JBridgeHandler/removeHandlersForRootLogger)
@@ -36,9 +34,6 @@
  (reify Thread$UncaughtExceptionHandler
    (uncaughtException [_ t e]
      (u/log-exception e (str "Uncaught exception in thread " (.getName t))))))
-
-; See https://github.com/http-kit/http-kit#enabling-client-sni-support-disabled-by-default
-(alter-var-root #'http/*default-client* (fn [_] sni-client/default-client))
 
 ; Adds a #split reader macro to aero - see https://github.com/juxt/aero/issues/55
 (defmethod a/reader 'split
@@ -64,7 +59,6 @@
   (if-let [result (trim-config-value (get m k))]
     result
     (throw (ex-info (str "Config key '"(name k)"' not provided") {}))))
-
 
 (defstate config
   :start (if-let [config-file (:config-file (mnt/args))]
