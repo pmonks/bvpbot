@@ -17,8 +17,7 @@
 ;
 
 (ns bvpbot.discord.commands
-  (:require [clojure.string              :as s]
-            [slash.command               :as scmd :refer [defhandler defpaths]]
+  (:require [slash.command               :as scmd :refer [defhandler defpaths]]
             [slash.command.structure     :as scs]
             [slash.response              :as rsp]
             [bvpbot.config               :as cfg]
