@@ -6,7 +6,7 @@
 [![License](https://img.shields.io/github/license/pmonks/bvpbot.svg)](https://github.com/pmonks/bvpbot/blob/release/LICENSE) [![Open Issues](https://img.shields.io/github/issues/pmonks/bvpbot.svg)](https://github.com/pmonks/bvpbot/issues) [![Vulnerabilities](https://github.com/pmonks/bvpbot/actions/workflows/vulnerabilities.yml/badge.svg)](https://pmonks.github.io/bvpbot/nvd/dependency-check-report.html)
 
 
-<img alt="bvpbot logo" align="right" src="https://github.com/pmonks/bvpbot/blob/release/bvpbot.png?raw=true"/>
+<img alt="bvpbot logo" align="right" width="25%" src="https://github.com/pmonks/bvpbot/blob/release/bvpbot.png?raw=true"/>
 
 # bvpbot
 
