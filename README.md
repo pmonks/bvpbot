@@ -10,7 +10,7 @@
 
 # bvpbot
 
-A small [Discord](https://discord.com/) bot.
+A small [Discord](https://discord.com/) bot specific to the author's personal Discord server, and unlikely to be of interest to anyone else.  [Click here to add it to a server you administer](https://discord.com/oauth2/authorize?client_id=1258214444891242647).
 
 Please review the [privacy policy](https://github.com/pmonks/bvpbot/blob/release/PRIVACY.md) before interacting with the deployed instance of the bot.
 
