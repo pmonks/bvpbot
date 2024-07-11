@@ -34,7 +34,6 @@
    "Generates a fake IST video title"
    :options []))
 
-#_{:clj-kondo/ignore [:unresolved-symbol]}
 (defhandler ist-handler
   ["ist"]
   _interaction
@@ -50,7 +49,6 @@
     "Provides a link to bvpbot's privacy policy"
    :options []))
 
-#_{:clj-kondo/ignore [:unresolved-symbol]}
 (defhandler privacy-handler
   ["privacy"]
   _interaction
@@ -65,7 +63,6 @@
     "Provides bvpbot's technical status"
    :options []))
 
-#_{:clj-kondo/ignore [:unresolved-symbol]}
 (defhandler status-handler
   ["status"]
   _interaction
@@ -87,7 +84,6 @@
   privacy-command
   status-command])
 
-#_{:clj-kondo/ignore [:unresolved-symbol]}
 (defpaths command-paths
   #'ist-handler
   #'status-handler

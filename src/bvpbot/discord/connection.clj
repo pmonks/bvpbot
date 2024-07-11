@@ -31,32 +31,28 @@
             [bvpbot.discord.commands     :as cmd]
             [bvpbot.discord.message-util :as mu]))
 
-;####TODO: CONFIGURE CLJ-KONDO TO USE MOUNT'S EXPORTS FOR defstate: https://github.com/tolitius/mount/tree/master/resources/clj-kondo.exports
-
-#_{:clj-kondo/ignore [:unresolved-symbol]}
+(declare api-token)  ; Hokey hack to appease clj-kondo
 (defstate api-token
   :start (cfg/ensure-config-value cfg/config :discord-api-token))
 
-#_{:clj-kondo/ignore [:unresolved-symbol]}
+(declare rest-conn)  ; Hokey hack to appease clj-kondo
 (defstate rest-conn
   :start (dmsg/start-connection! api-token)
   :stop  (dmsg/stop-connection! rest-conn))
 
-#_{:clj-kondo/ignore [:unresolved-symbol]}
+(declare event-channel)  ; Hokey hack to appease clj-kondo
 (defstate event-channel
   :start (a/chan (get cfg/config :discord-event-channel-size 100))
   :stop  (a/close! event-channel))
 
-#_{:clj-kondo/ignore [:unresolved-symbol]}
 (defstate gateway-conn
   :start (dconn/connect-bot! api-token event-channel :intents #{})
   :stop  (dconn/disconnect-bot! gateway-conn))
 
-#_{:clj-kondo/ignore [:unresolved-symbol]}
+(declare application-id)  ; Hokey hack to appease clj-kondo
 (defstate application-id
   :start (:id (mu/get-current-application-information! rest-conn)))
 
-#_{:clj-kondo/ignore [:unresolved-symbol]}
 (defstate command-registration
   :start (if (u/safe-parse-boolean (:reload-command-definitions cfg/config))
            (do
