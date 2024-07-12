@@ -3,10 +3,10 @@
 | [**release**](https://github.com/pmonks/bvpbot/tree/release) | [![Dependencies](https://github.com/pmonks/bvpbot/actions/workflows/dependencies.yml/badge.svg?branch=release)](https://github.com/pmonks/bvpbot/actions?query=workflow%3Adependencies+branch%3Arelease) |
 | [**dev**](https://github.com/pmonks/bvpbot/tree/dev) | [![Dependencies](https://github.com/pmonks/bvpbot/actions/workflows/dependencies.yml/badge.svg?branch=dev)](https://github.com/pmonks/bvpbot/actions?query=workflow%3Adependencies+branch%3Adev) |
 
-[![License](https://img.shields.io/github/license/pmonks/bvpbot.svg)](https://github.com/pmonks/bvpbot/blob/release/LICENSE) [![Open Issues](https://img.shields.io/github/issues/pmonks/bvpbot.svg)](https://github.com/pmonks/bvpbot/issues) [![Vulnerabilities](https://github.com/pmonks/bvpbot/actions/workflows/vulnerabilities.yml/badge.svg)](https://pmonks.github.io/bvpbot/nvd/dependency-check-report.html)
+[![License](https://img.shields.io/github/license/pmonks/bvpbot.svg)](https://github.com/pmonks/bvpbot/blob/release/LICENSE) [![Open Issues](https://img.shields.io/github/issues/pmonks/bvpbot.svg)](https://github.com/pmonks/bvpbot/issues) [![Vulnerabilities](https://github.com/pmonks/bvpbot/actions/workflows/vulnerabilities.yml/badge.svg?branch=dev)](https://pmonks.github.io/bvpbot/nvd/dependency-check-report.html)
 
 
-<img alt="bvpbot logo" align="right" src="https://cdn.jsdelivr.net/gh/pmonks/bvpbot/bvpbot.png"/>
+<img alt="bvpbot logo" align="right" src="https://raw.githubusercontent.com/pmonks/bvpbot/dev/bvpbot.png"/>
 
 # bvpbot
 
