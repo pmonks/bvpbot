@@ -31,7 +31,7 @@
     @discljord-api-result))
 
 (def embed-template-colour   9215480)
-(def embed-template-logo-url "https://cdn.jsdelivr.net/gh/pmonks/bvpbot/bvpbot.png")
+(def embed-template-logo-url "https://raw.githubusercontent.com/pmonks/bvpbot/dev/bvpbot.png")
 
 (defn embed-template-no-footer
   "Generates a default template for embeds, without a footer."
