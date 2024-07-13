@@ -26,7 +26,7 @@
             [mount.core                :as mnt]
             [java-time                 :as tm]
             [bvpbot.config             :as cfg]
-            [bvpbot.http               :as http]
+            [bvpbot.http-server        :as hs]
             [bvpbot.util               :as u]
             [bvpbot.discord.connection :as bdc])
   (:gen-class))

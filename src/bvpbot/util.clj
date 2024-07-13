@@ -17,9 +17,11 @@
 ;
 
 (ns bvpbot.util
-  (:require [clojure.string        :as s]
-            [clojure.tools.logging :as log]
-            [java-time             :as tm]))
+  (:require [clojure.string         :as s]
+            [clojure.tools.logging  :as log]
+            [cheshire.core          :as ch]
+            [camel-snake-kebab.core :as csk]
+            [java-time              :as tm]))
 
 (def boot-time (tm/instant))
 
@@ -51,6 +53,12 @@
   (when x
     (parse-boolean x)))
 
+(defn parse-json
+  "Parse a JSON string into Clojure data structures."
+  [^String json]
+  (when-not (s/blank? json)
+    (ch/parse-string json csk/->kebab-case-keyword)))
+
 (defn getrn
   "Like get, but also replace nil values found in the map with the default value."
   [m k nf]
@@ -77,17 +85,6 @@
   [^String s]
   ; Note: UrlValidator.isValid() is null-safe (returns false when given null), so we don't need to guard that ourselves
   (.isValid (org.apache.commons.validator.routines.UrlValidator/getInstance) s))
-
-(defn clojurise-json-key
-  "Converts JSON string keys (e.g. \"fullName\") to Clojure keyword keys (e.g. :full-name)."
-  [k]
-  (keyword
-    (s/replace
-      (s/join "-"
-              (map s/lower-case
-                   (s/split k #"(?<!(^|[A-Z]))(?=[A-Z])|(?<!^)(?=[A-Z][a-z])")))
-      "_"
-      "-")))
 
 (defn replace-all
   "Takes a sequence of replacements, and applies all of them to the given string, in the order provided.  Each replacement in the sequence is a pair of values to be passed to clojure.string/replace (the 2nd and 3rd arguments)."
