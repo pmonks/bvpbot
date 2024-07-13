@@ -178,7 +178,7 @@
    (System/exit status-code)))
 
 ; Various sys info strings
-(def clojure-info (str "v" (clojure-version)))
+(def clojure-info (clojure-version))
 (def jvm-info     (str (System/getProperty "java.version") " (" (System/getProperty "java.vm.name") " " (System/getProperty "java.vm.version") ")"))
 (def os-info      (str (System/getProperty "os.name") " " (System/getProperty "os.version") " " (System/getProperty "os.arch") " (" (.availableProcessors (Runtime/getRuntime)) " cores)"))
 

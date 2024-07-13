@@ -26,6 +26,11 @@
             [bvpbot.source.ist              :as ist]
             [bvpbot.source.urban-dictionary :as ud]))
 
+(defn- embed
+  "Construct an embed message with the given args."
+  [& args]
+  {:embeds [(apply assoc (mu/embed-template) args)]})
+
 (def ist-command
   (scs/command
    "ist"
@@ -36,10 +41,10 @@
   ["ist"]
   _interaction
   [_]
-  (rsp/channel-message {:embeds [(assoc (mu/embed-template)
-                                        :description (str "**" (mu/discord-escape (ist/gen-title)) "**")
-                                        :footer      {:text     "Disclaimer: this is a generated fake"
-                                                      :icon_url "https://yt3.ggpht.com/ytc/AAUvwnjhzwc9yNfyfX8C1N820yMhaS27baWlSz2wqaRE=s176-c-k-c0x00ffffff-no-rj"})]}))
+  (let [fake-ist-title (ist/gen-title)]
+    (rsp/channel-message (embed :description (str "**" (mu/discord-escape fake-ist-title) "**")
+                                :footer      {:text     "Disclaimer: this is a generated fake"
+                                              :icon_url "https://yt3.ggpht.com/ytc/AAUvwnjhzwc9yNfyfX8C1N820yMhaS27baWlSz2wqaRE=s176-c-k-c0x00ffffff-no-rj"}))))
 
 (def ud-command
   (scs/command
@@ -52,14 +57,12 @@
   _interaction
   {:keys [term]}
   (if-let [definition (ud/top-definition-for-term term)]
-    (rsp/channel-message {:embeds [(assoc (mu/embed-template)
-                                          :description (str "**Top Definition of [`" term "` on Urban Dictionary](https://www.urbandictionary.com/define.php?term=" term "):**\n\n"
-                                                            "`" (:definition definition) "`"
-                                                            (when-let [example (:example definition)]
-                                                              (str "\n\n**Example usage:**\n\n_" example "_"))))]})
+    (rsp/channel-message (embed :description (str "**Top Definition of [`" term "` on Urban Dictionary](https://www.urbandictionary.com/define.php?term=" term "):**\n\n"
+                                                  "`" (mu/discord-escape (:definition definition)) "`"
+                                                  (when-let [example (:example definition)]
+                                                    (str "\n\n**Example usage:**\n\n_" (mu/discord-escape example) "_")))))
     (rsp/ephemeral
-      (rsp/channel-message {:embeds [(assoc (mu/embed-template)
-                                            :description (str "No definition was found on Urban Dictionary for `" term "`."))]}))))
+      (rsp/channel-message (embed :description (str "No definition was found on Urban Dictionary for `" (mu/discord-escape term) "`."))))))
 
 (def privacy-command
   (scs/command
@@ -72,8 +75,7 @@
   _interaction
   [_]
   (rsp/ephemeral
-    (rsp/channel-message {:embeds [(assoc (mu/embed-template)
-                                          :description "[bvpbot's privacy policy is available here](https://github.com/pmonks/bvpbot/blob/release/PRIVACY.md)")]})))
+    (rsp/channel-message (embed :description "[bvpbot's privacy policy is available here](https://github.com/pmonks/bvpbot/blob/release/PRIVACY.md)"))))
 
 (def status-command
   (scs/command
@@ -86,16 +88,15 @@
   _interaction
   [_]
   (rsp/ephemeral
-    (rsp/channel-message {:embeds [(assoc (mu/embed-template)
-                                          :fields [
-                                            {:name "Running for"            :value (mu/discord-escape (u/runtime-info))}
-                                            {:name "Built at"               :value (mu/discord-escape cfg/build-info)}
-                                            {:name "Clojure"                :value (mu/discord-escape u/clojure-info)}
-                                            {:name "JVM"                    :value (mu/discord-escape u/jvm-info)}
-                                            {:name "OS"                     :value (mu/discord-escape u/os-info)}
-                                            {:name "Heap memory"            :value (mu/discord-escape (u/heap-mem-info))}
-                                            {:name "Non-heap memory"        :value (mu/discord-escape (u/non-heap-mem-info))}
-                                          ])]})))
+    (rsp/channel-message (embed :fields [
+                                  {:name "Running for"     :value (mu/discord-escape (u/runtime-info))}
+                                  {:name "Built at"        :value (mu/discord-escape cfg/build-info)}
+                                  {:name "Clojure"         :value (mu/discord-escape u/clojure-info)}
+                                  {:name "JVM"             :value (mu/discord-escape u/jvm-info)}
+                                  {:name "OS"              :value (mu/discord-escape u/os-info)}
+                                  {:name "Heap memory"     :value (mu/discord-escape (u/heap-mem-info))}
+                                  {:name "Non-heap memory" :value (mu/discord-escape (u/non-heap-mem-info))}
+                                ]))))
 
 (def help-command
   (scs/command
@@ -110,9 +111,7 @@
   _interaction
   [_]
   (rsp/ephemeral
-    (rsp/channel-message {:embeds [(assoc (mu/embed-template)
-                                          :fields (map #(hash-map :name (str "/" (:name %)) :value (mu/discord-escape (:description %)))
-                                                       command-definitions))]})))
+    (rsp/channel-message (embed :fields (map #(hash-map :name (str "/" (:name %)) :value (mu/discord-escape (:description %))) command-definitions)))))
 
 (def command-definitions [
   ist-command
