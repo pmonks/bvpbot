@@ -16,7 +16,7 @@
 ; SPDX-License-Identifier: Apache-2.0
 ;
 
-(ns bvpbot.http
+(ns bvpbot.http-server
   (:require [clojure.tools.logging :as log]
             [mount.core            :as mnt :refer [defstate]]
             [org.httpkit.server    :as http]

@@ -17,12 +17,11 @@
 ;
 
 (ns bvpbot.source.youtube
-  (:require [clojure.string        :as s]
-            [clojure.tools.logging :as log]
-            [org.httpkit.client    :as http]
-            [cheshire.core         :as ch]
-            [java-time             :as tm]
-            [bvpbot.util           :as u]))
+  (:require [clojure.string         :as s]
+            [clojure.tools.logging  :as log]
+            [java-time              :as tm]
+            [bvpbot.http-client     :as hc]
+            [bvpbot.util            :as u]))
 
 (def api-host                    "https://www.googleapis.com")
 (def endpoint-get-channel-info   "/youtube/v3/channels?part=snippet&id=%s")
@@ -32,12 +31,12 @@
   "Calls the given Google API endpoint (must be fully constructed), using the provided API key, and either returns parsed hashmap of the body or throws an ex-info."
   [youtube-api-token endpoint]
   (let [api-url                     (str api-host endpoint)
-        options                     {:headers {"Accept" "application/json"}}
+        headers                     {"Accept" "application/json"}
         _                           (log/debug "Calling" (str api-url "&key=REDACTED"))
-        {:keys [status body error]} @(http/get (str api-url "&key=" youtube-api-token) options)]
+        {:keys [status body error]} (hc/get (str api-url "&key=" youtube-api-token) headers)]
     (if (or error (not= status 200))
-      (throw (ex-info (format "Google API call (%s) failed" (str api-url "&key=REDACTED")) {:status status :body (ch/parse-string body u/clojurise-json-key)} error))
-      (ch/parse-string body u/clojurise-json-key))))
+      (throw (ex-info (format "Google API call (%s) failed" (str api-url "&key=REDACTED")) {:status status :body body} error))
+      (u/parse-json body))))
 
 (defn channel-info
   "Returns info for the given channel, or throws an ex-info."
