@@ -99,6 +99,11 @@
                (rest  r))
         s))))
 
+(defn query-string-escape
+  "Escape s (a String) for use in a URL query string."
+  [^String s]
+  (java.net.URLEncoder/encode s "UTF-8"))
+
 (defn to-ascii
   "Converts the given string to ASCII, mapping a small number of Unicode characters to their ASCII equivalents."
   [s]
