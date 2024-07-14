@@ -99,6 +99,11 @@
                (rest  r))
         s))))
 
+(defn query-string-escape
+  "Escape s (a String) for use in a URL query string."
+  [^String s]
+  (java.net.URLEncoder/encode s "UTF-8"))
+
 (defn to-ascii
   "Converts the given string to ASCII, mapping a small number of Unicode characters to their ASCII equivalents."
   [s]
@@ -178,7 +183,7 @@
    (System/exit status-code)))
 
 ; Various sys info strings
-(def clojure-info (str "v" (clojure-version)))
+(def clojure-info (clojure-version))
 (def jvm-info     (str (System/getProperty "java.version") " (" (System/getProperty "java.vm.name") " " (System/getProperty "java.vm.version") ")"))
 (def os-info      (str (System/getProperty "os.name") " " (System/getProperty "os.version") " " (System/getProperty "os.arch") " (" (.availableProcessors (Runtime/getRuntime)) " cores)"))
 

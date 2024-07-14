@@ -17,10 +17,10 @@
 ;
 
 (ns bvpbot.source.urban-dictionary
-  (:require [clojure.string         :as s]
-            [clojure.tools.logging  :as log]
-            [bvpbot.http-client     :as hc]
-            [bvpbot.util            :as u]))
+  (:require [clojure.string        :as s]
+            [clojure.tools.logging :as log]
+            [bvpbot.http-client    :as hc]
+            [bvpbot.util           :as u]))
 
 (def ^:private api-location           "https://api.urbandictionary.com/v0")
 (def ^:private define-term-url-format (str api-location "/define?term=%s"))
