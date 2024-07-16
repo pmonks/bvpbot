@@ -42,7 +42,7 @@
   _interaction
   [_]
   (let [fake-ist-title (ist/gen-title)]
-    (rsp/channel-message (embed :description (str "**" (mu/discord-escape fake-ist-title) "**")
+    (rsp/channel-message (embed :description (mu/discord-trim :embed-description (str "**" (mu/discord-escape fake-ist-title) "**"))
                                 :footer      {:text     "Disclaimer: this is a generated fake"
                                               :icon_url "https://yt3.ggpht.com/ytc/AAUvwnjhzwc9yNfyfX8C1N820yMhaS27baWlSz2wqaRE=s176-c-k-c0x00ffffff-no-rj"}))))
 
@@ -57,12 +57,15 @@
   _interaction
   {:keys [term]}
   (if-let [definition (ud/top-definition-for-term term)]
-    (rsp/channel-message (embed :description (str "**Top Definition of [`" (mu/discord-escape term) "`](https://www.urbandictionary.com/define.php?term=" (u/query-string-escape term) ") on Urban Dictionary:**\n\n"
-                                                  "`" (mu/discord-escape (:definition definition)) "`"
-                                                  (when-let [example (:example definition)]
-                                                    (str "\n\n**Example usage:**\n\n_" (mu/discord-escape example) "_")))))
-    (rsp/ephemeral
-      (rsp/channel-message (embed :description (str "No definition was found on Urban Dictionary for `" (mu/discord-escape term) "`."))))))
+    (let [definition-text (:definition definition)
+          definition-text (if (> (count definition-text) 3072) (str (subs definition-text 0 3069) "...") definition-text)
+          example-text    (:example definition)
+          example-text    (if (> (count example-text) 512) (str (subs example-text 0 509) "...") example-text)]
+      (rsp/channel-message (embed :description (str "**Top Definition of [`" (mu/discord-escape term) "`](https://www.urbandictionary.com/define.php?term=" (u/query-string-escape term) ") on Urban Dictionary:**\n\n"
+                                                    "`" (mu/discord-escape definition-text) "`"
+                                                    (when example-text
+                                                      (str "\n\n**Example usage:**\n\n_" (mu/discord-escape example-text) "_"))))))
+    (rsp/channel-message (embed :description (str "No definition was found on Urban Dictionary for `" (mu/discord-escape term) "`.")))))
 
 (def privacy-command
   (scs/command
@@ -89,13 +92,13 @@
   [_]
   (rsp/ephemeral
     (rsp/channel-message (embed :fields [
-                                  {:name "Running for"     :value (mu/discord-escape (u/runtime-info))}
-                                  {:name "Built at"        :value (mu/discord-escape cfg/build-info)}
-                                  {:name "Clojure"         :value (mu/discord-escape u/clojure-info)}
-                                  {:name "JVM"             :value (mu/discord-escape u/jvm-info)}
-                                  {:name "OS"              :value (mu/discord-escape u/os-info)}
-                                  {:name "Heap memory"     :value (mu/discord-escape (u/heap-mem-info))}
-                                  {:name "Non-heap memory" :value (mu/discord-escape (u/non-heap-mem-info))}
+                                  {:name "Running for"     :value (mu/discord-trim :embed-field-value (mu/discord-escape (u/runtime-info)))}
+                                  {:name "Built at"        :value (mu/discord-trim :embed-field-value (mu/discord-escape cfg/build-info))}
+                                  {:name "Clojure"         :value (mu/discord-trim :embed-field-value (mu/discord-escape u/clojure-info))}
+                                  {:name "JVM"             :value (mu/discord-trim :embed-field-value (mu/discord-escape u/jvm-info))}
+                                  {:name "OS"              :value (mu/discord-trim :embed-field-value (mu/discord-escape u/os-info))}
+                                  {:name "Heap memory"     :value (mu/discord-trim :embed-field-value (mu/discord-escape (u/heap-mem-info)))}
+                                  {:name "Non-heap memory" :value (mu/discord-trim :embed-field-value (mu/discord-escape (u/non-heap-mem-info)))}
                                 ]))))
 
 (def help-command
@@ -111,7 +114,7 @@
   _interaction
   [_]
   (rsp/ephemeral
-    (rsp/channel-message (embed :fields (map #(hash-map :name (str "/" (:name %)) :value (mu/discord-escape (:description %))) command-definitions)))))
+    (rsp/channel-message (embed :fields (map #(hash-map :name (mu/discord-trim :embed-field-name (str "/" (:name %))) :value (mu/discord-trim :embed-field-value (mu/discord-escape (:description %)))) command-definitions)))))
 
 (def command-definitions [
   ist-command

@@ -49,6 +49,31 @@
                  \< "\\<"
                  \> "\\>"})))
 
+(def discord-size-limits {
+  :message-content   2000
+  :embed-title        256
+  :embed-description 4096
+  :embed-field-count   25
+  :embed-field-name   256
+  :embed-field-value 1024
+  :embed-footer      2048
+  :embed-author       256
+  :embed-total       6000})
+
+(defn discord-trim
+  "Trims s (a String) if it is longer than Discord allows in the given context
+  (a keyword - a key from discord-size-limits).
+
+  Note: if s is longer than the limit for context, trims s to limit-3, then
+  appends three period characters."
+  [context s]
+  (when s
+    (if-let [limit (get discord-size-limits context)]
+      (if (> (count s) limit)
+        (str (subs s 0 (- limit 3)) "...")
+        s)
+      s)))
+
 (defn embed-template
   "Generates a default template for embeds."
   []

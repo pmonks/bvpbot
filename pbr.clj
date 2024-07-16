@@ -20,7 +20,7 @@
   [opts]
   (assoc opts
          :lib              'com.github.pmonks/bvpbot
-         :version          (format "0.0.%s" (.format (java.text.SimpleDateFormat. "yyyyMMdd") (java.util.Date.)))
+         :version          (format "1.0.%s" (.format (java.text.SimpleDateFormat. "yyyyMMdd") (java.util.Date.)))
          :uber-file        "./target/bvpbot-standalone.jar"
          :main             'bvpbot.main
          :deploy-info-file "./resources/deploy-info.edn"
