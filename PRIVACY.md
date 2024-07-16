@@ -6,7 +6,7 @@ Your privacy is important to me. It is my policy to respect your privacy regardi
 
 I only ask for personal information when I truly need it to provide a service to you. I collect it by fair and lawful means, with your knowledge and consent. I also let you know why I'm collecting it and how it will be used.
 
-`bvpbot` is a "stateless" service, and (with one exception) does not persist any information (including personal information) it receives from the Discord APIs or elsewhere.  The one exception is that some personal information may appear in log files.  These log files are deleted periodically, typically weekly (see [Heroku's documentation on log history limits](https://devcenter.heroku.com/articles/logging#log-history-limits)).
+`bvpbot` is a "stateless" service, and (with one exception) does not persist any information (including personal information) it receives from the Discord APIs or elsewhere.  The one exception is that some personal information (for example Discord account identifiers) may appear in `bvpbot`'s logging output, which is sent to `stdout` but captured by Digital Ocean (the hosting service).  [Digital Ocean's privacy policy is here](https://www.digitalocean.com/legal/privacy-policy).
 
 Regardless of source, I don’t share any personally identifying information publicly or with third-parties, except when required to do so by law.
 
