@@ -17,11 +17,11 @@
 ;
 
 (ns bvpbot.discord.message-util
-  (:require [clojure.tools.logging :as log]
+  (:require [clojure.string        :as s]
+            [clojure.tools.logging :as log]
             [java-time             :as tm]
             [discljord.messaging   :as dm]
-            [discljord.formatting  :as df]
-            [bvpbot.util           :as u]))
+            [discljord.formatting  :as df]))
 
 (defn- discljord-deref
   "discljord defaults to 'fire & forget' API calls, which silently swallows errors. This corrects that behaviour."
@@ -39,13 +39,15 @@
   {:color embed-template-colour})
 
 (defn discord-escape
+  "Escapes s (a String) for use in a Discord message or embed."
   [s]
   (when s
-    (u/replace-all s
-                   [["*" "\\*"]
-                    ["`" "\\`"]
-                    ["~" "\\~"]
-                    ["_" "\\_"]])))
+    (s/escape s {\* "\\*"
+                 \` "\\`"
+                 \~ "\\~"
+                 \_ "\\_"
+                 \< "\\<"
+                 \> "\\>"})))
 
 (defn embed-template
   "Generates a default template for embeds."

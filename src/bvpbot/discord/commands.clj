@@ -57,7 +57,7 @@
   _interaction
   {:keys [term]}
   (if-let [definition (ud/top-definition-for-term term)]
-    (rsp/channel-message (embed :description (str "**Top Definition of [`" term "`](https://www.urbandictionary.com/define.php?term=" (u/query-string-escape term) ") on Urban Dictionary:**\n\n"
+    (rsp/channel-message (embed :description (str "**Top Definition of [`" (mu/discord-escape term) "`](https://www.urbandictionary.com/define.php?term=" (u/query-string-escape term) ") on Urban Dictionary:**\n\n"
                                                   "`" (mu/discord-escape (:definition definition)) "`"
                                                   (when-let [example (:example definition)]
                                                     (str "\n\n**Example usage:**\n\n_" (mu/discord-escape example) "_")))))
