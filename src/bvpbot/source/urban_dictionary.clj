@@ -42,7 +42,7 @@
 
 (defn top-definition-for-term
   "Returns the 'top' Urban Dictionary definition for the given term, as determined
-  by votes (thumbs up minus thumbs down)."
+  by Urban Dictionary."
   [term]
   (when-let [definitions (define-term term)]
-    (last (sort-by #(- (:thumbs-up %) (:thumbs-down %)) (:list definitions)))))
+    (first (:list definitions))))
