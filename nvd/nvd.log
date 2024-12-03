@@ -1,764 +1,506 @@
 Downloading: nvd-clojure/nvd-clojure/maven-metadata.xml from clojars
 Downloading: org/owasp/dependency-check-core/10.0.3/dependency-check-core-10.0.3.pom from central
-Downloading: nvd-clojure/nvd-clojure/4.0.0/nvd-clojure-4.0.0.pom from clojars
 Downloading: org/owasp/dependency-check-parent/10.0.3/dependency-check-parent-10.0.3.pom from central
-Downloading: rm-hull/table/0.7.1/table-0.7.1.pom from clojars
+Downloading: nvd-clojure/nvd-clojure/4.0.0/nvd-clojure-4.0.0.pom from clojars
 Downloading: com/fasterxml/jackson/jackson-bom/2.17.1/jackson-bom-2.17.1.pom from central
 Downloading: org/slf4j/slf4j-simple/2.0.10/slf4j-simple-2.0.10.pom from central
 Downloading: org/slf4j/slf4j-parent/2.0.10/slf4j-parent-2.0.10.pom from central
 Downloading: org/slf4j/slf4j-bom/2.0.10/slf4j-bom-2.0.10.pom from central
-Downloading: trptcolin/versioneer/0.2.0/versioneer-0.2.0.pom from clojars
-Downloading: clansi/clansi/1.0.0/clansi-1.0.0.pom from clojars
 Downloading: com/fasterxml/jackson/core/jackson-databind/2.16.1/jackson-databind-2.16.1.pom from central
+Downloading: com/fasterxml/jackson/jackson-base/2.16.1/jackson-base-2.16.1.pom from central
+Downloading: clansi/clansi/1.0.0/clansi-1.0.0.pom from clojars
+Downloading: rm-hull/table/0.7.1/table-0.7.1.pom from clojars
+Downloading: trptcolin/versioneer/0.2.0/versioneer-0.2.0.pom from clojars
 Downloading: com/fasterxml/jackson/core/jackson-core/2.16.1/jackson-core-2.16.1.pom from central
+Downloading: org/junit/junit-bom/5.9.2/junit-bom-5.9.2.pom from central
 Downloading: com/fasterxml/jackson/core/jackson-annotations/2.16.1/jackson-annotations-2.16.1.pom from central
 Downloading: com/fasterxml/jackson/module/jackson-module-afterburner/2.16.1/jackson-module-afterburner-2.16.1.pom from central
-Downloading: com/fasterxml/jackson/jackson-base/2.16.1/jackson-base-2.16.1.pom from central
-Downloading: com/fasterxml/jackson/module/jackson-modules-base/2.16.1/jackson-modules-base-2.16.1.pom from central
 Downloading: org/apache/maven/resolver/maven-resolver-transport-http/1.9.18/maven-resolver-transport-http-1.9.18.pom from central
+Downloading: com/fasterxml/jackson/module/jackson-modules-base/2.16.1/jackson-modules-base-2.16.1.pom from central
 Downloading: org/apache/maven/resolver/maven-resolver/1.9.18/maven-resolver-1.9.18.pom from central
+Downloading: org/eclipse/jetty/jetty-client/12.0.5/jetty-client-12.0.5.pom from central
 Downloading: org/yaml/snakeyaml/2.2/snakeyaml-2.2.pom from central
 Downloading: org/apache/maven/maven-core/3.9.6/maven-core-3.9.6.pom from central
-Downloading: org/junit/junit-bom/5.9.2/junit-bom-5.9.2.pom from central
-Downloading: org/eclipse/jetty/jetty-client/12.0.5/jetty-client-12.0.5.pom from central
-Downloading: org/apache/maven/maven/3.9.6/maven-3.9.6.pom from central
 Downloading: org/eclipse/jetty/jetty-core/12.0.5/jetty-core-12.0.5.pom from central
-Downloading: org/apache/maven/resolver/maven-resolver-spi/1.9.18/maven-resolver-spi-1.9.18.pom from central
 Downloading: org/apache/maven/resolver/maven-resolver-api/1.9.18/maven-resolver-api-1.9.18.pom from central
-Downloading: org/apache/maven/resolver/maven-resolver-util/1.9.18/maven-resolver-util-1.9.18.pom from central
-Downloading: org/apache/maven/maven-resolver-provider/3.9.6/maven-resolver-provider-3.9.6.pom from central
+Downloading: org/apache/maven/maven/3.9.6/maven-3.9.6.pom from central
+Downloading: org/apache/maven/resolver/maven-resolver-spi/1.9.18/maven-resolver-spi-1.9.18.pom from central
 Downloading: org/eclipse/jetty/jetty-project/12.0.5/jetty-project-12.0.5.pom from central
+Downloading: org/apache/maven/resolver/maven-resolver-util/1.9.18/maven-resolver-util-1.9.18.pom from central
 Downloading: org/apache/maven/resolver/maven-resolver-impl/1.9.18/maven-resolver-impl-1.9.18.pom from central
+Downloading: org/apache/maven/maven-resolver-provider/3.9.6/maven-resolver-provider-3.9.6.pom from central
 Downloading: org/codehaus/plexus/plexus-utils/4.0.0/plexus-utils-4.0.0.pom from central
 Downloading: io/github/jeremylong/open-vulnerability-clients/6.1.7/open-vulnerability-clients-6.1.7.pom from central
-Downloading: org/anarres/jdiagnostics/jdiagnostics/1.0.7/jdiagnostics-1.0.7.pom from central
 Downloading: com/fasterxml/jackson/jackson-bom/2.15.3/jackson-bom-2.15.3.pom from central
+Downloading: org/anarres/jdiagnostics/jdiagnostics/1.0.7/jdiagnostics-1.0.7.pom from central
 Downloading: org/whitesource/pecoff4j/0.0.2.1/pecoff4j-0.0.2.1.pom from central
-Downloading: org/apache/commons/commons-jcs3-core/3.2.1/commons-jcs3-core-3.2.1.pom from central
-Downloading: io/github/jeremylong/jcs3-slf4j/1.0.5/jcs3-slf4j-1.0.5.pom from central
 Downloading: com/fasterxml/jackson/jackson-parent/2.15/jackson-parent-2.15.pom from central
-Downloading: org/apache/commons/commons-jcs3/3.2.1/commons-jcs3-3.2.1.pom from central
+Downloading: org/apache/commons/commons-jcs3-core/3.2.1/commons-jcs3-core-3.2.1.pom from central
 Downloading: com/fasterxml/oss-parent/50/oss-parent-50.pom from central
-Downloading: us/springett/cpe-parser/2.1.0/cpe-parser-2.1.0.pom from central
-Downloading: org/apache/commons/commons-parent/58/commons-parent-58.pom from central
+Downloading: io/github/jeremylong/jcs3-slf4j/1.0.5/jcs3-slf4j-1.0.5.pom from central
 Downloading: com/github/package-url/packageurl-java/1.5.0/packageurl-java-1.5.0.pom from central
+Downloading: us/springett/cpe-parser/2.1.0/cpe-parser-2.1.0.pom from central
 Downloading: org/infinispan/infinispan-bom/11.0.18.Final/infinispan-bom-11.0.18.Final.pom from central
-Downloading: org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.pom from central
-Downloading: org/semver4j/semver4j/5.3.0/semver4j-5.3.0.pom from central
-Downloading: org/owasp/dependency-check-utils/10.0.3/dependency-check-utils-10.0.3.pom from central
-Downloading: org/apache/commons/commons-parent/48/commons-parent-48.pom from central
+Downloading: org/apache/commons/commons-jcs3/3.2.1/commons-jcs3-3.2.1.pom from central
 Downloading: org/infinispan/infinispan-build-configuration-parent/11.0.18.Final/infinispan-build-configuration-parent-11.0.18.Final.pom from central
-Downloading: org/apache/commons/commons-compress/1.26.2/commons-compress-1.26.2.pom from central
-Downloading: commons-io/commons-io/2.16.1/commons-io-2.16.1.pom from central
+Downloading: org/semver4j/semver4j/5.3.0/semver4j-5.3.0.pom from central
+Downloading: org/apache/commons/commons-parent/58/commons-parent-58.pom from central
+Downloading: org/owasp/dependency-check-utils/10.0.3/dependency-check-utils-10.0.3.pom from central
+Downloading: org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.pom from central
 Downloading: org/ow2/asm/asm-bom/9.6/asm-bom-9.6.pom from central
-Downloading: org/apache/commons/commons-text/1.12.0/commons-text-1.12.0.pom from central
-Downloading: org/apache/commons/commons-dbcp2/2.12.0/commons-dbcp2-2.12.0.pom from central
 Downloading: org/testcontainers/testcontainers-bom/1.19.3/testcontainers-bom-1.19.3.pom from central
+Downloading: org/apache/commons/commons-parent/48/commons-parent-48.pom from central
+Downloading: commons-io/commons-io/2.16.1/commons-io-2.16.1.pom from central
+Downloading: org/apache/commons/commons-compress/1.26.2/commons-compress-1.26.2.pom from central
+Downloading: org/apache/commons/commons-dbcp2/2.12.0/commons-dbcp2-2.12.0.pom from central
 Downloading: org/apache/lucene/lucene-core/8.11.3/lucene-core-8.11.3.pom from central
-Downloading: org/apache/lucene/lucene-analyzers-common/8.11.3/lucene-analyzers-common-8.11.3.pom from central
-Downloading: org/apache/lucene/lucene-queryparser/8.11.3/lucene-queryparser-8.11.3.pom from central
+Downloading: org/apache/commons/commons-text/1.12.0/commons-text-1.12.0.pom from central
 Downloading: org/apache/commons/commons-parent/66/commons-parent-66.pom from central
 Downloading: org/apache/lucene/lucene-parent/8.11.3/lucene-parent-8.11.3.pom from central
-Downloading: org/apache/lucene/lucene-solr-grandparent/8.11.3/lucene-solr-grandparent-8.11.3.pom from central
+Downloading: org/apache/lucene/lucene-analyzers-common/8.11.3/lucene-analyzers-common-8.11.3.pom from central
+Downloading: org/apache/lucene/lucene-queryparser/8.11.3/lucene-queryparser-8.11.3.pom from central
 Downloading: org/apache/velocity/velocity-engine-core/2.3/velocity-engine-core-2.3.pom from central
 Downloading: org/apache/velocity/velocity-engine-parent/2.3/velocity-engine-parent-2.3.pom from central
+Downloading: org/apache/lucene/lucene-solr-grandparent/8.11.3/lucene-solr-grandparent-8.11.3.pom from central
 Downloading: org/apache/velocity/velocity-master/4/velocity-master-4.pom from central
 Downloading: com/h2database/h2/2.1.214/h2-2.1.214.pom from central
 Downloading: org/glassfish/javax.json/1.1.4/javax.json-1.1.4.pom from central
 Downloading: org/glassfish/json/1.1.4/json-1.1.4.pom from central
-Downloading: com/fasterxml/jackson/module/jackson-module-afterburner/2.17.1/jackson-module-afterburner-2.17.1.pom from central
-Downloading: com/fasterxml/jackson/core/jackson-databind/2.17.1/jackson-databind-2.17.1.pom from central
 Downloading: com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.17.1/jackson-datatype-jsr310-2.17.1.pom from central
+Downloading: com/fasterxml/jackson/core/jackson-databind/2.17.1/jackson-databind-2.17.1.pom from central
+Downloading: com/fasterxml/jackson/module/jackson-module-afterburner/2.17.1/jackson-module-afterburner-2.17.1.pom from central
+Downloading: com/fasterxml/jackson/module/jackson-modules-java8/2.17.1/jackson-modules-java8-2.17.1.pom from central
 Downloading: com/fasterxml/jackson/jackson-base/2.17.1/jackson-base-2.17.1.pom from central
 Downloading: com/fasterxml/jackson/module/jackson-modules-base/2.17.1/jackson-modules-base-2.17.1.pom from central
-Downloading: com/fasterxml/jackson/module/jackson-modules-java8/2.17.1/jackson-modules-java8-2.17.1.pom from central
 Downloading: com/fasterxml/jackson/module/jackson-module-blackbird/2.17.1/jackson-module-blackbird-2.17.1.pom from central
-Downloading: com/h3xstream/retirejs/retirejs-core/3.0.4/retirejs-core-3.0.4.pom from central
-Downloading: org/sonatype/ossindex/ossindex-service-client/1.8.2/ossindex-service-client-1.8.2.pom from central
-Downloading: com/h3xstream/retirejs/retirejs-root-pom/3.0.4/retirejs-root-pom-3.0.4.pom from central
 Downloading: com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.17.1/jackson-dataformat-yaml-2.17.1.pom from central
-Downloading: com/google/guava/guava/33.2.1-jre/guava-33.2.1-jre.pom from central
-Downloading: org/sonatype/ossindex/ossindex-service/1.8.2/ossindex-service-1.8.2.pom from central
+Downloading: org/sonatype/ossindex/ossindex-service-client/1.8.2/ossindex-service-client-1.8.2.pom from central
 Downloading: com/fasterxml/jackson/dataformat/jackson-dataformats-text/2.17.1/jackson-dataformats-text-2.17.1.pom from central
-Downloading: com/moandjiezana/toml/toml4j/0.7.2/toml4j-0.7.2.pom from central
-Downloading: com/google/guava/guava-parent/33.2.1-jre/guava-parent-33.2.1-jre.pom from central
+Downloading: org/sonatype/ossindex/ossindex-service/1.8.2/ossindex-service-1.8.2.pom from central
+Downloading: com/h3xstream/retirejs/retirejs-core/3.0.4/retirejs-core-3.0.4.pom from central
 Downloading: org/sonatype/buildsupport/public-parent/28/public-parent-28.pom from central
+Downloading: com/google/guava/guava/33.2.1-jre/guava-33.2.1-jre.pom from central
+Downloading: com/moandjiezana/toml/toml4j/0.7.2/toml4j-0.7.2.pom from central
+Downloading: com/h3xstream/retirejs/retirejs-root-pom/3.0.4/retirejs-root-pom-3.0.4.pom from central
 Downloading: org/sonatype/buildsupport/buildsupport/28/buildsupport-28.pom from central
+Downloading: com/google/guava/guava-parent/33.2.1-jre/guava-parent-33.2.1-jre.pom from central
 Downloading: com/hankcs/aho-corasick-double-array-trie/1.2.3/aho-corasick-double-array-trie-1.2.3.pom from central
-Downloading: org/eclipse/packager/packager-rpm/0.19.0/packager-rpm-0.19.0.pom from central
 Downloading: org/sonatype/ossindex/ossindex-service-bom/1.8.2/ossindex-service-bom-1.8.2.pom from central
-Downloading: org/eclipse/packager/packager/0.19.0/packager-0.19.0.pom from central
-Downloading: org/junit/junit-bom/5.8.2/junit-bom-5.8.2.pom from central
+Downloading: org/eclipse/packager/packager-rpm/0.19.0/packager-rpm-0.19.0.pom from central
 Downloading: org/slf4j/slf4j-api/2.0.10/slf4j-api-2.0.10.pom from central
+Downloading: org/eclipse/packager/packager/0.19.0/packager-0.19.0.pom from central
 Downloading: commons-codec/commons-codec/1.16.0/commons-codec-1.16.0.pom from central
+Downloading: org/junit/junit-bom/5.8.2/junit-bom-5.8.2.pom from central
 Downloading: org/apache/maven/maven-settings/3.9.6/maven-settings-3.9.6.pom from central
 Downloading: org/apache/maven/maven-model/3.9.6/maven-model-3.9.6.pom from central
 Downloading: org/apache/maven/maven-settings-builder/3.9.6/maven-settings-builder-3.9.6.pom from central
-Downloading: org/apache/maven/maven-builder-support/3.9.6/maven-builder-support-3.9.6.pom from central
 Downloading: org/apache/maven/maven-repository-metadata/3.9.6/maven-repository-metadata-3.9.6.pom from central
 Downloading: org/apache/maven/maven-artifact/3.9.6/maven-artifact-3.9.6.pom from central
 Downloading: org/apache/maven/maven-model-builder/3.9.6/maven-model-builder-3.9.6.pom from central
 Downloading: org/apache/maven/maven-plugin-api/3.9.6/maven-plugin-api-3.9.6.pom from central
-Downloading: org/eclipse/sisu/org.eclipse.sisu.inject/0.9.0.M2/org.eclipse.sisu.inject-0.9.0.M2.pom from central
-Downloading: org/eclipse/sisu/org.eclipse.sisu.plexus/0.9.0.M2/org.eclipse.sisu.plexus-0.9.0.M2.pom from central
-Downloading: com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.pom from central
+Downloading: org/apache/maven/maven-builder-support/3.9.6/maven-builder-support-3.9.6.pom from central
 Downloading: com/google/inject/guice/5.1.0/guice-5.1.0.pom from central
-Downloading: com/google/guava/guava-parent/26.0-android/guava-parent-26.0-android.pom from central
+Downloading: org/eclipse/sisu/org.eclipse.sisu.plexus/0.9.0.M2/org.eclipse.sisu.plexus-0.9.0.M2.pom from central
+Downloading: org/eclipse/sisu/org.eclipse.sisu.inject/0.9.0.M2/org.eclipse.sisu.inject-0.9.0.M2.pom from central
 Downloading: com/google/inject/guice-parent/5.1.0/guice-parent-5.1.0.pom from central
+Downloading: com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.pom from central
 Downloading: org/eclipse/sisu/sisu-plexus/0.9.0.M2/sisu-plexus-0.9.0.M2.pom from central
-Downloading: org/codehaus/plexus/plexus-classworlds/2.7.0/plexus-classworlds-2.7.0.pom from central
 Downloading: org/eclipse/sisu/sisu-inject/0.9.0.M2/sisu-inject-0.9.0.M2.pom from central
+Downloading: com/google/guava/guava-parent/26.0-android/guava-parent-26.0-android.pom from central
+Downloading: org/codehaus/plexus/plexus-classworlds/2.7.0/plexus-classworlds-2.7.0.pom from central
 Downloading: org/eclipse/jetty/jetty-alpn-client/12.0.5/jetty-alpn-client-12.0.5.pom from central
 Downloading: org/eclipse/jetty/jetty-http/12.0.5/jetty-http-12.0.5.pom from central
+Downloading: org/eclipse/jetty/jetty-io/12.0.5/jetty-io-12.0.5.pom from central
 Downloading: org/eclipse/jetty/jetty-alpn/12.0.5/jetty-alpn-12.0.5.pom from central
 Downloading: org/apache/maven/resolver/maven-resolver-named-locks/1.9.18/maven-resolver-named-locks-1.9.18.pom from central
-Downloading: org/eclipse/jetty/jetty-io/12.0.5/jetty-io-12.0.5.pom from central
-Downloading: com/samskivert/jmustache/1.15/jmustache-1.15.pom from central
 Downloading: org/apache/httpcomponents/client5/httpclient5/5.3.1/httpclient5-5.3.1.pom from central
-Downloading: commons-codec/commons-codec/1.17.0/commons-codec-1.17.0.pom from central
 Downloading: org/apache/httpcomponents/client5/httpclient5-parent/5.3.1/httpclient5-parent-5.3.1.pom from central
+Downloading: com/samskivert/jmustache/1.15/jmustache-1.15.pom from central
 Downloading: org/apache/httpcomponents/httpcomponents-parent/13/httpcomponents-parent-13.pom from central
+Downloading: commons-codec/commons-codec/1.17.0/commons-codec-1.17.0.pom from central
 Downloading: org/apache/commons/commons-pool2/2.12.0/commons-pool2-2.12.0.pom from central
-Downloading: org/apache/commons/commons-parent/62/commons-parent-62.pom from central
 Downloading: jakarta/transaction/jakarta.transaction-api/1.3.3/jakarta.transaction-api-1.3.3.pom from central
-Downloading: org/apache/lucene/lucene-queries/8.11.3/lucene-queries-8.11.3.pom from central
 Downloading: org/eclipse/ee4j/project/1.0.5/project-1.0.5.pom from central
-Downloading: com/fasterxml/jackson/core/jackson-annotations/2.17.1/jackson-annotations-2.17.1.pom from central
+Downloading: org/apache/commons/commons-parent/62/commons-parent-62.pom from central
 Downloading: org/apache/lucene/lucene-sandbox/8.11.3/lucene-sandbox-8.11.3.pom from central
+Downloading: org/apache/lucene/lucene-queries/8.11.3/lucene-queries-8.11.3.pom from central
+Downloading: com/fasterxml/jackson/core/jackson-annotations/2.17.1/jackson-annotations-2.17.1.pom from central
 Downloading: com/fasterxml/jackson/core/jackson-core/2.17.1/jackson-core-2.17.1.pom from central
 Downloading: com/esotericsoftware/minlog/1.3.1/minlog-1.3.1.pom from central
 Downloading: com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.pom from central
 Downloading: org/sonatype/ossindex/ossindex-service-api/1.8.2/ossindex-service-api-1.8.2.pom from central
-Downloading: joda-time/joda-time/2.10.4/joda-time-2.10.4.pom from central
 Downloading: com/github/spullara/mustache/java/compiler/0.9.6/compiler-0.9.6.pom from central
-Downloading: com/github/spullara/mustache/java/mustache.java/0.9.6/mustache.java-0.9.6.pom from central
-Downloading: com/google/guava/failureaccess/1.0.2/failureaccess-1.0.2.pom from central
-Downloading: javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.pom from central
 Downloading: com/google/code/gson/gson/2.9.0/gson-2.9.0.pom from central
-Downloading: com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.pom from central
+Downloading: joda-time/joda-time/2.10.4/joda-time-2.10.4.pom from central
+Downloading: com/github/spullara/mustache/java/mustache.java/0.9.6/mustache.java-0.9.6.pom from central
+Downloading: javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.pom from central
 Downloading: com/google/code/gson/gson-parent/2.9.0/gson-parent-2.9.0.pom from central
+Downloading: com/google/guava/failureaccess/1.0.2/failureaccess-1.0.2.pom from central
+Downloading: com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.pom from central
+Downloading: org/checkerframework/checker-qual/3.42.0/checker-qual-3.42.0.pom from central
 Downloading: javax/xml/bind/jaxb-api-parent/2.3.1/jaxb-api-parent-2.3.1.pom from central
 Downloading: com/google/errorprone/error_prone_annotations/2.26.1/error_prone_annotations-2.26.1.pom from central
-Downloading: org/checkerframework/checker-qual/3.42.0/checker-qual-3.42.0.pom from central
-Downloading: com/google/errorprone/error_prone_parent/2.26.1/error_prone_parent-2.26.1.pom from central
 Downloading: com/google/j2objc/j2objc-annotations/3.0.0/j2objc-annotations-3.0.0.pom from central
+Downloading: com/google/errorprone/error_prone_parent/2.26.1/error_prone_parent-2.26.1.pom from central
 Downloading: org/tukaani/xz/1.9/xz-1.9.pom from central
 Downloading: org/eclipse/packager/packager-core/0.19.0/packager-core-0.19.0.pom from central
-Downloading: org/eclipse/jetty/jetty-util/12.0.5/jetty-util-12.0.5.pom from central
-Downloading: org/apache/httpcomponents/core5/httpcore5-h2/5.2.4/httpcore5-h2-5.2.4.pom from central
 Downloading: org/apache/httpcomponents/core5/httpcore5/5.2.4/httpcore5-5.2.4.pom from central
-Downloading: javax/ws/rs/javax.ws.rs-api/2.0.1/javax.ws.rs-api-2.0.1.pom from central
+Downloading: org/eclipse/jetty/jetty-util/12.0.5/jetty-util-12.0.5.pom from central
 Downloading: org/apache/httpcomponents/core5/httpcore5-parent/5.2.4/httpcore5-parent-5.2.4.pom from central
+Downloading: org/apache/httpcomponents/core5/httpcore5-h2/5.2.4/httpcore5-h2-5.2.4.pom from central
+Downloading: javax/ws/rs/javax.ws.rs-api/2.0.1/javax.ws.rs-api-2.0.1.pom from central
+Downloading: org/bouncycastle/bcprov-jdk18on/1.71/bcprov-jdk18on-1.71.pom from central
 Downloading: org/sonatype/goodies/package-url-java/1.1.1/package-url-java-1.1.1.pom from central
 Downloading: org/bouncycastle/bcpg-jdk18on/1.71/bcpg-jdk18on-1.71.pom from central
 Downloading: org/sonatype/buildsupport/public-parent/13/public-parent-13.pom from central
-Downloading: org/bouncycastle/bcprov-jdk18on/1.71/bcprov-jdk18on-1.71.pom from central
 Downloading: org/sonatype/buildsupport/buildsupport/13/buildsupport-13.pom from central
-Downloading: commons-codec/commons-codec/1.17.0/commons-codec-1.17.0.jar from central
-Downloading: joda-time/joda-time/2.10.4/joda-time-2.10.4.jar from central
-Downloading: com/fasterxml/jackson/module/jackson-module-blackbird/2.17.1/jackson-module-blackbird-2.17.1.jar from central
 Downloading: org/apache/httpcomponents/core5/httpcore5-h2/5.2.4/httpcore5-h2-5.2.4.jar from central
-Downloading: org/apache/commons/commons-compress/1.26.2/commons-compress-1.26.2.jar from central
+Downloading: commons-codec/commons-codec/1.17.0/commons-codec-1.17.0.jar from central
+Downloading: com/fasterxml/jackson/module/jackson-module-blackbird/2.17.1/jackson-module-blackbird-2.17.1.jar from central
+Downloading: joda-time/joda-time/2.10.4/joda-time-2.10.4.jar from central
 Downloading: com/google/errorprone/error_prone_annotations/2.26.1/error_prone_annotations-2.26.1.jar from central
-Downloading: org/tukaani/xz/1.9/xz-1.9.jar from central
 Downloading: com/esotericsoftware/minlog/1.3.1/minlog-1.3.1.jar from central
+Downloading: org/apache/commons/commons-compress/1.26.2/commons-compress-1.26.2.jar from central
+Downloading: org/tukaani/xz/1.9/xz-1.9.jar from central
 Downloading: com/fasterxml/jackson/core/jackson-databind/2.17.1/jackson-databind-2.17.1.jar from central
 Downloading: com/h3xstream/retirejs/retirejs-core/3.0.4/retirejs-core-3.0.4.jar from central
-Downloading: org/bouncycastle/bcpg-jdk18on/1.71/bcpg-jdk18on-1.71.jar from central
-Downloading: org/eclipse/jetty/jetty-alpn-client/12.0.5/jetty-alpn-client-12.0.5.jar from central
 Downloading: com/google/inject/guice/5.1.0/guice-5.1.0.jar from central
+Downloading: org/eclipse/jetty/jetty-alpn-client/12.0.5/jetty-alpn-client-12.0.5.jar from central
 Downloading: jakarta/transaction/jakarta.transaction-api/1.3.3/jakarta.transaction-api-1.3.3.jar from central
-Downloading: org/eclipse/packager/packager-rpm/0.19.0/packager-rpm-0.19.0.jar from central
-Downloading: org/apache/commons/commons-dbcp2/2.12.0/commons-dbcp2-2.12.0.jar from central
 Downloading: org/eclipse/jetty/jetty-http/12.0.5/jetty-http-12.0.5.jar from central
 Downloading: org/eclipse/jetty/jetty-util/12.0.5/jetty-util-12.0.5.jar from central
+Downloading: org/bouncycastle/bcpg-jdk18on/1.71/bcpg-jdk18on-1.71.jar from central
+Downloading: org/eclipse/packager/packager-rpm/0.19.0/packager-rpm-0.19.0.jar from central
 Downloading: org/apache/commons/commons-pool2/2.12.0/commons-pool2-2.12.0.jar from central
-Downloading: com/fasterxml/jackson/module/jackson-module-afterburner/2.17.1/jackson-module-afterburner-2.17.1.jar from central
 Downloading: com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.17.1/jackson-dataformat-yaml-2.17.1.jar from central
+Downloading: com/fasterxml/jackson/module/jackson-module-afterburner/2.17.1/jackson-module-afterburner-2.17.1.jar from central
 Downloading: org/anarres/jdiagnostics/jdiagnostics/1.0.7/jdiagnostics-1.0.7.jar from central
+Downloading: org/apache/lucene/lucene-analyzers-common/8.11.3/lucene-analyzers-common-8.11.3.jar from central
+Downloading: clansi/clansi/1.0.0/clansi-1.0.0.jar from clojars
 Downloading: org/apache/maven/resolver/maven-resolver-transport-http/1.9.18/maven-resolver-transport-http-1.9.18.jar from central
 Downloading: org/apache/maven/maven-model-builder/3.9.6/maven-model-builder-3.9.6.jar from central
 Downloading: com/hankcs/aho-corasick-double-array-trie/1.2.3/aho-corasick-double-array-trie-1.2.3.jar from central
-Downloading: org/apache/lucene/lucene-analyzers-common/8.11.3/lucene-analyzers-common-8.11.3.jar from central
 Downloading: org/codehaus/plexus/plexus-utils/4.0.0/plexus-utils-4.0.0.jar from central
-Downloading: com/h2database/h2/2.1.214/h2-2.1.214.jar from central
-Downloading: clansi/clansi/1.0.0/clansi-1.0.0.jar from clojars
-Downloading: rm-hull/table/0.7.1/table-0.7.1.jar from clojars
 Downloading: org/eclipse/sisu/org.eclipse.sisu.plexus/0.9.0.M2/org.eclipse.sisu.plexus-0.9.0.M2.jar from central
-Downloading: commons-io/commons-io/2.16.1/commons-io-2.16.1.jar from central
+Downloading: com/h2database/h2/2.1.214/h2-2.1.214.jar from central
 Downloading: com/samskivert/jmustache/1.15/jmustache-1.15.jar from central
-Downloading: org/apache/maven/maven-settings-builder/3.9.6/maven-settings-builder-3.9.6.jar from central
+Downloading: commons-io/commons-io/2.16.1/commons-io-2.16.1.jar from central
+Downloading: rm-hull/table/0.7.1/table-0.7.1.jar from clojars
 Downloading: com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar from central
-Downloading: com/github/spullara/mustache/java/compiler/0.9.6/compiler-0.9.6.jar from central
+Downloading: org/apache/maven/maven-settings-builder/3.9.6/maven-settings-builder-3.9.6.jar from central
 Downloading: org/owasp/dependency-check-core/10.0.3/dependency-check-core-10.0.3.jar from central
 Downloading: com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar from central
+Downloading: com/github/spullara/mustache/java/compiler/0.9.6/compiler-0.9.6.jar from central
 Downloading: org/apache/velocity/velocity-engine-core/2.3/velocity-engine-core-2.3.jar from central
 Downloading: com/fasterxml/jackson/core/jackson-core/2.17.1/jackson-core-2.17.1.jar from central
 Downloading: org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar from central
 Downloading: org/apache/maven/maven-settings/3.9.6/maven-settings-3.9.6.jar from central
+Downloading: org/owasp/dependency-check-utils/10.0.3/dependency-check-utils-10.0.3.jar from central
+Downloading: org/apache/commons/commons-jcs3-core/3.2.1/commons-jcs3-core-3.2.1.jar from central
 Downloading: trptcolin/versioneer/0.2.0/versioneer-0.2.0.jar from clojars
 Downloading: org/apache/lucene/lucene-core/8.11.3/lucene-core-8.11.3.jar from central
-Downloading: org/apache/commons/commons-jcs3-core/3.2.1/commons-jcs3-core-3.2.1.jar from central
-Downloading: org/owasp/dependency-check-utils/10.0.3/dependency-check-utils-10.0.3.jar from central
 Downloading: org/semver4j/semver4j/5.3.0/semver4j-5.3.0.jar from central
-Downloading: org/apache/maven/maven-core/3.9.6/maven-core-3.9.6.jar from central
-Downloading: org/apache/lucene/lucene-queryparser/8.11.3/lucene-queryparser-8.11.3.jar from central
 Downloading: org/slf4j/slf4j-simple/2.0.10/slf4j-simple-2.0.10.jar from central
+Downloading: org/apache/lucene/lucene-queryparser/8.11.3/lucene-queryparser-8.11.3.jar from central
+Downloading: org/apache/maven/maven-core/3.9.6/maven-core-3.9.6.jar from central
 Downloading: org/apache/maven/resolver/maven-resolver-api/1.9.18/maven-resolver-api-1.9.18.jar from central
-Downloading: org/bouncycastle/bcprov-jdk18on/1.71/bcprov-jdk18on-1.71.jar from central
 Downloading: org/eclipse/packager/packager-core/0.19.0/packager-core-0.19.0.jar from central
 Downloading: com/fasterxml/jackson/core/jackson-annotations/2.17.1/jackson-annotations-2.17.1.jar from central
 Downloading: org/apache/maven/maven-resolver-provider/3.9.6/maven-resolver-provider-3.9.6.jar from central
-Downloading: nvd-clojure/nvd-clojure/4.0.0/nvd-clojure-4.0.0.jar from clojars
 Downloading: org/apache/commons/commons-text/1.12.0/commons-text-1.12.0.jar from central
+Downloading: org/bouncycastle/bcprov-jdk18on/1.71/bcprov-jdk18on-1.71.jar from central
 Downloading: us/springett/cpe-parser/2.1.0/cpe-parser-2.1.0.jar from central
-Downloading: com/google/guava/failureaccess/1.0.2/failureaccess-1.0.2.jar from central
 Downloading: org/apache/lucene/lucene-queries/8.11.3/lucene-queries-8.11.3.jar from central
+Downloading: nvd-clojure/nvd-clojure/4.0.0/nvd-clojure-4.0.0.jar from clojars
+Downloading: com/google/guava/failureaccess/1.0.2/failureaccess-1.0.2.jar from central
+Downloading: org/apache/maven/resolver/maven-resolver-spi/1.9.18/maven-resolver-spi-1.9.18.jar from central
 Downloading: com/google/guava/guava/33.2.1-jre/guava-33.2.1-jre.jar from central
 Downloading: org/sonatype/ossindex/ossindex-service-api/1.8.2/ossindex-service-api-1.8.2.jar from central
-Downloading: org/apache/maven/resolver/maven-resolver-spi/1.9.18/maven-resolver-spi-1.9.18.jar from central
 Downloading: com/google/j2objc/j2objc-annotations/3.0.0/j2objc-annotations-3.0.0.jar from central
 Downloading: org/codehaus/plexus/plexus-classworlds/2.7.0/plexus-classworlds-2.7.0.jar from central
 Downloading: io/github/jeremylong/open-vulnerability-clients/6.1.7/open-vulnerability-clients-6.1.7.jar from central
 Downloading: org/apache/lucene/lucene-sandbox/8.11.3/lucene-sandbox-8.11.3.jar from central
 Downloading: org/apache/httpcomponents/client5/httpclient5/5.3.1/httpclient5-5.3.1.jar from central
 Downloading: org/checkerframework/checker-qual/3.42.0/checker-qual-3.42.0.jar from central
-Downloading: org/eclipse/jetty/jetty-client/12.0.5/jetty-client-12.0.5.jar from central
-Downloading: org/sonatype/ossindex/ossindex-service-client/1.8.2/ossindex-service-client-1.8.2.jar from central
 Downloading: org/eclipse/jetty/jetty-io/12.0.5/jetty-io-12.0.5.jar from central
+Downloading: org/sonatype/ossindex/ossindex-service-client/1.8.2/ossindex-service-client-1.8.2.jar from central
+Downloading: org/eclipse/jetty/jetty-client/12.0.5/jetty-client-12.0.5.jar from central
 Downloading: org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar from central
 Downloading: io/github/jeremylong/jcs3-slf4j/1.0.5/jcs3-slf4j-1.0.5.jar from central
-Downloading: org/apache/maven/resolver/maven-resolver-impl/1.9.18/maven-resolver-impl-1.9.18.jar from central
 Downloading: org/slf4j/slf4j-api/2.0.10/slf4j-api-2.0.10.jar from central
+Downloading: org/apache/maven/resolver/maven-resolver-impl/1.9.18/maven-resolver-impl-1.9.18.jar from central
+Downloading: org/apache/commons/commons-dbcp2/2.12.0/commons-dbcp2-2.12.0.jar from central
 Downloading: org/apache/maven/maven-model/3.9.6/maven-model-3.9.6.jar from central
 Downloading: org/apache/httpcomponents/core5/httpcore5/5.2.4/httpcore5-5.2.4.jar from central
-Downloading: org/apache/maven/resolver/maven-resolver-util/1.9.18/maven-resolver-util-1.9.18.jar from central
 Downloading: org/eclipse/sisu/org.eclipse.sisu.inject/0.9.0.M2/org.eclipse.sisu.inject-0.9.0.M2.jar from central
-Downloading: org/apache/maven/resolver/maven-resolver-named-locks/1.9.18/maven-resolver-named-locks-1.9.18.jar from central
+Downloading: org/apache/maven/resolver/maven-resolver-util/1.9.18/maven-resolver-util-1.9.18.jar from central
 Downloading: com/moandjiezana/toml/toml4j/0.7.2/toml4j-0.7.2.jar from central
+Downloading: org/apache/maven/resolver/maven-resolver-named-locks/1.9.18/maven-resolver-named-locks-1.9.18.jar from central
+Downloading: javax/ws/rs/javax.ws.rs-api/2.0.1/javax.ws.rs-api-2.0.1.jar from central
+Downloading: org/apache/maven/maven-builder-support/3.9.6/maven-builder-support-3.9.6.jar from central
 Downloading: org/apache/maven/maven-repository-metadata/3.9.6/maven-repository-metadata-3.9.6.jar from central
 Downloading: com/github/package-url/packageurl-java/1.5.0/packageurl-java-1.5.0.jar from central
 Downloading: org/apache/maven/maven-plugin-api/3.9.6/maven-plugin-api-3.9.6.jar from central
-Downloading: javax/ws/rs/javax.ws.rs-api/2.0.1/javax.ws.rs-api-2.0.1.jar from central
-Downloading: org/apache/maven/maven-builder-support/3.9.6/maven-builder-support-3.9.6.jar from central
-Downloading: org/sonatype/goodies/package-url-java/1.1.1/package-url-java-1.1.1.jar from central
-Downloading: org/whitesource/pecoff4j/0.0.2.1/pecoff4j-0.0.2.1.jar from central
-Downloading: org/glassfish/javax.json/1.1.4/javax.json-1.1.4.jar from central
 Downloading: com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.17.1/jackson-datatype-jsr310-2.17.1.jar from central
-Downloading: javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar from central
+Downloading: org/glassfish/javax.json/1.1.4/javax.json-1.1.4.jar from central
+Downloading: org/whitesource/pecoff4j/0.0.2.1/pecoff4j-0.0.2.1.jar from central
 Downloading: org/apache/maven/maven-artifact/3.9.6/maven-artifact-3.9.6.jar from central
 Downloading: com/google/code/gson/gson/2.9.0/gson-2.9.0.jar from central
-[2024-11-26 02:55:11.022] INFO nvd-clojure - User-provided config: {:delete-config? false, :group "com.github.pmonks", :name "bvpbot", :version "1.0.20241126", :nvd {:output-dir "../target/nvd"}}
-Nov 26, 2024 2:55:11 AM org.apache.commons.jcs3.engine.control.CompositeCacheManager 
+Downloading: org/sonatype/goodies/package-url-java/1.1.1/package-url-java-1.1.1.jar from central
+Downloading: javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar from central
+[2024-12-03 03:01:09.954] INFO nvd-clojure - User-provided config: {:delete-config? false, :group "com.github.pmonks", :name "bvpbot", :version "1.0.20241203", :nvd {:output-dir "../target/nvd"}}
+Dec 03, 2024 3:01:10 AM org.apache.commons.jcs3.engine.control.CompositeCacheManager 
 INFO: Instance is null, returning unconfigured instance
-Nov 26, 2024 2:55:11 AM org.apache.commons.jcs3.engine.control.CompositeCacheManager 
+Dec 03, 2024 3:01:10 AM org.apache.commons.jcs3.engine.control.CompositeCacheManager 
 INFO: Setting default auxiliaries to "ODC"
-Nov 26, 2024 2:55:11 AM org.apache.commons.jcs3.engine.control.CompositeCacheManager 
+Dec 03, 2024 3:01:10 AM org.apache.commons.jcs3.engine.control.CompositeCacheManager 
 INFO: setting defaultCompositeCacheAttributes to [ useLateral = true, useRemote = true, useDisk = true, maxObjs = 0, maxSpoolPerRun = -1, diskUsagePattern = UPDATE, spoolChunkSize = 2 ]
-Nov 26, 2024 2:55:11 AM org.apache.commons.jcs3.engine.control.CompositeCacheManager 
-INFO: setting defaultElementAttributes to [ IS_LATERAL = false, IS_SPOOL = true, IS_REMOTE = false, IS_ETERNAL = false, MaxLifeSeconds = 86400, IdleTime = 1800, CreateTime = 1732589711392, LastAccessTime = 1732589711392, getTimeToLiveSeconds() = 86399, createTime = 1732589711392 ]
-Nov 26, 2024 2:55:11 AM org.apache.commons.jcs3.engine.memory.AbstractDoubleLinkedListMemoryCache 
+Dec 03, 2024 3:01:10 AM org.apache.commons.jcs3.engine.control.CompositeCacheManager 
+INFO: setting defaultElementAttributes to [ IS_LATERAL = false, IS_SPOOL = true, IS_REMOTE = false, IS_ETERNAL = false, MaxLifeSeconds = 86400, IdleTime = 1800, CreateTime = 1733194870884, LastAccessTime = 1733194870884, getTimeToLiveSeconds() = 86399, createTime = 1733194870884 ]
+Dec 03, 2024 3:01:10 AM org.apache.commons.jcs3.engine.memory.AbstractDoubleLinkedListMemoryCache 
 INFO: initialized MemoryCache for CENTRAL
-Nov 26, 2024 2:55:11 AM org.apache.commons.jcs3.engine.control.CompositeCache 
+Dec 03, 2024 3:01:10 AM org.apache.commons.jcs3.engine.control.CompositeCache 
 INFO: Constructed cache with name [CENTRAL] and cache attributes [ useLateral = true, useRemote = true, useDisk = true, maxObjs = 0, maxSpoolPerRun = -1, diskUsagePattern = UPDATE, spoolChunkSize = 2 ]
-Nov 26, 2024 2:55:11 AM org.apache.commons.jcs3.auxiliary.AuxiliaryCacheConfigurator 
+Dec 03, 2024 3:01:10 AM org.apache.commons.jcs3.auxiliary.AuxiliaryCacheConfigurator 
 INFO: No cache event logger defined for auxiliary [jcs.auxiliary.ODC]
-Nov 26, 2024 2:55:11 AM org.apache.commons.jcs3.auxiliary.AuxiliaryCacheConfigurator 
+Dec 03, 2024 3:01:10 AM org.apache.commons.jcs3.auxiliary.AuxiliaryCacheConfigurator 
 INFO: Using standard serializer [org.apache.commons.jcs3.utils.serialization.StandardSerializer@50085d9c] for auxiliary [jcs.auxiliary.ODC]
-Nov 26, 2024 2:55:11 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
+Dec 03, 2024 3:01:10 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
 INFO: Region [CENTRAL] : Set maxKeySize to: "1,000,000"
-Nov 26, 2024 2:55:11 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
+Dec 03, 2024 3:01:10 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
 INFO: Region [CENTRAL] : Cache file root directory: /home/runner/.m2/repository/org/owasp/dependency-check-utils/10.0.3/data/9.0/cache
-Nov 26, 2024 2:55:11 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
+Dec 03, 2024 3:01:10 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
 INFO: Region [CENTRAL] : Indexed Disk Cache is alive.
-Nov 26, 2024 2:55:11 AM org.apache.commons.jcs3.engine.memory.AbstractDoubleLinkedListMemoryCache 
+Dec 03, 2024 3:01:10 AM org.apache.commons.jcs3.engine.memory.AbstractDoubleLinkedListMemoryCache 
 INFO: initialized MemoryCache for POM
-Nov 26, 2024 2:55:11 AM org.apache.commons.jcs3.engine.control.CompositeCache 
+Dec 03, 2024 3:01:10 AM org.apache.commons.jcs3.engine.control.CompositeCache 
 INFO: Constructed cache with name [POM] and cache attributes [ useLateral = true, useRemote = true, useDisk = true, maxObjs = 0, maxSpoolPerRun = -1, diskUsagePattern = UPDATE, spoolChunkSize = 2 ]
-Nov 26, 2024 2:55:11 AM org.apache.commons.jcs3.auxiliary.AuxiliaryCacheConfigurator 
+Dec 03, 2024 3:01:10 AM org.apache.commons.jcs3.auxiliary.AuxiliaryCacheConfigurator 
 INFO: No cache event logger defined for auxiliary [jcs.auxiliary.ODC]
-Nov 26, 2024 2:55:11 AM org.apache.commons.jcs3.auxiliary.AuxiliaryCacheConfigurator 
+Dec 03, 2024 3:01:10 AM org.apache.commons.jcs3.auxiliary.AuxiliaryCacheConfigurator 
 INFO: Using standard serializer [org.apache.commons.jcs3.utils.serialization.StandardSerializer@30c19bff] for auxiliary [jcs.auxiliary.ODC]
-Nov 26, 2024 2:55:11 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
+Dec 03, 2024 3:01:10 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
 INFO: Region [POM] : Set maxKeySize to: "1,000,000"
-Nov 26, 2024 2:55:11 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
+Dec 03, 2024 3:01:10 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
 INFO: Region [POM] : Cache file root directory: /home/runner/.m2/repository/org/owasp/dependency-check-utils/10.0.3/data/9.0/cache
-Nov 26, 2024 2:55:11 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
+Dec 03, 2024 3:01:10 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
 INFO: Region [POM] : Indexed Disk Cache is alive.
-Nov 26, 2024 2:55:11 AM org.apache.commons.jcs3.engine.memory.AbstractDoubleLinkedListMemoryCache 
+Dec 03, 2024 3:01:10 AM org.apache.commons.jcs3.engine.memory.AbstractDoubleLinkedListMemoryCache 
 INFO: initialized MemoryCache for NODEAUDIT
-Nov 26, 2024 2:55:11 AM org.apache.commons.jcs3.engine.control.CompositeCache 
+Dec 03, 2024 3:01:10 AM org.apache.commons.jcs3.engine.control.CompositeCache 
 INFO: Constructed cache with name [NODEAUDIT] and cache attributes [ useLateral = true, useRemote = true, useDisk = true, maxObjs = 0, maxSpoolPerRun = -1, diskUsagePattern = UPDATE, spoolChunkSize = 2 ]
-Nov 26, 2024 2:55:11 AM org.apache.commons.jcs3.auxiliary.AuxiliaryCacheConfigurator 
+Dec 03, 2024 3:01:10 AM org.apache.commons.jcs3.auxiliary.AuxiliaryCacheConfigurator 
 INFO: No cache event logger defined for auxiliary [jcs.auxiliary.ODC]
-Nov 26, 2024 2:55:11 AM org.apache.commons.jcs3.auxiliary.AuxiliaryCacheConfigurator 
+Dec 03, 2024 3:01:10 AM org.apache.commons.jcs3.auxiliary.AuxiliaryCacheConfigurator 
 INFO: Using standard serializer [org.apache.commons.jcs3.utils.serialization.StandardSerializer@4e375bba] for auxiliary [jcs.auxiliary.ODC]
-Nov 26, 2024 2:55:11 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
+Dec 03, 2024 3:01:10 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
 INFO: Region [NODEAUDIT] : Set maxKeySize to: "1,000,000"
-Nov 26, 2024 2:55:11 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
+Dec 03, 2024 3:01:10 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
 INFO: Region [NODEAUDIT] : Cache file root directory: /home/runner/.m2/repository/org/owasp/dependency-check-utils/10.0.3/data/9.0/cache
-Nov 26, 2024 2:55:11 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
+Dec 03, 2024 3:01:10 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
 INFO: Region [NODEAUDIT] : Indexed Disk Cache is alive.
-Nov 26, 2024 2:55:11 AM org.apache.commons.jcs3.engine.control.CompositeCacheConfigurator 
+Dec 03, 2024 3:01:10 AM org.apache.commons.jcs3.engine.control.CompositeCacheConfigurator 
 INFO: Parsed regions [CENTRAL, POM, NODEAUDIT]
-Nov 26, 2024 2:55:11 AM org.apache.commons.jcs3.engine.control.CompositeCacheManager 
-INFO: Finished configuration in 89 ms.
-[2024-11-26 02:55:11.461] WARN NexusAnalyzer - Disabling Nexus analyzer - please specify the URL to a Nexus Server
-[2024-11-26 02:55:11.947] INFO Engine - Checking for updates
-[2024-11-26 02:55:27.464] WARN NvdApiRetryStrategy - Retrying request /rest/json/cves/2.0?resultsPerPage=2000&startIndex=0 : 3 time
-[2024-11-26 02:55:27.465] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.RequestNotExecutedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
-[2024-11-26 02:56:32.784] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
-[2024-11-26 02:56:33.700] INFO NvdApiDataSource - NVD API has 271,433 records in this update
-[2024-11-26 02:56:48.692] WARN NvdApiRetryStrategy - Retrying request /rest/json/cves/2.0?resultsPerPage=2000&startIndex=2000 : 3 time
-[2024-11-26 02:56:48.692] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.RequestNotExecutedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
-[2024-11-26 02:56:48.766] WARN NvdApiRetryStrategy - Retrying request /rest/json/cves/2.0?resultsPerPage=2000&startIndex=4000 : 3 time
-[2024-11-26 02:56:48.766] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
-[2024-11-26 02:57:08.715] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
-[2024-11-26 02:57:08.784] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
-[2024-11-26 02:57:21.226] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 6 time
-[2024-11-26 02:57:21.297] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 6 time
-[2024-11-26 02:57:23.848] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
-[2024-11-26 02:57:23.848] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
-[2024-11-26 02:57:36.286] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 7 time
-[2024-11-26 02:57:36.305] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 7 time
-[2024-11-26 02:57:36.358] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 6 time
-[2024-11-26 02:57:36.358] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 6 time
-[2024-11-26 02:57:51.367] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 7 time
-[2024-11-26 02:57:51.368] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 7 time
-[2024-11-26 02:57:53.796] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 8 time
-[2024-11-26 02:57:53.816] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 8 time
-[2024-11-26 02:58:08.927] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 8 time
-[2024-11-26 02:58:08.928] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 8 time
-[2024-11-26 02:58:13.810] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 9 time
-[2024-11-26 02:58:13.826] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 9 time
-[2024-11-26 02:59:32.927] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 9 time
-[2024-11-26 02:59:38.673] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 9 time
-[2024-11-26 02:59:48.090] WARN NvdApiRetryStrategy - Retrying request /rest/json/cves/2.0?resultsPerPage=2000&startIndex=16000 : 3 time
-[2024-11-26 02:59:48.091] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.RequestNotExecutedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
-[2024-11-26 03:00:04.629] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 10 time
-[2024-11-26 03:00:08.214] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
-[2024-11-26 03:00:08.358] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 10 time
-[2024-11-26 03:00:09.487] INFO NvdApiDataSource - Downloaded 10,000/271,433 (4%)
-[2024-11-26 03:00:20.727] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 6 time
-[2024-11-26 03:00:24.174] WARN NvdApiRetryStrategy - Retrying request /rest/json/cves/2.0?resultsPerPage=2000&startIndex=12000 : 3 time
-[2024-11-26 03:00:24.174] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
-[2024-11-26 03:00:28.817] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
-[2024-11-26 03:00:35.739] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 7 time
-[2024-11-26 03:00:54.199] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
-[2024-11-26 03:00:56.481] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 6 time
-[2024-11-26 03:01:53.770] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
-[2024-11-26 03:02:08.868] WARN NvdApiRetryStrategy - Retrying request /rest/json/cves/2.0?resultsPerPage=2000&startIndex=18000 : 3 time
-[2024-11-26 03:02:08.868] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
-[2024-11-26 03:02:13.854] WARN NvdApiRetryStrategy - Retrying request /rest/json/cves/2.0?resultsPerPage=2000&startIndex=30000 : 3 time
-[2024-11-26 03:02:13.854] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
-[2024-11-26 03:02:19.049] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 8 time
-[2024-11-26 03:02:19.544] INFO NvdApiDataSource - Downloaded 20,000/271,433 (7%)
-[2024-11-26 03:02:28.941] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
-[2024-11-26 03:02:33.873] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
-[2024-11-26 03:02:34.122] WARN NvdApiRetryStrategy - Retrying request /rest/json/cves/2.0?resultsPerPage=2000&startIndex=24000 : 3 time
-[2024-11-26 03:02:34.123] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
-[2024-11-26 03:02:36.757] WARN NvdApiRetryStrategy - Retrying request /rest/json/cves/2.0?resultsPerPage=2000&startIndex=28000 : 3 time
-[2024-11-26 03:02:36.758] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.RequestNotExecutedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
-[2024-11-26 03:02:41.515] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 6 time
-[2024-11-26 03:02:46.385] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 6 time
-[2024-11-26 03:02:54.153] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
-[2024-11-26 03:02:56.526] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 7 time
-[2024-11-26 03:02:56.781] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
-[2024-11-26 03:03:01.394] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 7 time
-[2024-11-26 03:03:43.707] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 6 time
-[2024-11-26 03:04:23.454] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 6 time
-[2024-11-26 03:04:51.750] INFO NvdApiDataSource - Downloaded 30,000/271,433 (11%)
-[2024-11-26 03:05:06.155] WARN NvdApiRetryStrategy - Retrying request /rest/json/cves/2.0?resultsPerPage=2000&startIndex=48000 : 3 time
-[2024-11-26 03:05:06.155] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
-[2024-11-26 03:05:18.255] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 8 time
-[2024-11-26 03:05:26.251] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
-[2024-11-26 03:05:38.824] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 6 time
-[2024-11-26 03:06:00.225] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 8 time
-[2024-11-26 03:06:24.921] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 7 time
-[2024-11-26 03:06:41.593] INFO NvdApiDataSource - Downloaded 40,000/271,433 (15%)
-[2024-11-26 03:06:56.065] WARN NvdApiRetryStrategy - Retrying request /rest/json/cves/2.0?resultsPerPage=2000&startIndex=52000 : 3 time
-[2024-11-26 03:06:56.066] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
-[2024-11-26 03:08:13.354] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
-[2024-11-26 03:08:35.785] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
-[2024-11-26 03:08:41.359] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
-[2024-11-26 03:08:48.296] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 6 time
-[2024-11-26 03:09:03.307] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 7 time
-[2024-11-26 03:09:03.460] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
-[2024-11-26 03:09:15.974] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 6 time
-[2024-11-26 03:09:20.816] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 8 time
-[2024-11-26 03:10:57.348] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 7 time
-[2024-11-26 03:10:57.970] INFO NvdApiDataSource - Downloaded 50,000/271,433 (18%)
-[2024-11-26 03:11:03.808] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
-[2024-11-26 03:12:09.797] WARN NvdApiRetryStrategy - Retrying request /rest/json/cves/2.0?resultsPerPage=2000&startIndex=76000 : 3 time
-[2024-11-26 03:12:09.797] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
-[2024-11-26 03:12:37.149] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 9 time
-[2024-11-26 03:12:37.683] INFO NvdApiDataSource - Downloaded 60,000/271,433 (22%)
-[2024-11-26 03:13:34.811] WARN NvdApiRetryStrategy - Retrying request /rest/json/cves/2.0?resultsPerPage=2000&startIndex=58000 : 3 time
-[2024-11-26 03:13:34.812] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
-[2024-11-26 03:14:57.421] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
-[2024-11-26 03:15:05.952] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
-[2024-11-26 03:15:12.577] WARN NvdApiRetryStrategy - Retrying request /rest/json/cves/2.0?resultsPerPage=2000&startIndex=84000 : 3 time
-[2024-11-26 03:15:12.577] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
-[2024-11-26 03:15:30.601] INFO NvdApiDataSource - Downloaded 70,000/271,436 (26%)
-[2024-11-26 03:15:32.678] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
-[2024-11-26 03:15:45.080] WARN NvdApiRetryStrategy - Retrying request /rest/json/cves/2.0?resultsPerPage=2000&startIndex=62000 : 3 time
-[2024-11-26 03:15:45.080] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
-[2024-11-26 03:15:45.190] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 6 time
-[2024-11-26 03:15:56.057] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
-[2024-11-26 03:16:00.201] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 7 time
-[2024-11-26 03:16:05.178] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
-[2024-11-26 03:16:08.567] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 6 time
-[2024-11-26 03:17:35.738] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 8 time
-[2024-11-26 03:17:36.523] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 6 time
-[2024-11-26 03:18:29.402] INFO NvdApiDataSource - Downloaded 80,000/271,436 (29%)
-[2024-11-26 03:18:41.079] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 7 time
-[2024-11-26 03:18:44.033] WARN NvdApiRetryStrategy - Retrying request /rest/json/cves/2.0?resultsPerPage=2000&startIndex=100000 : 3 time
-[2024-11-26 03:18:44.033] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
-[2024-11-26 03:18:44.166] WARN NvdApiRetryStrategy - Retrying request /rest/json/cves/2.0?resultsPerPage=2000&startIndex=78000 : 3 time
-[2024-11-26 03:18:44.166] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
-[2024-11-26 03:19:47.994] INFO NvdApiDataSource - Downloaded 90,000/271,436 (33%)
-[2024-11-26 03:20:02.580] WARN NvdApiRetryStrategy - Retrying request /rest/json/cves/2.0?resultsPerPage=2000&startIndex=108000 : 3 time
-[2024-11-26 03:20:02.580] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.RequestNotExecutedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
-[2024-11-26 03:20:06.767] WARN NvdApiRetryStrategy - Retrying request /rest/json/cves/2.0?resultsPerPage=2000&startIndex=86000 : 3 time
-[2024-11-26 03:20:06.767] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
-[2024-11-26 03:20:22.662] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
-[2024-11-26 03:20:26.787] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
-[2024-11-26 03:20:35.231] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 6 time
-[2024-11-26 03:20:39.298] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 6 time
-[2024-11-26 03:20:50.243] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 7 time
-[2024-11-26 03:20:54.308] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 7 time
-[2024-11-26 03:21:00.675] WARN NvdApiRetryStrategy - Retrying request /rest/json/cves/2.0?resultsPerPage=2000&startIndex=112000 : 3 time
-[2024-11-26 03:21:00.675] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
-[2024-11-26 03:22:10.603] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 8 time
-[2024-11-26 03:22:45.292] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 8 time
-[2024-11-26 03:22:45.477] INFO NvdApiDataSource - Downloaded 100,000/271,436 (37%)
-[2024-11-26 03:23:00.327] WARN NvdApiRetryStrategy - Retrying request /rest/json/cves/2.0?resultsPerPage=2000&startIndex=94000 : 3 time
-[2024-11-26 03:23:00.327] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.RequestNotExecutedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
-[2024-11-26 03:23:05.705] WARN NvdApiRetryStrategy - Retrying request /rest/json/cves/2.0?resultsPerPage=2000&startIndex=124000 : 3 time
-[2024-11-26 03:23:05.705] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
-[2024-11-26 03:23:20.431] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
-[2024-11-26 03:23:25.723] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
-[2024-11-26 03:23:33.018] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 6 time
-[2024-11-26 03:23:38.233] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 6 time
-[2024-11-26 03:23:48.029] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 7 time
-[2024-11-26 03:23:53.243] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 7 time
-[2024-11-26 03:24:06.781] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
-[2024-11-26 03:25:08.161] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 8 time
-[2024-11-26 03:25:23.219] WARN NvdApiRetryStrategy - Retrying request /rest/json/cves/2.0?resultsPerPage=2000&startIndex=102000 : 3 time
-[2024-11-26 03:25:23.219] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
-[2024-11-26 03:25:30.469] INFO NvdApiDataSource - Downloaded 110,000/271,436 (41%)
-[2024-11-26 03:26:16.080] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 8 time
-[2024-11-26 03:26:26.656] WARN NvdApiRetryStrategy - Retrying request /rest/json/cves/2.0?resultsPerPage=2000&startIndex=136000 : 3 time
-[2024-11-26 03:26:26.656] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
-[2024-11-26 03:26:28.855] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
-[2024-11-26 03:26:46.732] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
-[2024-11-26 03:26:59.241] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 6 time
-[2024-11-26 03:27:06.178] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
-[2024-11-26 03:27:14.250] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 7 time
-[2024-11-26 03:27:18.690] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 6 time
-[2024-11-26 03:27:19.003] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
-[2024-11-26 03:27:19.737] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
-[2024-11-26 03:27:31.578] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 6 time
-[2024-11-26 03:27:31.762] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 8 time
-[2024-11-26 03:27:32.247] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 6 time
-[2024-11-26 03:27:33.703] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 7 time
-[2024-11-26 03:27:46.587] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 7 time
-[2024-11-26 03:27:47.258] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 7 time
-[2024-11-26 03:27:51.216] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 8 time
-[2024-11-26 03:27:51.774] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 9 time
-[2024-11-26 03:29:07.087] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 8 time
-[2024-11-26 03:29:07.454] INFO NvdApiDataSource - Downloaded 120,000/271,436 (44%)
-[2024-11-26 03:29:11.361] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 8 time
-[2024-11-26 03:30:19.356] WARN NvdApiRetryStrategy - Retrying request /rest/json/cves/2.0?resultsPerPage=2000&startIndex=114000 : 3 time
-[2024-11-26 03:30:19.356] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
-[2024-11-26 03:30:21.100] WARN NvdApiRetryStrategy - Retrying request /rest/json/cves/2.0?resultsPerPage=2000&startIndex=134000 : 3 time
-[2024-11-26 03:30:21.100] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
-[2024-11-26 03:30:29.507] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 9 time
-[2024-11-26 03:30:39.439] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
-[2024-11-26 03:30:41.125] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
-[2024-11-26 03:30:44.573] WARN NvdApiRetryStrategy - Retrying request /rest/json/cves/2.0?resultsPerPage=2000&startIndex=140000 : 3 time
-[2024-11-26 03:30:44.573] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
-[2024-11-26 03:31:00.587] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 10 time
-[2024-11-26 03:31:00.929] INFO NvdApiDataSource - Downloaded 130,000/271,436 (48%)
-[2024-11-26 03:31:24.406] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 6 time
-[2024-11-26 03:31:43.194] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 6 time
-[2024-11-26 03:31:58.257] WARN NvdApiRetryStrategy - Retrying request /rest/json/cves/2.0?resultsPerPage=2000&startIndex=142000 : 3 time
-[2024-11-26 03:31:58.257] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.RequestNotExecutedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
-[2024-11-26 03:33:10.089] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
-[2024-11-26 03:33:12.800] WARN NvdApiRetryStrategy - Retrying request /rest/json/cves/2.0?resultsPerPage=2000&startIndex=152000 : 3 time
-[2024-11-26 03:33:12.800] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.RequestNotExecutedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
-[2024-11-26 03:33:23.857] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
-[2024-11-26 03:33:24.536] INFO NvdApiDataSource - Downloaded 140,000/271,436 (52%)
-[2024-11-26 03:33:25.161] WARN NvdApiRetryStrategy - Retrying request /rest/json/cves/2.0?resultsPerPage=2000&startIndex=150000 : 3 time
-[2024-11-26 03:33:25.161] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
-[2024-11-26 03:33:32.874] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
-[2024-11-26 03:33:38.964] WARN NvdApiRetryStrategy - Retrying request /rest/json/cves/2.0?resultsPerPage=2000&startIndex=148000 : 3 time
-[2024-11-26 03:33:38.964] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
-[2024-11-26 03:33:45.242] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
-[2024-11-26 03:33:45.385] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 6 time
-[2024-11-26 03:33:57.752] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 6 time
-[2024-11-26 03:33:58.985] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
-[2024-11-26 03:34:00.395] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 7 time
-[2024-11-26 03:34:11.494] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 6 time
-[2024-11-26 03:34:12.764] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 7 time
-[2024-11-26 03:34:17.962] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 8 time
-[2024-11-26 03:35:09.240] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 7 time
-[2024-11-26 03:36:01.147] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 8 time
-[2024-11-26 03:36:01.697] INFO NvdApiDataSource - Downloaded 150,000/271,436 (55%)
-[2024-11-26 03:36:41.855] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
-[2024-11-26 03:36:45.952] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
-[2024-11-26 03:36:51.241] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
-[2024-11-26 03:36:54.364] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 6 time
-[2024-11-26 03:37:12.959] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 9 time
-[2024-11-26 03:37:30.677] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 6 time
-[2024-11-26 03:38:38.118] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 6 time
-[2024-11-26 03:39:11.793] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 7 time
-[2024-11-26 03:39:30.056] INFO NvdApiDataSource - Downloaded 160,000/271,436 (59%)
-[2024-11-26 03:39:44.755] WARN NvdApiRetryStrategy - Retrying request /rest/json/cves/2.0?resultsPerPage=2000&startIndex=168000 : 3 time
-[2024-11-26 03:39:44.755] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
-[2024-11-26 03:39:57.486] WARN NvdApiRetryStrategy - Retrying request /rest/json/cves/2.0?resultsPerPage=2000&startIndex=174000 : 3 time
-[2024-11-26 03:39:57.486] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
-[2024-11-26 03:40:01.940] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
-[2024-11-26 03:40:04.775] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
-[2024-11-26 03:40:14.451] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 6 time
-[2024-11-26 03:40:17.286] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 6 time
-[2024-11-26 03:40:17.570] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
-[2024-11-26 03:40:29.519] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 7 time
-[2024-11-26 03:40:30.079] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 6 time
-[2024-11-26 03:40:32.296] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 7 time
-[2024-11-26 03:40:45.772] WARN NvdApiRetryStrategy - Retrying request /rest/json/cves/2.0?resultsPerPage=2000&startIndex=180000 : 3 time
-[2024-11-26 03:40:45.772] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
-[2024-11-26 03:40:52.579] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 7 time
-[2024-11-26 03:41:17.977] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 8 time
-[2024-11-26 03:41:51.107] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 8 time
-[2024-11-26 03:41:51.665] INFO NvdApiDataSource - Downloaded 170,000/271,436 (63%)
-[2024-11-26 03:43:34.210] WARN NvdApiRetryStrategy - Retrying request /rest/json/cves/2.0?resultsPerPage=2000&startIndex=192000 : 3 time
-[2024-11-26 03:43:34.210] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
-[2024-11-26 03:43:54.287] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
-[2024-11-26 03:43:58.785] WARN NvdApiRetryStrategy - Retrying request /rest/json/cves/2.0?resultsPerPage=2000&startIndex=198000 : 3 time
-[2024-11-26 03:43:58.785] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.RequestNotExecutedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
-[2024-11-26 03:44:31.711] INFO NvdApiDataSource - Downloaded 180,000/271,436 (66%)
-[2024-11-26 03:45:46.724] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 6 time
-[2024-11-26 03:47:29.932] WARN NvdApiRetryStrategy - Retrying request /rest/json/cves/2.0?resultsPerPage=2000&startIndex=154000 : 3 time
-[2024-11-26 03:47:29.932] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
-[2024-11-26 03:47:46.224] WARN NvdApiRetryStrategy - Retrying request /rest/json/cves/2.0?resultsPerPage=2000&startIndex=206000 : 3 time
-[2024-11-26 03:47:46.224] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
-[2024-11-26 03:47:50.040] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
-[2024-11-26 03:48:12.703] INFO NvdApiDataSource - Downloaded 190,000/271,436 (70%)
-[2024-11-26 03:49:21.179] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 6 time
-[2024-11-26 03:49:36.241] WARN NvdApiRetryStrategy - Retrying request /rest/json/cves/2.0?resultsPerPage=2000&startIndex=162000 : 3 time
-[2024-11-26 03:49:36.241] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
-[2024-11-26 03:49:51.476] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
-[2024-11-26 03:50:12.642] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
-[2024-11-26 03:50:28.030] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
-[2024-11-26 03:50:28.694] INFO NvdApiDataSource - Downloaded 200,000/271,436 (74%)
-[2024-11-26 03:53:13.371] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
-[2024-11-26 03:53:25.882] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 6 time
-[2024-11-26 03:53:27.586] WARN NvdApiRetryStrategy - Retrying request /rest/json/cves/2.0?resultsPerPage=2000&startIndex=230000 : 3 time
-[2024-11-26 03:53:27.586] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
-[2024-11-26 03:53:28.182] WARN NvdApiRetryStrategy - Retrying request /rest/json/cves/2.0?resultsPerPage=2000&startIndex=224000 : 3 time
-[2024-11-26 03:53:28.182] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
-[2024-11-26 03:53:29.412] INFO NvdApiDataSource - Downloaded 210,000/271,436 (77%)
-[2024-11-26 03:53:44.191] WARN NvdApiRetryStrategy - Retrying request /rest/json/cves/2.0?resultsPerPage=2000&startIndex=220000 : 3 time
-[2024-11-26 03:53:44.192] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
-[2024-11-26 03:54:11.995] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 7 time
-[2024-11-26 03:55:37.605] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
-[2024-11-26 03:55:40.474] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
-[2024-11-26 03:55:40.874] INFO NvdApiDataSource - Downloaded 220,000/271,436 (81%)
-[2024-11-26 03:55:52.669] WARN NvdApiRetryStrategy - Retrying request /rest/json/cves/2.0?resultsPerPage=2000&startIndex=238000 : 3 time
-[2024-11-26 03:55:52.669] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
-[2024-11-26 03:55:55.516] WARN NvdApiRetryStrategy - Retrying request /rest/json/cves/2.0?resultsPerPage=2000&startIndex=232000 : 3 time
-[2024-11-26 03:55:55.516] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
-[2024-11-26 03:56:12.742] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
-[2024-11-26 03:56:15.534] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
-[2024-11-26 03:56:25.298] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 6 time
-[2024-11-26 03:56:25.856] WARN NvdApiRetryStrategy - Retrying request /rest/json/cves/2.0?resultsPerPage=2000&startIndex=244000 : 3 time
-[2024-11-26 03:56:25.857] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
-[2024-11-26 03:56:50.128] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 6 time
-[2024-11-26 03:57:27.040] WARN NvdApiRetryStrategy - Retrying request /rest/json/cves/2.0?resultsPerPage=2000&startIndex=186000 : 3 time
-[2024-11-26 03:57:27.041] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.RequestNotExecutedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
-[2024-11-26 03:57:47.117] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
-[2024-11-26 03:57:59.681] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 6 time
-[2024-11-26 03:58:06.634] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 7 time
-[2024-11-26 03:58:14.691] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 7 time
-[2024-11-26 03:58:21.667] WARN NvdApiRetryStrategy - Retrying request /rest/json/cves/2.0?resultsPerPage=2000&startIndex=246000 : 3 time
-[2024-11-26 03:58:21.668] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
-[2024-11-26 03:58:44.064] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
-[2024-11-26 03:58:44.238] INFO NvdApiDataSource - Downloaded 230,000/271,436 (85%)
-[2024-11-26 04:00:16.696] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 8 time
-[2024-11-26 04:01:35.742] WARN NvdApiRetryStrategy - Retrying request /rest/json/cves/2.0?resultsPerPage=2000&startIndex=262000 : 3 time
-[2024-11-26 04:01:35.742] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
-[2024-11-26 04:01:55.761] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
-[2024-11-26 04:01:58.142] INFO NvdApiDataSource - Downloaded 240,000/271,436 (88%)
-[2024-11-26 04:02:12.671] WARN NvdApiRetryStrategy - Retrying request /rest/json/cves/2.0?resultsPerPage=2000&startIndex=256000 : 3 time
-[2024-11-26 04:02:12.671] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
-[2024-11-26 04:02:52.606] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 6 time
-[2024-11-26 04:03:08.925] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
-[2024-11-26 04:03:40.057] INFO NvdApiDataSource - Downloaded 250,000/271,436 (92%)
-[2024-11-26 04:03:59.798] WARN NvdApiRetryStrategy - Retrying request /rest/json/cves/2.0?resultsPerPage=2000&startIndex=264000 : 3 time
-[2024-11-26 04:03:59.798] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
-[2024-11-26 04:04:19.874] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
-[2024-11-26 04:04:32.393] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 6 time
-[2024-11-26 04:06:09.322] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 7 time
-[2024-11-26 04:08:23.243] WARN NvdApiRetryStrategy - Retrying request /rest/json/cves/2.0?resultsPerPage=2000&startIndex=218000 : 3 time
-[2024-11-26 04:08:23.243] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
-[2024-11-26 04:09:38.539] INFO NvdApiDataSource - Downloaded 260,000/271,436 (96%)
-[2024-11-26 04:18:51.261] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
-[2024-11-26 04:19:06.303] WARN NvdApiRetryStrategy - Retrying request /rest/json/cves/2.0?resultsPerPage=2000&startIndex=258000 : 3 time
-[2024-11-26 04:19:06.303] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
-[2024-11-26 04:19:26.353] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
-[2024-11-26 04:19:38.936] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 6 time
-[2024-11-26 04:19:53.944] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 7 time
-[2024-11-26 04:21:11.381] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 8 time
-[2024-11-26 04:21:12.114] INFO NvdApiDataSource - Downloaded 270,000/271,440 (99%)
-[2024-11-26 04:21:26.435] WARN NvdApiRetryStrategy - Retrying request /rest/json/cves/2.0?resultsPerPage=2000&startIndex=266000 : 3 time
-[2024-11-26 04:21:26.435] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
-[2024-11-26 04:21:46.519] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
-[2024-11-26 04:21:59.091] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 6 time
-[2024-11-26 04:22:14.100] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 7 time
-[2024-11-26 04:24:47.085] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 8 time
-[2024-11-26 04:24:47.380] INFO NvdApiDataSource - Downloaded 271,440/271,440 (100%)
-[2024-11-26 04:24:47.381] INFO NvdApiDataSource - Completed processing batch 1/136 (1%) in 1,645ms
-[2024-11-26 04:24:47.381] INFO NvdApiDataSource - Completed processing batch 2/136 (1%) in 1,619ms
-[2024-11-26 04:24:47.381] INFO NvdApiDataSource - Completed processing batch 3/136 (2%) in 1,166ms
-[2024-11-26 04:24:47.381] INFO NvdApiDataSource - Completed processing batch 4/136 (3%) in 702ms
-[2024-11-26 04:24:47.381] INFO NvdApiDataSource - Completed processing batch 5/136 (4%) in 769ms
-[2024-11-26 04:24:47.381] INFO NvdApiDataSource - Completed processing batch 6/136 (4%) in 805ms
-[2024-11-26 04:24:47.381] INFO NvdApiDataSource - Completed processing batch 7/136 (5%) in 788ms
-[2024-11-26 04:24:47.381] INFO NvdApiDataSource - Completed processing batch 8/136 (6%) in 761ms
-[2024-11-26 04:24:47.381] INFO NvdApiDataSource - Completed processing batch 9/136 (7%) in 751ms
-[2024-11-26 04:24:47.381] INFO NvdApiDataSource - Completed processing batch 10/136 (7%) in 828ms
-[2024-11-26 04:24:47.381] INFO NvdApiDataSource - Completed processing batch 11/136 (8%) in 653ms
-[2024-11-26 04:24:47.381] INFO NvdApiDataSource - Completed processing batch 12/136 (9%) in 748ms
-[2024-11-26 04:24:47.382] INFO NvdApiDataSource - Completed processing batch 13/136 (10%) in 986ms
-[2024-11-26 04:24:47.382] INFO NvdApiDataSource - Completed processing batch 14/136 (10%) in 809ms
-[2024-11-26 04:24:47.382] INFO NvdApiDataSource - Completed processing batch 15/136 (11%) in 1,120ms
-[2024-11-26 04:24:47.382] INFO NvdApiDataSource - Completed processing batch 16/136 (12%) in 873ms
-[2024-11-26 04:24:47.382] INFO NvdApiDataSource - Completed processing batch 17/136 (13%) in 1,133ms
-[2024-11-26 04:24:47.382] INFO NvdApiDataSource - Completed processing batch 18/136 (13%) in 863ms
-[2024-11-26 04:24:47.382] INFO NvdApiDataSource - Completed processing batch 19/136 (14%) in 1,268ms
-[2024-11-26 04:24:47.382] INFO NvdApiDataSource - Completed processing batch 20/136 (15%) in 1,636ms
-[2024-11-26 04:24:47.382] INFO NvdApiDataSource - Completed processing batch 21/136 (15%) in 1,110ms
-[2024-11-26 04:24:47.382] INFO NvdApiDataSource - Completed processing batch 22/136 (16%) in 1,421ms
-[2024-11-26 04:24:47.382] INFO NvdApiDataSource - Completed processing batch 23/136 (17%) in 780ms
-[2024-11-26 04:24:47.383] INFO NvdApiDataSource - Completed processing batch 24/136 (18%) in 1,168ms
-[2024-11-26 04:24:47.383] INFO NvdApiDataSource - Completed processing batch 25/136 (18%) in 1,063ms
-[2024-11-26 04:24:47.383] INFO NvdApiDataSource - Completed processing batch 26/136 (19%) in 892ms
-[2024-11-26 04:24:47.383] INFO NvdApiDataSource - Completed processing batch 27/136 (20%) in 775ms
-[2024-11-26 04:24:47.383] INFO NvdApiDataSource - Completed processing batch 28/136 (21%) in 711ms
-[2024-11-26 04:24:47.383] INFO NvdApiDataSource - Completed processing batch 29/136 (21%) in 1,054ms
-[2024-11-26 04:24:47.383] INFO NvdApiDataSource - Completed processing batch 30/136 (22%) in 1,536ms
-[2024-11-26 04:24:47.383] INFO NvdApiDataSource - Completed processing batch 31/136 (23%) in 585ms
-[2024-11-26 04:24:47.383] INFO NvdApiDataSource - Completed processing batch 32/136 (24%) in 1,488ms
-[2024-11-26 04:24:47.383] INFO NvdApiDataSource - Completed processing batch 33/136 (24%) in 717ms
-[2024-11-26 04:24:47.383] INFO NvdApiDataSource - Completed processing batch 34/136 (25%) in 1,064ms
-[2024-11-26 04:24:47.383] INFO NvdApiDataSource - Completed processing batch 35/136 (26%) in 1,484ms
-[2024-11-26 04:24:47.384] INFO NvdApiDataSource - Completed processing batch 36/136 (26%) in 1,888ms
-[2024-11-26 04:24:47.384] INFO NvdApiDataSource - Completed processing batch 37/136 (27%) in 1,812ms
-[2024-11-26 04:24:47.384] INFO NvdApiDataSource - Completed processing batch 38/136 (28%) in 2,170ms
-[2024-11-26 04:24:47.384] INFO NvdApiDataSource - Completed processing batch 39/136 (29%) in 182ms
-[2024-11-26 04:24:47.384] INFO NvdApiDataSource - Completed processing batch 40/136 (29%) in 901ms
-[2024-11-26 04:24:47.384] INFO NvdApiDataSource - Completed processing batch 41/136 (30%) in 934ms
-[2024-11-26 04:24:47.384] INFO NvdApiDataSource - Completed processing batch 42/136 (31%) in 888ms
-[2024-11-26 04:24:47.384] INFO NvdApiDataSource - Completed processing batch 43/136 (32%) in 566ms
-[2024-11-26 04:24:47.384] INFO NvdApiDataSource - Completed processing batch 44/136 (32%) in 798ms
-[2024-11-26 04:24:47.384] INFO NvdApiDataSource - Completed processing batch 45/136 (33%) in 592ms
-[2024-11-26 04:24:47.385] INFO NvdApiDataSource - Completed processing batch 46/136 (34%) in 722ms
-[2024-11-26 04:24:47.385] INFO NvdApiDataSource - Completed processing batch 47/136 (35%) in 464ms
-[2024-11-26 04:24:47.385] INFO NvdApiDataSource - Completed processing batch 48/136 (35%) in 501ms
-[2024-11-26 04:24:47.385] INFO NvdApiDataSource - Completed processing batch 49/136 (36%) in 533ms
-[2024-11-26 04:24:47.385] INFO NvdApiDataSource - Completed processing batch 50/136 (37%) in 117ms
-[2024-11-26 04:24:47.385] INFO NvdApiDataSource - Completed processing batch 51/136 (38%) in 497ms
-[2024-11-26 04:24:47.385] INFO NvdApiDataSource - Completed processing batch 52/136 (38%) in 538ms
-[2024-11-26 04:24:47.385] INFO NvdApiDataSource - Completed processing batch 53/136 (39%) in 615ms
-[2024-11-26 04:24:47.385] INFO NvdApiDataSource - Completed processing batch 54/136 (40%) in 505ms
-[2024-11-26 04:24:47.385] INFO NvdApiDataSource - Completed processing batch 55/136 (40%) in 268ms
-[2024-11-26 04:24:47.386] INFO NvdApiDataSource - Completed processing batch 56/136 (41%) in 529ms
-[2024-11-26 04:24:47.386] INFO NvdApiDataSource - Completed processing batch 57/136 (42%) in 487ms
-[2024-11-26 04:24:47.386] INFO NvdApiDataSource - Completed processing batch 58/136 (43%) in 590ms
-[2024-11-26 04:24:47.386] INFO NvdApiDataSource - Completed processing batch 59/136 (43%) in 517ms
-[2024-11-26 04:24:47.386] INFO NvdApiDataSource - Completed processing batch 60/136 (44%) in 430ms
-[2024-11-26 04:24:47.386] INFO NvdApiDataSource - Completed processing batch 61/136 (45%) in 362ms
-[2024-11-26 04:24:47.386] INFO NvdApiDataSource - Completed processing batch 62/136 (46%) in 534ms
-[2024-11-26 04:24:47.386] INFO NvdApiDataSource - Completed processing batch 63/136 (46%) in 523ms
-[2024-11-26 04:24:47.386] INFO NvdApiDataSource - Completed processing batch 64/136 (47%) in 433ms
-[2024-11-26 04:24:47.386] INFO NvdApiDataSource - Completed processing batch 65/136 (48%) in 462ms
-[2024-11-26 04:24:47.386] INFO NvdApiDataSource - Completed processing batch 66/136 (49%) in 505ms
-[2024-11-26 04:24:47.387] INFO NvdApiDataSource - Completed processing batch 67/136 (49%) in 421ms
-[2024-11-26 04:24:47.387] INFO NvdApiDataSource - Completed processing batch 68/136 (50%) in 457ms
-[2024-11-26 04:24:47.387] INFO NvdApiDataSource - Completed processing batch 69/136 (51%) in 430ms
-[2024-11-26 04:24:47.387] INFO NvdApiDataSource - Completed processing batch 70/136 (51%) in 471ms
-[2024-11-26 04:24:47.387] INFO NvdApiDataSource - Completed processing batch 71/136 (52%) in 438ms
-[2024-11-26 04:24:47.387] INFO NvdApiDataSource - Completed processing batch 72/136 (53%) in 414ms
-[2024-11-26 04:24:47.387] INFO NvdApiDataSource - Completed processing batch 73/136 (54%) in 518ms
-[2024-11-26 04:24:47.387] INFO NvdApiDataSource - Completed processing batch 74/136 (54%) in 417ms
-[2024-11-26 04:24:47.387] INFO NvdApiDataSource - Completed processing batch 75/136 (55%) in 480ms
-[2024-11-26 04:24:47.387] INFO NvdApiDataSource - Completed processing batch 76/136 (56%) in 456ms
-[2024-11-26 04:24:47.388] INFO NvdApiDataSource - Completed processing batch 77/136 (57%) in 514ms
-[2024-11-26 04:24:47.388] INFO NvdApiDataSource - Completed processing batch 78/136 (57%) in 528ms
-[2024-11-26 04:24:47.388] INFO NvdApiDataSource - Completed processing batch 79/136 (58%) in 520ms
-[2024-11-26 04:24:47.388] INFO NvdApiDataSource - Completed processing batch 80/136 (59%) in 476ms
-[2024-11-26 04:24:47.388] INFO NvdApiDataSource - Completed processing batch 81/136 (60%) in 520ms
-[2024-11-26 04:24:47.388] INFO NvdApiDataSource - Completed processing batch 82/136 (60%) in 438ms
-[2024-11-26 04:24:47.388] INFO NvdApiDataSource - Completed processing batch 83/136 (61%) in 494ms
-[2024-11-26 04:24:47.388] INFO NvdApiDataSource - Completed processing batch 84/136 (62%) in 487ms
-[2024-11-26 04:24:47.388] INFO NvdApiDataSource - Completed processing batch 85/136 (63%) in 422ms
-[2024-11-26 04:24:47.388] INFO NvdApiDataSource - Completed processing batch 86/136 (63%) in 317ms
-[2024-11-26 04:24:47.389] INFO NvdApiDataSource - Completed processing batch 87/136 (64%) in 448ms
-[2024-11-26 04:24:47.389] INFO NvdApiDataSource - Completed processing batch 88/136 (65%) in 632ms
-[2024-11-26 04:24:47.389] INFO NvdApiDataSource - Completed processing batch 89/136 (65%) in 462ms
-[2024-11-26 04:24:47.389] INFO NvdApiDataSource - Completed processing batch 90/136 (66%) in 495ms
-[2024-11-26 04:24:47.389] INFO NvdApiDataSource - Completed processing batch 91/136 (67%) in 403ms
-[2024-11-26 04:24:47.389] INFO NvdApiDataSource - Completed processing batch 92/136 (68%) in 457ms
-[2024-11-26 04:24:47.389] INFO NvdApiDataSource - Completed processing batch 93/136 (68%) in 512ms
-[2024-11-26 04:24:47.389] INFO NvdApiDataSource - Completed processing batch 94/136 (69%) in 387ms
-[2024-11-26 04:24:47.389] INFO NvdApiDataSource - Completed processing batch 95/136 (70%) in 392ms
-[2024-11-26 04:24:47.389] INFO NvdApiDataSource - Completed processing batch 96/136 (71%) in 432ms
-[2024-11-26 04:24:47.389] INFO NvdApiDataSource - Completed processing batch 97/136 (71%) in 484ms
-[2024-11-26 04:24:47.389] INFO NvdApiDataSource - Completed processing batch 98/136 (72%) in 524ms
-[2024-11-26 04:24:47.389] INFO NvdApiDataSource - Completed processing batch 99/136 (73%) in 382ms
-[2024-11-26 04:24:47.389] INFO NvdApiDataSource - Completed processing batch 100/136 (74%) in 367ms
-[2024-11-26 04:24:47.390] INFO NvdApiDataSource - Completed processing batch 101/136 (74%) in 411ms
-[2024-11-26 04:24:47.390] INFO NvdApiDataSource - Completed processing batch 102/136 (75%) in 482ms
-[2024-11-26 04:24:47.390] INFO NvdApiDataSource - Completed processing batch 103/136 (76%) in 454ms
-[2024-11-26 04:24:47.390] INFO NvdApiDataSource - Completed processing batch 104/136 (76%) in 490ms
-[2024-11-26 04:24:47.390] INFO NvdApiDataSource - Completed processing batch 105/136 (77%) in 463ms
-[2024-11-26 04:24:47.390] INFO NvdApiDataSource - Completed processing batch 106/136 (78%) in 490ms
-[2024-11-26 04:24:47.390] INFO NvdApiDataSource - Completed processing batch 107/136 (79%) in 460ms
-[2024-11-26 04:24:47.390] INFO NvdApiDataSource - Completed processing batch 108/136 (79%) in 436ms
-[2024-11-26 04:24:47.390] INFO NvdApiDataSource - Completed processing batch 109/136 (80%) in 517ms
-[2024-11-26 04:24:47.390] INFO NvdApiDataSource - Completed processing batch 110/136 (81%) in 371ms
-[2024-11-26 04:24:47.390] INFO NvdApiDataSource - Completed processing batch 111/136 (82%) in 452ms
-[2024-11-26 04:24:47.390] INFO NvdApiDataSource - Completed processing batch 112/136 (82%) in 421ms
-[2024-11-26 04:24:47.390] INFO NvdApiDataSource - Completed processing batch 113/136 (83%) in 182ms
-[2024-11-26 04:24:47.391] INFO NvdApiDataSource - Completed processing batch 114/136 (84%) in 61ms
-[2024-11-26 04:24:47.391] INFO NvdApiDataSource - Completed processing batch 115/136 (85%) in 74ms
-[2024-11-26 04:24:47.391] INFO NvdApiDataSource - Completed processing batch 116/136 (85%) in 60ms
-[2024-11-26 04:24:47.391] INFO NvdApiDataSource - Completed processing batch 117/136 (86%) in 446ms
-[2024-11-26 04:24:47.391] INFO NvdApiDataSource - Completed processing batch 118/136 (87%) in 257ms
-[2024-11-26 04:24:47.391] INFO NvdApiDataSource - Completed processing batch 119/136 (88%) in 253ms
-[2024-11-26 04:24:47.391] INFO NvdApiDataSource - Completed processing batch 120/136 (88%) in 73ms
-[2024-11-26 04:24:47.391] INFO NvdApiDataSource - Completed processing batch 121/136 (89%) in 394ms
-[2024-11-26 04:24:47.391] INFO NvdApiDataSource - Completed processing batch 122/136 (90%) in 310ms
-[2024-11-26 04:24:47.391] INFO NvdApiDataSource - Completed processing batch 123/136 (90%) in 70ms
-[2024-11-26 04:24:47.392] INFO NvdApiDataSource - Completed processing batch 124/136 (91%) in 313ms
-[2024-11-26 04:24:47.392] INFO NvdApiDataSource - Completed processing batch 125/136 (92%) in 218ms
-[2024-11-26 04:24:47.392] INFO NvdApiDataSource - Completed processing batch 126/136 (93%) in 260ms
-[2024-11-26 04:24:47.392] INFO NvdApiDataSource - Completed processing batch 127/136 (93%) in 353ms
-[2024-11-26 04:24:47.392] INFO NvdApiDataSource - Completed processing batch 128/136 (94%) in 303ms
-[2024-11-26 04:24:47.392] INFO NvdApiDataSource - Completed processing batch 129/136 (95%) in 360ms
-[2024-11-26 04:24:47.392] INFO NvdApiDataSource - Completed processing batch 130/136 (96%) in 422ms
-[2024-11-26 04:24:47.392] INFO NvdApiDataSource - Completed processing batch 131/136 (96%) in 461ms
-[2024-11-26 04:24:47.392] INFO NvdApiDataSource - Completed processing batch 132/136 (97%) in 424ms
-[2024-11-26 04:24:47.392] INFO NvdApiDataSource - Completed processing batch 133/136 (98%) in 60ms
-[2024-11-26 04:24:47.392] INFO NvdApiDataSource - Completed processing batch 134/136 (99%) in 72ms
-[2024-11-26 04:24:47.392] INFO NvdApiDataSource - Completed processing batch 135/136 (99%) in 308ms
-[2024-11-26 04:24:47.653] INFO NvdApiDataSource - Completed processing batch 136/136 (100%) in 281ms
-[2024-11-26 04:24:47.747] INFO KnownExploitedDataSource - Updating CISA Known Exploited Vulnerability list: https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json
-[2024-11-26 04:24:48.238] INFO CveDB - Begin database defrag
-[2024-11-26 04:24:51.934] INFO CveDB - End database defrag (3699 ms)
-[2024-11-26 04:24:51.936] INFO Engine - Check for updates complete (5379989 ms)
-[2024-11-26 04:24:52.155] INFO Engine - 
+Dec 03, 2024 3:01:10 AM org.apache.commons.jcs3.engine.control.CompositeCacheManager 
+INFO: Finished configuration in 157 ms.
+[2024-12-03 03:01:10.926] WARN NexusAnalyzer - Disabling Nexus analyzer - please specify the URL to a Nexus Server
+[2024-12-03 03:01:11.389] INFO Engine - Checking for updates
+[2024-12-03 03:01:20.048] INFO NvdApiDataSource - NVD API has 272,068 records in this update
+[2024-12-03 03:01:44.956] INFO NvdApiDataSource - Downloaded 10,000/272,068 (4%)
+[2024-12-03 03:01:55.817] WARN NvdApiRetryStrategy - Retrying request /rest/json/cves/2.0?resultsPerPage=2000&startIndex=12000 : 3 time
+[2024-12-03 03:01:55.818] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.RequestNotExecutedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-12-03 03:01:56.547] WARN NvdApiRetryStrategy - Retrying request /rest/json/cves/2.0?resultsPerPage=2000&startIndex=14000 : 3 time
+[2024-12-03 03:01:56.547] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.RequestNotExecutedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-12-03 03:01:59.569] WARN NvdApiRetryStrategy - Retrying request /rest/json/cves/2.0?resultsPerPage=2000&startIndex=16000 : 3 time
+[2024-12-03 03:01:59.569] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-12-03 03:02:32.486] INFO NvdApiDataSource - Downloaded 20,000/272,068 (7%)
+[2024-12-03 03:03:07.714] INFO NvdApiDataSource - Downloaded 30,000/272,068 (11%)
+[2024-12-03 03:03:54.684] INFO NvdApiDataSource - Downloaded 40,000/272,068 (15%)
+[2024-12-03 03:04:39.101] INFO NvdApiDataSource - Downloaded 50,000/272,068 (18%)
+[2024-12-03 03:05:21.240] INFO NvdApiDataSource - Downloaded 60,000/272,068 (22%)
+[2024-12-03 03:05:50.933] INFO NvdApiDataSource - Downloaded 70,000/272,068 (26%)
+[2024-12-03 03:06:41.689] INFO NvdApiDataSource - Downloaded 80,000/272,068 (29%)
+[2024-12-03 03:07:05.045] INFO NvdApiDataSource - Downloaded 90,000/272,068 (33%)
+[2024-12-03 03:07:58.497] INFO NvdApiDataSource - Downloaded 100,000/272,068 (37%)
+[2024-12-03 03:08:13.308] WARN NvdApiRetryStrategy - Retrying request /rest/json/cves/2.0?resultsPerPage=2000&startIndex=110000 : 3 time
+[2024-12-03 03:08:13.309] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.RequestNotExecutedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-12-03 03:08:45.564] INFO NvdApiDataSource - Downloaded 110,000/272,068 (40%)
+[2024-12-03 03:09:48.565] INFO NvdApiDataSource - Downloaded 120,000/272,068 (44%)
+[2024-12-03 03:10:41.618] INFO NvdApiDataSource - Downloaded 130,000/272,068 (48%)
+[2024-12-03 03:11:52.275] INFO NvdApiDataSource - Downloaded 140,000/272,068 (51%)
+[2024-12-03 03:12:32.202] WARN NvdApiRetryStrategy - Retrying request /rest/json/cves/2.0?resultsPerPage=2000&startIndex=152000 : 3 time
+[2024-12-03 03:12:32.202] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-12-03 03:12:39.643] INFO NvdApiDataSource - Downloaded 150,000/272,068 (55%)
+[2024-12-03 03:13:16.773] INFO NvdApiDataSource - Downloaded 160,000/272,068 (59%)
+[2024-12-03 03:14:11.308] INFO NvdApiDataSource - Downloaded 170,000/272,068 (62%)
+[2024-12-03 03:14:57.929] INFO NvdApiDataSource - Downloaded 180,000/272,068 (66%)
+[2024-12-03 03:15:43.746] WARN NvdApiRetryStrategy - Retrying request /rest/json/cves/2.0?resultsPerPage=2000&startIndex=178000 : 3 time
+[2024-12-03 03:15:43.746] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-12-03 03:15:54.319] INFO NvdApiDataSource - Downloaded 190,000/272,070 (70%)
+[2024-12-03 03:17:04.314] INFO NvdApiDataSource - Downloaded 200,000/272,070 (74%)
+[2024-12-03 03:17:31.396] INFO NvdApiDataSource - Downloaded 210,000/272,070 (77%)
+[2024-12-03 03:17:55.936] INFO NvdApiDataSource - Downloaded 220,000/272,070 (81%)
+[2024-12-03 03:18:36.566] WARN NvdApiRetryStrategy - Retrying request /rest/json/cves/2.0?resultsPerPage=2000&startIndex=210000 : 3 time
+[2024-12-03 03:18:36.566] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-12-03 03:18:37.787] WARN NvdApiRetryStrategy - Retrying request /rest/json/cves/2.0?resultsPerPage=2000&startIndex=246000 : 3 time
+[2024-12-03 03:18:37.788] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-12-03 03:19:11.881] INFO NvdApiDataSource - Downloaded 230,000/272,070 (85%)
+[2024-12-03 03:20:01.552] WARN NvdApiRetryStrategy - Retrying request /rest/json/cves/2.0?resultsPerPage=2000&startIndex=248000 : 3 time
+[2024-12-03 03:20:01.553] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-12-03 03:20:08.797] INFO NvdApiDataSource - Downloaded 240,000/272,070 (88%)
+[2024-12-03 03:21:17.196] INFO NvdApiDataSource - Downloaded 250,000/272,070 (92%)
+[2024-12-03 03:21:24.021] WARN NvdApiRetryStrategy - Retrying request /rest/json/cves/2.0?resultsPerPage=2000&startIndex=234000 : 3 time
+[2024-12-03 03:21:24.021] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.RequestNotExecutedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-12-03 03:21:31.903] WARN NvdApiRetryStrategy - Retrying request /rest/json/cves/2.0?resultsPerPage=2000&startIndex=264000 : 3 time
+[2024-12-03 03:21:31.903] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-12-03 03:22:25.225] INFO NvdApiDataSource - Downloaded 260,000/272,070 (96%)
+[2024-12-03 03:23:04.886] WARN NvdApiRetryStrategy - Retrying request /rest/json/cves/2.0?resultsPerPage=2000&startIndex=250000 : 3 time
+[2024-12-03 03:23:04.886] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-12-03 03:23:29.512] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-12-03 03:23:29.923] INFO NvdApiDataSource - Downloaded 270,000/272,070 (99%)
+[2024-12-03 03:25:31.944] INFO NvdApiDataSource - Downloaded 272,070/272,070 (100%)
+[2024-12-03 03:25:31.945] INFO NvdApiDataSource - Completed processing batch 1/137 (1%) in 1,664ms
+[2024-12-03 03:25:31.945] INFO NvdApiDataSource - Completed processing batch 2/137 (1%) in 2,168ms
+[2024-12-03 03:25:31.945] INFO NvdApiDataSource - Completed processing batch 3/137 (2%) in 2,347ms
+[2024-12-03 03:25:31.945] INFO NvdApiDataSource - Completed processing batch 4/137 (3%) in 1,984ms
+[2024-12-03 03:25:31.945] INFO NvdApiDataSource - Completed processing batch 5/137 (4%) in 1,419ms
+[2024-12-03 03:25:31.945] INFO NvdApiDataSource - Completed processing batch 6/137 (4%) in 1,197ms
+[2024-12-03 03:25:31.945] INFO NvdApiDataSource - Completed processing batch 7/137 (5%) in 932ms
+[2024-12-03 03:25:31.945] INFO NvdApiDataSource - Completed processing batch 8/137 (6%) in 771ms
+[2024-12-03 03:25:31.945] INFO NvdApiDataSource - Completed processing batch 9/137 (7%) in 882ms
+[2024-12-03 03:25:31.946] INFO NvdApiDataSource - Completed processing batch 10/137 (7%) in 856ms
+[2024-12-03 03:25:31.946] INFO NvdApiDataSource - Completed processing batch 11/137 (8%) in 800ms
+[2024-12-03 03:25:31.946] INFO NvdApiDataSource - Completed processing batch 12/137 (9%) in 996ms
+[2024-12-03 03:25:31.946] INFO NvdApiDataSource - Completed processing batch 13/137 (9%) in 1,109ms
+[2024-12-03 03:25:31.946] INFO NvdApiDataSource - Completed processing batch 14/137 (10%) in 1,316ms
+[2024-12-03 03:25:31.946] INFO NvdApiDataSource - Completed processing batch 15/137 (11%) in 858ms
+[2024-12-03 03:25:31.946] INFO NvdApiDataSource - Completed processing batch 16/137 (12%) in 1,140ms
+[2024-12-03 03:25:31.946] INFO NvdApiDataSource - Completed processing batch 17/137 (12%) in 1,397ms
+[2024-12-03 03:25:31.946] INFO NvdApiDataSource - Completed processing batch 18/137 (13%) in 1,486ms
+[2024-12-03 03:25:31.946] INFO NvdApiDataSource - Completed processing batch 19/137 (14%) in 957ms
+[2024-12-03 03:25:31.946] INFO NvdApiDataSource - Completed processing batch 20/137 (15%) in 1,311ms
+[2024-12-03 03:25:31.947] INFO NvdApiDataSource - Completed processing batch 21/137 (15%) in 1,221ms
+[2024-12-03 03:25:31.947] INFO NvdApiDataSource - Completed processing batch 22/137 (16%) in 1,226ms
+[2024-12-03 03:25:31.947] INFO NvdApiDataSource - Completed processing batch 23/137 (17%) in 1,213ms
+[2024-12-03 03:25:31.947] INFO NvdApiDataSource - Completed processing batch 24/137 (18%) in 1,253ms
+[2024-12-03 03:25:31.947] INFO NvdApiDataSource - Completed processing batch 25/137 (18%) in 1,550ms
+[2024-12-03 03:25:31.947] INFO NvdApiDataSource - Completed processing batch 26/137 (19%) in 1,635ms
+[2024-12-03 03:25:31.947] INFO NvdApiDataSource - Completed processing batch 27/137 (20%) in 1,794ms
+[2024-12-03 03:25:31.947] INFO NvdApiDataSource - Completed processing batch 28/137 (20%) in 1,999ms
+[2024-12-03 03:25:31.947] INFO NvdApiDataSource - Completed processing batch 29/137 (21%) in 1,150ms
+[2024-12-03 03:25:31.947] INFO NvdApiDataSource - Completed processing batch 30/137 (22%) in 1,438ms
+[2024-12-03 03:25:31.947] INFO NvdApiDataSource - Completed processing batch 31/137 (23%) in 1,179ms
+[2024-12-03 03:25:31.948] INFO NvdApiDataSource - Completed processing batch 32/137 (23%) in 1,030ms
+[2024-12-03 03:25:31.948] INFO NvdApiDataSource - Completed processing batch 33/137 (24%) in 817ms
+[2024-12-03 03:25:31.948] INFO NvdApiDataSource - Completed processing batch 34/137 (25%) in 1,362ms
+[2024-12-03 03:25:31.948] INFO NvdApiDataSource - Completed processing batch 35/137 (26%) in 768ms
+[2024-12-03 03:25:31.948] INFO NvdApiDataSource - Completed processing batch 36/137 (26%) in 718ms
+[2024-12-03 03:25:31.948] INFO NvdApiDataSource - Completed processing batch 37/137 (27%) in 838ms
+[2024-12-03 03:25:31.948] INFO NvdApiDataSource - Completed processing batch 38/137 (28%) in 804ms
+[2024-12-03 03:25:31.948] INFO NvdApiDataSource - Completed processing batch 39/137 (28%) in 664ms
+[2024-12-03 03:25:31.948] INFO NvdApiDataSource - Completed processing batch 40/137 (29%) in 701ms
+[2024-12-03 03:25:31.949] INFO NvdApiDataSource - Completed processing batch 41/137 (30%) in 707ms
+[2024-12-03 03:25:31.949] INFO NvdApiDataSource - Completed processing batch 42/137 (31%) in 147ms
+[2024-12-03 03:25:31.949] INFO NvdApiDataSource - Completed processing batch 43/137 (31%) in 179ms
+[2024-12-03 03:25:31.949] INFO NvdApiDataSource - Completed processing batch 44/137 (32%) in 691ms
+[2024-12-03 03:25:31.949] INFO NvdApiDataSource - Completed processing batch 45/137 (33%) in 623ms
+[2024-12-03 03:25:31.949] INFO NvdApiDataSource - Completed processing batch 46/137 (34%) in 839ms
+[2024-12-03 03:25:31.949] INFO NvdApiDataSource - Completed processing batch 47/137 (34%) in 710ms
+[2024-12-03 03:25:31.949] INFO NvdApiDataSource - Completed processing batch 48/137 (35%) in 603ms
+[2024-12-03 03:25:31.949] INFO NvdApiDataSource - Completed processing batch 49/137 (36%) in 475ms
+[2024-12-03 03:25:31.949] INFO NvdApiDataSource - Completed processing batch 50/137 (36%) in 287ms
+[2024-12-03 03:25:31.949] INFO NvdApiDataSource - Completed processing batch 51/137 (37%) in 461ms
+[2024-12-03 03:25:31.949] INFO NvdApiDataSource - Completed processing batch 52/137 (38%) in 540ms
+[2024-12-03 03:25:31.950] INFO NvdApiDataSource - Completed processing batch 53/137 (39%) in 506ms
+[2024-12-03 03:25:31.950] INFO NvdApiDataSource - Completed processing batch 54/137 (39%) in 518ms
+[2024-12-03 03:25:31.950] INFO NvdApiDataSource - Completed processing batch 55/137 (40%) in 598ms
+[2024-12-03 03:25:31.950] INFO NvdApiDataSource - Completed processing batch 56/137 (41%) in 542ms
+[2024-12-03 03:25:31.950] INFO NvdApiDataSource - Completed processing batch 57/137 (42%) in 393ms
+[2024-12-03 03:25:31.950] INFO NvdApiDataSource - Completed processing batch 58/137 (42%) in 500ms
+[2024-12-03 03:25:31.950] INFO NvdApiDataSource - Completed processing batch 59/137 (43%) in 443ms
+[2024-12-03 03:25:31.950] INFO NvdApiDataSource - Completed processing batch 60/137 (44%) in 566ms
+[2024-12-03 03:25:31.951] INFO NvdApiDataSource - Completed processing batch 61/137 (45%) in 537ms
+[2024-12-03 03:25:31.951] INFO NvdApiDataSource - Completed processing batch 62/137 (45%) in 432ms
+[2024-12-03 03:25:31.951] INFO NvdApiDataSource - Completed processing batch 63/137 (46%) in 509ms
+[2024-12-03 03:25:31.951] INFO NvdApiDataSource - Completed processing batch 64/137 (47%) in 552ms
+[2024-12-03 03:25:31.951] INFO NvdApiDataSource - Completed processing batch 65/137 (47%) in 478ms
+[2024-12-03 03:25:31.951] INFO NvdApiDataSource - Completed processing batch 66/137 (48%) in 438ms
+[2024-12-03 03:25:31.951] INFO NvdApiDataSource - Completed processing batch 67/137 (49%) in 496ms
+[2024-12-03 03:25:31.951] INFO NvdApiDataSource - Completed processing batch 68/137 (50%) in 513ms
+[2024-12-03 03:25:31.951] INFO NvdApiDataSource - Completed processing batch 69/137 (50%) in 503ms
+[2024-12-03 03:25:31.951] INFO NvdApiDataSource - Completed processing batch 70/137 (51%) in 573ms
+[2024-12-03 03:25:31.952] INFO NvdApiDataSource - Completed processing batch 71/137 (52%) in 501ms
+[2024-12-03 03:25:31.952] INFO NvdApiDataSource - Completed processing batch 72/137 (53%) in 444ms
+[2024-12-03 03:25:31.952] INFO NvdApiDataSource - Completed processing batch 73/137 (53%) in 506ms
+[2024-12-03 03:25:31.952] INFO NvdApiDataSource - Completed processing batch 74/137 (54%) in 567ms
+[2024-12-03 03:25:31.952] INFO NvdApiDataSource - Completed processing batch 75/137 (55%) in 465ms
+[2024-12-03 03:25:31.952] INFO NvdApiDataSource - Completed processing batch 76/137 (55%) in 559ms
+[2024-12-03 03:25:31.952] INFO NvdApiDataSource - Completed processing batch 77/137 (56%) in 512ms
+[2024-12-03 03:25:31.952] INFO NvdApiDataSource - Completed processing batch 78/137 (57%) in 544ms
+[2024-12-03 03:25:31.952] INFO NvdApiDataSource - Completed processing batch 79/137 (58%) in 482ms
+[2024-12-03 03:25:31.953] INFO NvdApiDataSource - Completed processing batch 80/137 (58%) in 458ms
+[2024-12-03 03:25:31.953] INFO NvdApiDataSource - Completed processing batch 81/137 (59%) in 454ms
+[2024-12-03 03:25:31.953] INFO NvdApiDataSource - Completed processing batch 82/137 (60%) in 432ms
+[2024-12-03 03:25:31.953] INFO NvdApiDataSource - Completed processing batch 83/137 (61%) in 446ms
+[2024-12-03 03:25:31.953] INFO NvdApiDataSource - Completed processing batch 84/137 (61%) in 455ms
+[2024-12-03 03:25:31.953] INFO NvdApiDataSource - Completed processing batch 85/137 (62%) in 469ms
+[2024-12-03 03:25:31.953] INFO NvdApiDataSource - Completed processing batch 86/137 (63%) in 575ms
+[2024-12-03 03:25:31.953] INFO NvdApiDataSource - Completed processing batch 87/137 (64%) in 464ms
+[2024-12-03 03:25:31.954] INFO NvdApiDataSource - Completed processing batch 88/137 (64%) in 500ms
+[2024-12-03 03:25:31.954] INFO NvdApiDataSource - Completed processing batch 89/137 (65%) in 424ms
+[2024-12-03 03:25:31.954] INFO NvdApiDataSource - Completed processing batch 90/137 (66%) in 330ms
+[2024-12-03 03:25:31.954] INFO NvdApiDataSource - Completed processing batch 91/137 (66%) in 510ms
+[2024-12-03 03:25:31.954] INFO NvdApiDataSource - Completed processing batch 92/137 (67%) in 563ms
+[2024-12-03 03:25:31.954] INFO NvdApiDataSource - Completed processing batch 93/137 (68%) in 622ms
+[2024-12-03 03:25:31.954] INFO NvdApiDataSource - Completed processing batch 94/137 (69%) in 526ms
+[2024-12-03 03:25:31.954] INFO NvdApiDataSource - Completed processing batch 95/137 (69%) in 604ms
+[2024-12-03 03:25:31.954] INFO NvdApiDataSource - Completed processing batch 96/137 (70%) in 509ms
+[2024-12-03 03:25:31.954] INFO NvdApiDataSource - Completed processing batch 97/137 (71%) in 426ms
+[2024-12-03 03:25:31.954] INFO NvdApiDataSource - Completed processing batch 98/137 (72%) in 483ms
+[2024-12-03 03:25:31.954] INFO NvdApiDataSource - Completed processing batch 99/137 (72%) in 396ms
+[2024-12-03 03:25:31.955] INFO NvdApiDataSource - Completed processing batch 100/137 (73%) in 392ms
+[2024-12-03 03:25:31.955] INFO NvdApiDataSource - Completed processing batch 101/137 (74%) in 456ms
+[2024-12-03 03:25:31.955] INFO NvdApiDataSource - Completed processing batch 102/137 (74%) in 426ms
+[2024-12-03 03:25:31.955] INFO NvdApiDataSource - Completed processing batch 103/137 (75%) in 420ms
+[2024-12-03 03:25:31.955] INFO NvdApiDataSource - Completed processing batch 104/137 (76%) in 434ms
+[2024-12-03 03:25:31.955] INFO NvdApiDataSource - Completed processing batch 105/137 (77%) in 458ms
+[2024-12-03 03:25:31.955] INFO NvdApiDataSource - Completed processing batch 106/137 (77%) in 383ms
+[2024-12-03 03:25:31.955] INFO NvdApiDataSource - Completed processing batch 107/137 (78%) in 446ms
+[2024-12-03 03:25:31.955] INFO NvdApiDataSource - Completed processing batch 108/137 (79%) in 519ms
+[2024-12-03 03:25:31.955] INFO NvdApiDataSource - Completed processing batch 109/137 (80%) in 486ms
+[2024-12-03 03:25:31.956] INFO NvdApiDataSource - Completed processing batch 110/137 (80%) in 531ms
+[2024-12-03 03:25:31.956] INFO NvdApiDataSource - Completed processing batch 111/137 (81%) in 381ms
+[2024-12-03 03:25:31.956] INFO NvdApiDataSource - Completed processing batch 112/137 (82%) in 278ms
+[2024-12-03 03:25:31.956] INFO NvdApiDataSource - Completed processing batch 113/137 (82%) in 342ms
+[2024-12-03 03:25:31.956] INFO NvdApiDataSource - Completed processing batch 114/137 (83%) in 467ms
+[2024-12-03 03:25:31.956] INFO NvdApiDataSource - Completed processing batch 115/137 (84%) in 451ms
+[2024-12-03 03:25:31.956] INFO NvdApiDataSource - Completed processing batch 116/137 (85%) in 646ms
+[2024-12-03 03:25:31.956] INFO NvdApiDataSource - Completed processing batch 117/137 (85%) in 452ms
+[2024-12-03 03:25:31.956] INFO NvdApiDataSource - Completed processing batch 118/137 (86%) in 64ms
+[2024-12-03 03:25:31.956] INFO NvdApiDataSource - Completed processing batch 119/137 (87%) in 70ms
+[2024-12-03 03:25:31.956] INFO NvdApiDataSource - Completed processing batch 120/137 (88%) in 442ms
+[2024-12-03 03:25:31.956] INFO NvdApiDataSource - Completed processing batch 121/137 (88%) in 71ms
+[2024-12-03 03:25:31.957] INFO NvdApiDataSource - Completed processing batch 122/137 (89%) in 294ms
+[2024-12-03 03:25:31.957] INFO NvdApiDataSource - Completed processing batch 123/137 (90%) in 59ms
+[2024-12-03 03:25:31.957] INFO NvdApiDataSource - Completed processing batch 124/137 (91%) in 450ms
+[2024-12-03 03:25:31.957] INFO NvdApiDataSource - Completed processing batch 125/137 (91%) in 284ms
+[2024-12-03 03:25:31.957] INFO NvdApiDataSource - Completed processing batch 126/137 (92%) in 271ms
+[2024-12-03 03:25:31.957] INFO NvdApiDataSource - Completed processing batch 127/137 (93%) in 321ms
+[2024-12-03 03:25:31.957] INFO NvdApiDataSource - Completed processing batch 128/137 (93%) in 409ms
+[2024-12-03 03:25:31.957] INFO NvdApiDataSource - Completed processing batch 129/137 (94%) in 350ms
+[2024-12-03 03:25:31.957] INFO NvdApiDataSource - Completed processing batch 130/137 (95%) in 363ms
+[2024-12-03 03:25:31.957] INFO NvdApiDataSource - Completed processing batch 131/137 (96%) in 103ms
+[2024-12-03 03:25:31.957] INFO NvdApiDataSource - Completed processing batch 132/137 (96%) in 57ms
+[2024-12-03 03:25:31.957] INFO NvdApiDataSource - Completed processing batch 133/137 (97%) in 220ms
+[2024-12-03 03:25:31.958] INFO NvdApiDataSource - Completed processing batch 134/137 (98%) in 77ms
+[2024-12-03 03:25:31.958] INFO NvdApiDataSource - Completed processing batch 135/137 (99%) in 34ms
+[2024-12-03 03:25:31.958] INFO NvdApiDataSource - Completed processing batch 136/137 (99%) in 337ms
+[2024-12-03 03:25:32.224] INFO NvdApiDataSource - Completed processing batch 137/137 (100%) in 307ms
+[2024-12-03 03:25:32.407] INFO KnownExploitedDataSource - Updating CISA Known Exploited Vulnerability list: https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json
+[2024-12-03 03:25:32.739] INFO CveDB - Begin database defrag
+[2024-12-03 03:25:36.347] INFO CveDB - End database defrag (3613 ms)
+[2024-12-03 03:25:36.349] INFO Engine - Check for updates complete (1464960 ms)
+[2024-12-03 03:25:36.585] INFO Engine - 
 
 Dependency-Check is an open source tool performing a best effort analysis of 3rd party dependencies; false positives and false negatives may exist in the analysis performed by the tool. Use of the tool and the reporting provided constitutes acceptance for use in an AS IS condition, and there are NO warranties, implied or otherwise, with regard to the analysis or its use. Any use of the tool and the reporting provided is at the user's risk. In no event shall the copyright holder or OWASP be held liable for any damages whatsoever arising out of or in connection with the use of this tool, the analysis performed, or the resulting report.
 
@@ -769,33 +511,35 @@ Dependency-Check is an open source tool performing a best effort analysis of 3rd
 💖 Sponsor: https://github.com/sponsors/jeremylong
 
 
-[2024-11-26 04:24:52.158] INFO Engine - Analysis Started
-[2024-11-26 04:24:52.381] INFO Engine - Finished Archive Analyzer (0 seconds)
-[2024-11-26 04:24:52.394] INFO Engine - Finished File Name Analyzer (0 seconds)
-[2024-11-26 04:24:52.717] INFO Engine - Finished Jar Analyzer (0 seconds)
-[2024-11-26 04:24:52.721] INFO Engine - Finished Central Analyzer (0 seconds)
-[2024-11-26 04:24:52.725] INFO Engine - Finished Dependency Merging Analyzer (0 seconds)
-[2024-11-26 04:24:52.888] INFO Engine - Finished Hint Analyzer (0 seconds)
-[2024-11-26 04:24:52.891] INFO Engine - Finished Version Filter Analyzer (0 seconds)
-[2024-11-26 04:24:54.617] INFO CPEAnalyzer - Created CPE Index (1 seconds)
-[2024-11-26 04:24:55.706] INFO Engine - Finished CPE Analyzer (2 seconds)
-[2024-11-26 04:24:55.711] INFO Engine - Finished False Positive Analyzer (0 seconds)
-[2024-11-26 04:24:55.777] INFO Engine - Finished NVD CVE Analyzer (0 seconds)
-[2024-11-26 04:24:56.335] INFO Engine - Finished Sonatype OSS Index Analyzer (0 seconds)
-[2024-11-26 04:24:56.344] INFO Engine - Finished Vulnerability Suppression Analyzer (0 seconds)
-[2024-11-26 04:24:56.351] INFO Engine - Finished Known Exploited Vulnerability Analyzer (0 seconds)
-[2024-11-26 04:24:56.359] INFO Engine - Finished Dependency Bundling Analyzer (0 seconds)
-[2024-11-26 04:24:56.360] INFO Engine - Finished Unused Suppression Rule Analyzer (0 seconds)
-[2024-11-26 04:24:56.408] INFO Engine - Analysis Complete (4 seconds)
-[2024-11-26 04:24:56.449] INFO ReportGenerator - Writing XML report to: /home/runner/work/bvpbot/bvpbot/.nvd/../target/nvd/dependency-check-report.xml
-[2024-11-26 04:24:56.623] INFO ReportGenerator - Writing HTML report to: /home/runner/work/bvpbot/bvpbot/.nvd/../target/nvd/dependency-check-report.html
-[2024-11-26 04:24:56.877] INFO ReportGenerator - Writing JSON report to: /home/runner/work/bvpbot/bvpbot/.nvd/../target/nvd/dependency-check-report.json
-[2024-11-26 04:24:56.938] INFO ReportGenerator - Writing CSV report to: /home/runner/work/bvpbot/bvpbot/.nvd/../target/nvd/dependency-check-report.csv
-[2024-11-26 04:24:56.945] INFO ReportGenerator - Writing SARIF report to: /home/runner/work/bvpbot/bvpbot/.nvd/../target/nvd/dependency-check-report.sarif
-[2024-11-26 04:24:56.965] INFO ReportGenerator - Writing JENKINS report to: /home/runner/work/bvpbot/bvpbot/.nvd/../target/nvd/dependency-check-jenkins.html
-[2024-11-26 04:24:56.987] INFO ReportGenerator - Writing JUNIT report to: /home/runner/work/bvpbot/bvpbot/.nvd/../target/nvd/dependency-check-junit.xml
-[2024-11-26 04:24:57.003] INFO ReportGenerator - Writing GITLAB report to: /home/runner/work/bvpbot/bvpbot/.nvd/../target/nvd/dependency-check-gitlab.json
-Nov 26, 2024 4:24:57 AM org.apache.commons.jcs3.engine.control.CompositeCacheManager 
+[2024-12-03 03:25:36.585] INFO Engine - Analysis Started
+[2024-12-03 03:25:36.780] INFO Engine - Finished Archive Analyzer (0 seconds)
+[2024-12-03 03:25:36.789] INFO Engine - Finished File Name Analyzer (0 seconds)
+[2024-12-03 03:25:37.436] INFO Engine - Finished Jar Analyzer (0 seconds)
+[2024-12-03 03:25:37.439] INFO Engine - Finished Central Analyzer (0 seconds)
+[2024-12-03 03:25:37.443] INFO Engine - Finished Dependency Merging Analyzer (0 seconds)
+[2024-12-03 03:25:37.669] INFO Engine - Finished Hint Analyzer (0 seconds)
+[2024-12-03 03:25:37.672] INFO Engine - Finished Version Filter Analyzer (0 seconds)
+[2024-12-03 03:25:39.512] INFO CPEAnalyzer - Created CPE Index (1 seconds)
+[2024-12-03 03:25:40.644] INFO Engine - Finished CPE Analyzer (2 seconds)
+[2024-12-03 03:25:40.651] INFO Engine - Finished False Positive Analyzer (0 seconds)
+[2024-12-03 03:25:40.756] INFO Engine - Finished NVD CVE Analyzer (0 seconds)
+[2024-12-03 03:25:41.472] INFO Engine - Finished Sonatype OSS Index Analyzer (0 seconds)
+[2024-12-03 03:25:41.483] INFO Engine - Finished Vulnerability Suppression Analyzer (0 seconds)
+[2024-12-03 03:25:41.495] INFO Engine - Finished Known Exploited Vulnerability Analyzer (0 seconds)
+[2024-12-03 03:25:41.502] INFO Engine - Finished Dependency Bundling Analyzer (0 seconds)
+[2024-12-03 03:25:41.504] INFO Engine - Finished Unused Suppression Rule Analyzer (0 seconds)
+[2024-12-03 03:25:41.562] INFO Engine - Analysis Complete (4 seconds)
+[2024-12-03 03:25:41.611] INFO ReportGenerator - Writing XML report to: /home/runner/work/bvpbot/bvpbot/.nvd/../target/nvd/dependency-check-report.xml
+[2024-12-03 03:25:41.853] INFO ReportGenerator - Writing HTML report to: /home/runner/work/bvpbot/bvpbot/.nvd/../target/nvd/dependency-check-report.html
+[2024-12-03 03:25:42.001] INFO ReportGenerator - Writing JSON report to: /home/runner/work/bvpbot/bvpbot/.nvd/../target/nvd/dependency-check-report.json
+[2024-12-03 03:25:42.057] INFO ReportGenerator - Writing CSV report to: /home/runner/work/bvpbot/bvpbot/.nvd/../target/nvd/dependency-check-report.csv
+[2024-12-03 03:25:42.063] INFO ReportGenerator - Writing SARIF report to: /home/runner/work/bvpbot/bvpbot/.nvd/../target/nvd/dependency-check-report.sarif
+[2024-12-03 03:25:42.083] INFO ReportGenerator - Writing JENKINS report to: /home/runner/work/bvpbot/bvpbot/.nvd/../target/nvd/dependency-check-jenkins.html
+[2024-12-03 03:25:42.105] INFO ReportGenerator - Writing JUNIT report to: /home/runner/work/bvpbot/bvpbot/.nvd/../target/nvd/dependency-check-junit.xml
+[2024-12-03 03:25:42.120] INFO ReportGenerator - Writing GITLAB report to: /home/runner/work/bvpbot/bvpbot/.nvd/../target/nvd/dependency-check-gitlab.json
+Dec 03, 2024 3:25:42 AM org.apache.commons.jcs3.engine.control.CompositeCacheManager 
 INFO: Shutdown hook activated. Shutdown was not called. Shutting down JCS.
-Nov 26, 2024 4:24:57 AM org.apache.commons.jcs3.engine.control.event.ElementEventQueue 
-INFO: Element event queue destroyed: org.apache.commons.jcs3.engine.control.event.ElementEventQueue@1ea642dd
+Dec 03, 2024 3:25:42 AM org.apache.commons.jcs3.engine.control.event.ElementEventQueue 
+INFO: Element event queue destroyed: org.apache.commons.jcs3.engine.control.event.ElementEventQueue@358f7465
+Dec 03, 2024 3:25:42 AM org.apache.commons.jcs3.engine.control.CompositeCache 
+INFO: In DISPOSE, [NODEAUDIT] fromRemote [false]
