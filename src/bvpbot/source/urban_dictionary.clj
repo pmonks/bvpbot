@@ -49,7 +49,7 @@
   (when-let [definitions (define-term term)]
     (last (sort-by #(u/lidstone-scoring (:thumbs-up %) (:thumbs-down %)) (:list definitions)))))
 
-(defn definition-to-plain-text
+(defn to-plain-text
   "Converts the given Urban Dictionary definition text to plain text (i.e.
   strips out formatting characters)."
   [s]
