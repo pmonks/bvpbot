@@ -138,11 +138,11 @@
   "Returns a human readable String containing the human readable difference between two instants."
   [^java.time.Instant i1
    ^java.time.Instant i2]
-  (format "%dd %dh %dm %d.%03ds" (.until i1 i2 (java.time.temporal.ChronoUnit/DAYS))
-                                 (mod (.until i1 i2 (java.time.temporal.ChronoUnit/HOURS))     24)
-                                 (mod (.until i1 i2 (java.time.temporal.ChronoUnit/MINUTES))   60)
-                                 (mod (.until i1 i2 (java.time.temporal.ChronoUnit/SECONDS))   60)
-                                 (mod (.until i1 i2 (java.time.temporal.ChronoUnit/MILLIS))  1000)))
+  (format "%dd %dh %dm %d.%03ds" (.until i1 i2 java.time.temporal.ChronoUnit/DAYS)
+                                 (mod (.until i1 i2 java.time.temporal.ChronoUnit/HOURS)     24)
+                                 (mod (.until i1 i2 java.time.temporal.ChronoUnit/MINUTES)   60)
+                                 (mod (.until i1 i2 java.time.temporal.ChronoUnit/SECONDS)   60)
+                                 (mod (.until i1 i2 java.time.temporal.ChronoUnit/MILLIS)  1000)))
 
 (def ^:private units ["B" "KB" "MB" "GB" "TB" "PB" "EB" "ZB" "YB"])
 (def ^:private ^java.text.DecimalFormat df (java.text.DecimalFormat. "#.##"))
