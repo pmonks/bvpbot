@@ -41,8 +41,19 @@
           (u/parse-json body)))))
 
 (defn top-definition-for-term
-  "Returns the 'top' Urban Dictionary definition for the given term, as determined
-  by Urban Dictionary."
+  "Returns the 'top' Urban Dictionary definition for the given term.
+
+  Note: Urban Dictionary doesn't return items sorted in any known order, so we
+  have to 'score' the results ourselves.  We choose to use Lidstone smoothing."
   [term]
   (when-let [definitions (define-term term)]
-    (first (:list definitions))))
+    (last (sort-by #(u/lidstone-scoring (:thumbs-up %) (:thumbs-down %)) (:list definitions)))))
+
+(defn definition-to-plain-text
+  "Converts the given Urban Dictionary definition text to plain text (i.e.
+  strips out formatting characters)."
+  [s]
+  (when s
+    (-> s
+        (s/replace "[" "")
+        (s/replace "]" ""))))

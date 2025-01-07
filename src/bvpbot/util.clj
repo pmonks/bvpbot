@@ -112,6 +112,16 @@
                 [#"[–‑‒–—]"            "-"]     ; Hyphens / dashes
                 [#"[^\p{ASCII}]+"      ""]]))   ; Strip everything else
 
+(def ^:private default-ε 0.5)
+
+(defn lidstone-scoring
+  "Lidstone smoothed scoring, adapted from https://www.researchgate.net/publication/220959619_How_to_Count_Thumb-Ups_and_Thumb-Downs_User-Rating_Based_Ranking_of_Items_from_an_Axiomatic_Perspective"
+  ([up-votes down-votes] (lidstone-scoring default-ε up-votes down-votes))
+  ([ε up-votes down-votes]
+   (let [uvd (double up-votes)
+         dvd (double down-votes)]
+     (/ (+ ε uvd) (+ ε uvd ε dvd)))))
+
 (defn truncate
   "If s is longer than len, truncates it to len-1 and adds the ellipsis (…) character to the end."
   [s len]

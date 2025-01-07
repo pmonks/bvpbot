@@ -70,9 +70,9 @@
   (when s
     (if-let [limit (get discord-size-limits context)]
       (if (> (count s) limit)
-        (str (subs s 0 (- limit 3)) "...")
-        s)
-      s)))
+        (str (s/trim (subs s 0 (- limit 3))) "...")
+        (s/trim s))
+      (s/trim s))))
 
 (defn embed-template
   "Generates a default template for embeds."

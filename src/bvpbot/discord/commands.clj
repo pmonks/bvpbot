@@ -57,7 +57,7 @@
   _interaction
   {:keys [term]}
   (if-let [definition (ud/top-definition-for-term term)]
-    (let [definition-text (:definition definition)
+    (let [definition-text (ud/definition-to-plain-text (:definition definition))
           definition-text (if (> (count definition-text) 3072) (str (subs definition-text 0 3069) "...") definition-text)
           example-text    (:example definition)
           example-text    (if (> (count example-text) 512) (str (subs example-text 0 509) "...") example-text)]
