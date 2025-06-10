@@ -2,10 +2,12 @@
 
 # bvpbot
 
+
+[![CI](https://github.com/pmonks/bvpbot/actions/workflows/ci.yml/badge.svg?branch=dev)](https://github.com/pmonks/bvpbot/actions?query=workflow%3ACI+branch%3Adev)
 [![Dependencies](https://github.com/pmonks/bvpbot/actions/workflows/dependencies.yml/badge.svg?branch=dev)](https://github.com/pmonks/bvpbot/actions?query=workflow%3Adependencies+branch%3Adev)
 [![Vulnerabilities](https://github.com/pmonks/bvpbot/actions/workflows/vulnerabilities.yml/badge.svg?branch=dev)](https://pmonks.github.io/bvpbot/nvd/dependency-check-report.html)
-[![License](https://img.shields.io/github/license/pmonks/bvpbot.svg)](https://github.com/pmonks/bvpbot/blob/release/LICENSE)
 [![Open Issues](https://img.shields.io/github/issues/pmonks/bvpbot.svg)](https://github.com/pmonks/bvpbot/issues)
+[![License](https://img.shields.io/github/license/pmonks/bvpbot.svg)](https://github.com/pmonks/bvpbot/blob/release/LICENSE)
 
 A small [Discord](https://discord.com/) bot specific to the author's personal Discord server, and unlikely to be of interest to anyone else.  [Click here to add it to a server you administer](https://discord.com/oauth2/authorize?client_id=1258214444891242647).
 
