@@ -1,19 +1,11 @@
 ;
 ; Copyright © 2020 Peter Monks
 ;
-; Licensed under the Apache License, Version 2.0 (the "License");
-; you may not use this file except in compliance with the License.
-; You may obtain a copy of the License at
+; This Source Code Form is subject to the terms of the Mozilla Public
+; License, v. 2.0. If a copy of the MPL was not distributed with this
+; file, You can obtain one at https://mozilla.org/MPL/2.0/.
 ;
-;     http://www.apache.org/licenses/LICENSE-2.0
-;
-; Unless required by applicable law or agreed to in writing, software
-; distributed under the License is distributed on an "AS IS" BASIS,
-; WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-; See the License for the specific language governing permissions and
-; limitations under the License.
-;
-; SPDX-License-Identifier: Apache-2.0
+; SPDX-License-Identifier: MPL-2.0
 ;
 
 (ns bvpbot.config
@@ -60,10 +52,19 @@
     result
     (throw (ex-info (str "Config key '"(name k)"' not provided") {}))))
 
+(defn- parse-boolean-string
+  "Parses string `s` into a boolean, with `\"true\"` (all cases variations and
+  with leading and/or trailing whitespace stripped) being converted to `true`
+  and all other values (including `nil`) being `false`."
+  [^String s]
+  (boolean
+    (when-not (s/blank? s) (parse-boolean (s/lower-case(s/trim s))))))
+
 (defstate config
-  :start (if-let [config-file (:config-file (mnt/args))]
-           (a/read-config config-file)
-           (a/read-config (io/resource "config.edn"))))
+  :start (let [raw-config (if-let [config-file (:config-file (mnt/args))]
+                            (a/read-config config-file)
+                            (a/read-config (io/resource "config.edn")))]
+           (assoc raw-config :production? (parse-boolean-string (:production-mode raw-config)))))
 
 ; Note: do NOT use mount for these, since they're used before mount has started
 (def build-config

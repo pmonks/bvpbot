@@ -5,5 +5,6 @@
 
   :http-status-port           #or [#env HTTP_STATUS_PORT 8080]
 
+  :production-mode            #or [#env PRODUCTION_MODE "false"]
   :reload-command-definitions #or [#env RELOAD_COMMAND_DEFS "false"]      ; Default = don't reload command definitions
 }
