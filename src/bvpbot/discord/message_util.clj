@@ -13,7 +13,8 @@
             [clojure.tools.logging :as log]
             [java-time             :as tm]
             [discljord.messaging   :as dm]
-            [discljord.formatting  :as df]))
+            [discljord.formatting  :as df]
+            [bvpbot.config         :as cfg]))
 
 (defn- discljord-deref
   "discljord defaults to 'fire & forget' API calls, which silently swallows errors. This corrects that behaviour."
@@ -70,7 +71,7 @@
   "Generates a default template for embeds."
   []
   (merge (embed-template-no-footer)
-         {:footer    {:text "bvpbot"
+         {:footer    {:text (str "bvpbot" (when-not (:production? cfg/config) " ⚠️ DEVELOPMENT INSTANCE! ⚠️"))
                       :icon_url embed-template-logo-url}
           :timestamp (str (tm/instant))}))
 

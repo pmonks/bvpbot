@@ -52,10 +52,19 @@
     result
     (throw (ex-info (str "Config key '"(name k)"' not provided") {}))))
 
+(defn- parse-boolean-string
+  "Parses string `s` into a boolean, with `\"true\"` (all cases variations and
+  with leading and/or trailing whitespace stripped) being converted to `true`
+  and all other values (including `nil`) being `false`."
+  [^String s]
+  (boolean
+    (when-not (s/blank? s) (parse-boolean (s/lower-case(s/trim s))))))
+
 (defstate config
-  :start (if-let [config-file (:config-file (mnt/args))]
-           (a/read-config config-file)
-           (a/read-config (io/resource "config.edn"))))
+  :start (let [raw-config (if-let [config-file (:config-file (mnt/args))]
+                            (a/read-config config-file)
+                            (a/read-config (io/resource "config.edn")))]
+           (assoc raw-config :production? (parse-boolean-string (:production-mode raw-config)))))
 
 ; Note: do NOT use mount for these, since they're used before mount has started
 (def build-config
