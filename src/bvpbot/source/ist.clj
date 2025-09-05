@@ -12,8 +12,7 @@
   (:require [clojure.string     :as s]
             [clojure.java.io    :as io]
             [clojure.edn        :as edn]
-            [markov-chains.core :as mc]
-            [bvpbot.util        :as u]))
+            [markov-chains.core :as mc]))
 
 (def markov-chain (if-let [ist-markov-chain (io/resource "ist-markov-chain.edn")]
                     (edn/read-string (slurp ist-markov-chain))
@@ -22,9 +21,14 @@
 (defn gen-title
   ([] (gen-title markov-chain))
   ([chain]
-   (u/replace-all (s/join " "
-                          (take 100   ; Make sure we eventually drop out
-                                (take-while (partial not= "🔚")
-                                            (drop-while #(or (= "🔚" %) (re-matches #"(\p{Punct})+" %))   ; Drop leading title breaks and punctuation
-                                                        (mc/generate chain)))))
-                  [[#"\s+([!?:;,\"…\*\.])" "$1"]])))  ; Collapse whitespace before punctuation
+   (-> (s/join " "
+               (take 100   ; Make sure we eventually drop out
+                     (take-while (partial not= "🔚")
+                                 (drop-while #(or (= "🔚" %) (re-matches #"(\p{Punct})+" %))   ; Drop leading title breaks and punctuation
+                                             (mc/generate chain)))))
+       (s/replace #"\s+([!?:;,\"…\*\.])" "$1")   ; Collapse whitespace before punctuation
+       (s/replace #"\s+'\s*s\s+"         "'s ")  ; Collapse orphaned plurals
+       (s/replace #"\s+'\s*S\s+"         "'S ")  ;    "         "      "
+       (s/replace #"\s+\(\s+"            " (")   ; Collapse orphaned parens
+       (s/replace #"\s+\)\s+"            ") ")   ;    "         "      "
+       )))

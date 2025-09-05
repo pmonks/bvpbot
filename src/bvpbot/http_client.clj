@@ -18,7 +18,7 @@
                                                            :cookie-policy   :none})))
 
 (defn get
-  "Attempts an HTTP GET on the given URI. Returns the raw responsefor further
+  "Attempts an HTTP GET on the given URI. Returns the raw response for further
   processing by the caller.
 
   Throws on I/O exceptions."
@@ -27,5 +27,5 @@
    (when-not (s/blank? uri)
      (hc/get uri
              {:http-client @http-client-d
-              :header      (merge {"user agent" "com.github.pmonks/bvpbot"}
+              :header      (merge {"user agent" "https://github.com/pmonks/bvpbot"}
                                   headers)}))))
