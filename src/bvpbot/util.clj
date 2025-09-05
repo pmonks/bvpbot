@@ -78,19 +78,6 @@
   ; Note: UrlValidator.isValid() is null-safe (returns false when given null), so we don't need to guard that ourselves
   (.isValid (org.apache.commons.validator.routines.UrlValidator/getInstance) s))
 
-(defn replace-all
-  "Takes a sequence of replacements, and applies all of them to the given string, in the order provided.  Each replacement in the sequence is a pair of values to be passed to clojure.string/replace (the 2nd and 3rd arguments)."
-  [string replacements]
-  (when (and string (seq replacements))
-    (loop [s string
-           f (first replacements)
-           r (rest  replacements)]
-      (if f
-        (recur (s/replace s (first f) (second f))
-               (first r)
-               (rest  r))
-        s))))
-
 (defn query-string-escape
   "Escape s (a String) for use in a URL query string."
   [^String s]
@@ -99,10 +86,11 @@
 (defn to-ascii
   "Converts the given string to ASCII, mapping a small number of Unicode characters to their ASCII equivalents."
   [s]
-  (replace-all s
-               [[#"\p{javaWhitespace}" " "]     ; Whitespace
-                [#"[–‑‒–—]"            "-"]     ; Hyphens / dashes
-                [#"[^\p{ASCII}]+"      ""]]))   ; Strip everything else
+  (when s
+    (-> s
+        (s/replace #"\p{javaWhitespace}" " ")     ; Whitespace
+        (s/replace #"[–‑‒–—]"            "-")     ; Hyphens / dashes
+        (s/replace #"[^\p{ASCII}]+"      ""))))   ; Strip everything else
 
 (def ^:private default-ε 0.5)
 
