@@ -90,7 +90,8 @@
   []
   (when-let [bonus-file (io/resource "bonus-titles.edn")]
     (println "bonus-titles.edn found, reading titles...")
-    (edn/read-string (slurp bonus-file))))
+    (let [raw-bonus-titles (edn/read-string (slurp bonus-file))]
+      (distinct (concat raw-bonus-titles (map s/upper-case  raw-bonus-titles) (map s/lower-case raw-bonus-titles))))))  ; Automatically add all-upper and all-lower versions of every bonus title
 
 (defn -main
   [& args]
