@@ -21,27 +21,26 @@
 (def ^:private min-title-length 2)
 (def ^:private max-title-length 100)
 
-(defn- gen-title-words
-  "Generates no more than `max-title-length` words from the given chain."
-  [chain]
-  (take max-title-length   ; Make sure we eventually drop out
+(defn- gen-up-to-tokens
+  "Generates no more than `mx` tokens from Markov chain `chain`."
+  [chain mx]
+  (take mx
         (take-while (partial not= "🔚")
                     (drop-while #(or (= "🔚" %) (re-matches #"(\p{Punct})+" %))   ; Drop leading title breaks and punctuation
                                 (mc/generate chain)))))
 
-(defn- gen-minimum-length-title
-  "Generates between `min-title-length` and `max-title-length` words from the
-  given chain."
-  [chain]
-  (loop [words (gen-title-words chain)]
-    (if (> (count words) min-title-length)
-      words
-      (recur (gen-title-words chain)))))
+(defn- gen-between-tokens
+  "Generates between `mn` and `mx` tokens from Markov chain `chain`."
+  [chain mn mx]
+  (loop [tokens (gen-up-to-tokens chain mx)]
+    (if (> (count tokens) mn)
+      tokens
+      (recur (gen-up-to-tokens chain mx)))))
 
 (defn gen-title
-  ([] (gen-title markov-chain))
-  ([chain]
-   (-> (s/join " " (gen-minimum-length-title chain))
+  ([] (gen-title markov-chain min-title-length max-title-length))
+  ([chain mn mx]
+   (-> (s/join " " (gen-between-tokens chain mn mx))
        (s/replace #"\s+([!?:;,\"…\*\.])" "$1")     ; Collapse whitespace before punctuation
        (s/replace #"\s+'\s*s\s+"         "'s ")    ; Collapse orphaned plurals
        (s/replace #"\s+'\s*S\s+"         "'S ")    ;    "         "      "
