@@ -21,8 +21,35 @@
    :headers {"Content-Type" "text/html"}
    :body    (str "<!DOCTYPE html>
 <html>
-  <head><title>bvpbot status</title></head>
-  <body><p style='font-family:sans-serif'>bvpbot Discord bot up for " (u/runtime-info) ".<p></body>
+  <head>
+    <style type=\"text/css\">
+      html{
+        max-width: 70ch;
+        padding: 1em;
+        margin: auto;
+        line-height: 1.75;
+        font-size: 2.25em;
+        font-family: sans-serif;
+      }
+      p,ul,ol {
+        margin-bottom: 2em;
+      }
+      img{
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
+    <title>bvpbot status</title>
+  </head>
+  <body>
+    <h1>bvpbot status</h1>
+    <p>Up for: " (u/runtime-info) "<br/>
+    OS: " u/os-info "<br/>
+    JVM: " u/jvm-info "<br/>
+    Clojure: " u/clojure-info "<br/>
+    Heap: " (u/heap-mem-info) "<br/>
+    Non-heap: " (u/non-heap-mem-info) "</p>
+  </body>
 </html>")})
 
 (defstate http-status-port
