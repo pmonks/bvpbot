@@ -5,19 +5,19 @@
         "dataSource": [
 {
                 "name": "NVD API Last Checked",
-                "timestamp": "2026-03-03T06:03:19Z"
+                "timestamp": "2026-03-10T04:55:13Z"
             }
 ,{
                 "name": "NVD API Last Modified",
-                "timestamp": "2026-03-03T05:17:25Z"
+                "timestamp": "2026-03-09T21:23:43Z"
             }
         ]
 
 
     },
     "projectInfo": {
-        "name": "com.github.pmonks\/bvpbot 1.0.20260303",
-        "reportDate": "2026-03-03T06:03:31.014420153Z",
+        "name": "com.github.pmonks\/bvpbot 1.0.20260310",
+        "reportDate": "2026-03-10T04:55:24.338653150Z",
         "credits": {
             "NVD": "This product uses the NVD API but is not endorsed or certified by the NVD. This report contains data retrieved from the National Vulnerability Database: https://nvd.nist.gov",
             "CISA": "This report may contain data retrieved from the CISA Known Exploited Vulnerability Catalog: https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
@@ -9012,7 +9012,54 @@
                     "id": "cpe:2.3:a:mortbay_jetty:jetty:9.4.58:20250814:*:*:*:*:*:*"
 ,"confidence": "HIGHEST","url": "https:\/\/nvd.nist.gov\/vuln\/search#\/nvd\/home?sortOrder=3&sortDirection=2&cpeFilterMode=applicability&resultType=records&cpeName=cpe%3A2.3%3Aa%3Amortbay_jetty%3Ajetty%3A9.4.58%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A"                }
             ]
-        },{
+            ,"vulnerabilities": [
+ {
+                "source": "NVD",
+                "name": "CVE-2025-11143",
+                    "severity" : "MEDIUM",
+                    "cvssv3": {
+                        "baseScore": 6.5
+                        ,"attackVector": "NETWORK"
+                        ,"attackComplexity": "LOW"
+                        ,"privilegesRequired": "NONE"
+                        ,"userInteraction": "NONE"
+                        ,"scope": "UNCHANGED"
+                        ,"confidentialityImpact": "LOW"
+                        ,"integrityImpact": "LOW"
+                        ,"availabilityImpact": "NONE"
+                        ,"baseSeverity": "MEDIUM"
+,"exploitabilityScore": "3.9","impactScore": "2.5","version": "3.1"                    },
+                    "cwes": [
+                        "CWE-20"                    ],
+                "description": "The Jetty URI parser has some key differences to other common parsers when evaluating invalid or unusual URIs.\u00A0Differential parsing of URIs in systems using multiple components may result in security by-pass. For example a component that enforces a black list may interpret the URIs differently from one that generates a response.\u00A0At the very least, differential parsing may divulge implementation details.",
+                "notes": "",
+                "references": [
+ {
+                        "source": "emo@eclipse.org"
+,"url": "https:\/\/github.com\/jetty\/jetty.project\/security\/advisories\/GHSA-wjpw-4j6x-6rwh","name": "VENDOR_ADVISORY"                    }                ],
+                "vulnerableSoftware": [
+ {
+                        "software": { 
+                            "id":"cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*"
+,"versionStartIncluding":"10.0.0","versionEndIncluding":"10.0.26"                        }
+                    }, {
+                        "software": { 
+                            "id":"cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*"
+,"versionStartIncluding":"11.0.0","versionEndIncluding":"11.0.26"                        }
+                    }, {
+                        "software": { 
+                            "id":"cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*"
+,"versionStartIncluding":"12.0.0","versionEndExcluding":"12.0.31"                        }
+                    }, {
+                        "software": { 
+                            "id":"cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*"
+,"versionStartIncluding":"12.1.0","versionEndExcluding":"12.1.5"                        }
+                    }, {
+                        "software": { 
+                            "id":"cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*"
+,"vulnerabilityIdMatched":"true","versionStartIncluding":"9.4.0","versionEndIncluding":"9.4.58"                        }
+                    }                ]
+                }            ]        },{
             "isVirtual": false,
             "fileName": "jul-to-slf4j-2.0.17.jar",
             "filePath": "\/home\/runner\/.m2\/repository\/org\/slf4j\/jul-to-slf4j\/2.0.17\/jul-to-slf4j-2.0.17.jar"
@@ -12219,7 +12266,54 @@
                     "id": "cpe:2.3:a:mortbay_jetty:jetty:9.4.58:20250814:*:*:*:*:*:*"
 ,"confidence": "HIGHEST","url": "https:\/\/nvd.nist.gov\/vuln\/search#\/nvd\/home?sortOrder=3&sortDirection=2&cpeFilterMode=applicability&resultType=records&cpeName=cpe%3A2.3%3Aa%3Amortbay_jetty%3Ajetty%3A9.4.58%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A"                }
             ]
-        },{
+            ,"vulnerabilities": [
+ {
+                "source": "NVD",
+                "name": "CVE-2025-11143",
+                    "severity" : "MEDIUM",
+                    "cvssv3": {
+                        "baseScore": 6.5
+                        ,"attackVector": "NETWORK"
+                        ,"attackComplexity": "LOW"
+                        ,"privilegesRequired": "NONE"
+                        ,"userInteraction": "NONE"
+                        ,"scope": "UNCHANGED"
+                        ,"confidentialityImpact": "LOW"
+                        ,"integrityImpact": "LOW"
+                        ,"availabilityImpact": "NONE"
+                        ,"baseSeverity": "MEDIUM"
+,"exploitabilityScore": "3.9","impactScore": "2.5","version": "3.1"                    },
+                    "cwes": [
+                        "CWE-20"                    ],
+                "description": "The Jetty URI parser has some key differences to other common parsers when evaluating invalid or unusual URIs.\u00A0Differential parsing of URIs in systems using multiple components may result in security by-pass. For example a component that enforces a black list may interpret the URIs differently from one that generates a response.\u00A0At the very least, differential parsing may divulge implementation details.",
+                "notes": "",
+                "references": [
+ {
+                        "source": "emo@eclipse.org"
+,"url": "https:\/\/github.com\/jetty\/jetty.project\/security\/advisories\/GHSA-wjpw-4j6x-6rwh","name": "VENDOR_ADVISORY"                    }                ],
+                "vulnerableSoftware": [
+ {
+                        "software": { 
+                            "id":"cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*"
+,"versionStartIncluding":"10.0.0","versionEndIncluding":"10.0.26"                        }
+                    }, {
+                        "software": { 
+                            "id":"cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*"
+,"versionStartIncluding":"11.0.0","versionEndIncluding":"11.0.26"                        }
+                    }, {
+                        "software": { 
+                            "id":"cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*"
+,"versionStartIncluding":"12.0.0","versionEndExcluding":"12.0.31"                        }
+                    }, {
+                        "software": { 
+                            "id":"cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*"
+,"versionStartIncluding":"12.1.0","versionEndExcluding":"12.1.5"                        }
+                    }, {
+                        "software": { 
+                            "id":"cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*"
+,"vulnerabilityIdMatched":"true","versionStartIncluding":"9.4.0","versionEndIncluding":"9.4.58"                        }
+                    }                ]
+                }            ]        },{
             "isVirtual": false,
             "fileName": "websocket-common-9.4.58.v20250814.jar",
             "filePath": "\/home\/runner\/.m2\/repository\/org\/eclipse\/jetty\/websocket\/websocket-common\/9.4.58.v20250814\/websocket-common-9.4.58.v20250814.jar"
@@ -12531,5 +12625,52 @@
                     "id": "cpe:2.3:a:websocket-extensions_project:websocket-extensions:9.4.58:20250814:*:*:*:*:*:*"
 ,"confidence": "LOW"                }
             ]
-        }    ]
+            ,"vulnerabilities": [
+ {
+                "source": "NVD",
+                "name": "CVE-2025-11143",
+                    "severity" : "MEDIUM",
+                    "cvssv3": {
+                        "baseScore": 6.5
+                        ,"attackVector": "NETWORK"
+                        ,"attackComplexity": "LOW"
+                        ,"privilegesRequired": "NONE"
+                        ,"userInteraction": "NONE"
+                        ,"scope": "UNCHANGED"
+                        ,"confidentialityImpact": "LOW"
+                        ,"integrityImpact": "LOW"
+                        ,"availabilityImpact": "NONE"
+                        ,"baseSeverity": "MEDIUM"
+,"exploitabilityScore": "3.9","impactScore": "2.5","version": "3.1"                    },
+                    "cwes": [
+                        "CWE-20"                    ],
+                "description": "The Jetty URI parser has some key differences to other common parsers when evaluating invalid or unusual URIs.\u00A0Differential parsing of URIs in systems using multiple components may result in security by-pass. For example a component that enforces a black list may interpret the URIs differently from one that generates a response.\u00A0At the very least, differential parsing may divulge implementation details.",
+                "notes": "",
+                "references": [
+ {
+                        "source": "emo@eclipse.org"
+,"url": "https:\/\/github.com\/jetty\/jetty.project\/security\/advisories\/GHSA-wjpw-4j6x-6rwh","name": "VENDOR_ADVISORY"                    }                ],
+                "vulnerableSoftware": [
+ {
+                        "software": { 
+                            "id":"cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*"
+,"versionStartIncluding":"10.0.0","versionEndIncluding":"10.0.26"                        }
+                    }, {
+                        "software": { 
+                            "id":"cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*"
+,"versionStartIncluding":"11.0.0","versionEndIncluding":"11.0.26"                        }
+                    }, {
+                        "software": { 
+                            "id":"cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*"
+,"versionStartIncluding":"12.0.0","versionEndExcluding":"12.0.31"                        }
+                    }, {
+                        "software": { 
+                            "id":"cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*"
+,"versionStartIncluding":"12.1.0","versionEndExcluding":"12.1.5"                        }
+                    }, {
+                        "software": { 
+                            "id":"cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*"
+,"vulnerabilityIdMatched":"true","versionStartIncluding":"9.4.0","versionEndIncluding":"9.4.58"                        }
+                    }                ]
+                }            ]        }    ]
 }

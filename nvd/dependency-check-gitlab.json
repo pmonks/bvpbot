@@ -22,13 +22,108 @@
                         "url": "https://github.com/dependency-check/DependencyCheck/"
         },
 
-        "end_time": "2026-03-03T06:03:31",
-                "start_time": "2026-03-03T06:03:31",
+        "end_time": "2026-03-10T04:55:24",
+                "start_time": "2026-03-10T04:55:24",
                 "status":  "success"  ,
                 "type": "dependency_scanning"
 
                                     },
     "vulnerabilities": [
+                                                            {
+                        "id": "CVE-2025-11143",
+                        "identifiers": [
+                            {
+                                "type": "NVD"
+                                    , "name": "CVE-2025-11143"
+                                , "value": "e198dae4d91fa79d9c1e2e039870d49c487c45cf"
+
+                                                                    , "url": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2025-11143"
+                            }
+                        ],
+                        "location": {
+                            "file": "\/home\/runner\/.m2\/repository\/org\/eclipse\/jetty\/jetty-io\/9.4.58.v20250814\/jetty-io-9.4.58.v20250814.jar",
+                            "dependency": {
+                                "package": {
+                                    "name": "org.eclipse.jetty:jetty-io"
+                                },
+                                "version": "9.4.58.v20250814"
+                                                                                                                                                                                                                                                                                                                                                                                                                            }
+                        },
+
+                                                "name": "CVE-2025-11143",
+                        "description": "The Jetty URI parser has some key differences to other common parsers when evaluating invalid or unusual URIs.\u00A0Differential parsing of URIs in systems using multiple components may result in security by-pass. For example a component that enforces a black list may interpret the URIs differently from one that generates a response.\u00A0At the very least, differential parsing may divulge implementation details.",
+                        "severity": "Medium",
+                                                "links": [
+                                    {
+                                                                                "name": "VENDOR_ADVISORY",
+                                        "url": "https:\/\/github.com\/jetty\/jetty.project\/security\/advisories\/GHSA-wjpw-4j6x-6rwh"
+                                    }
+                        ]
+                                                                                            }
+                                        ,
+                                        {
+                        "id": "CVE-2025-11143",
+                        "identifiers": [
+                            {
+                                "type": "NVD"
+                                    , "name": "CVE-2025-11143"
+                                , "value": "def27af0dc52086738483191761bd8edd08ff625"
+
+                                                                    , "url": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2025-11143"
+                            }
+                        ],
+                        "location": {
+                            "file": "\/home\/runner\/.m2\/repository\/org\/eclipse\/jetty\/websocket\/websocket-client\/9.4.58.v20250814\/websocket-client-9.4.58.v20250814.jar",
+                            "dependency": {
+                                "package": {
+                                    "name": "org.eclipse.jetty.websocket:websocket-client"
+                                },
+                                "version": "9.4.58.v20250814"
+                                                                                                                                                                                                                                                                                                                                                                                                                            }
+                        },
+
+                                                "name": "CVE-2025-11143",
+                        "description": "The Jetty URI parser has some key differences to other common parsers when evaluating invalid or unusual URIs.\u00A0Differential parsing of URIs in systems using multiple components may result in security by-pass. For example a component that enforces a black list may interpret the URIs differently from one that generates a response.\u00A0At the very least, differential parsing may divulge implementation details.",
+                        "severity": "Medium",
+                                                "links": [
+                                    {
+                                                                                "name": "VENDOR_ADVISORY",
+                                        "url": "https:\/\/github.com\/jetty\/jetty.project\/security\/advisories\/GHSA-wjpw-4j6x-6rwh"
+                                    }
+                        ]
+                                                                                            }
+                                        ,
+                                        {
+                        "id": "CVE-2025-11143",
+                        "identifiers": [
+                            {
+                                "type": "NVD"
+                                    , "name": "CVE-2025-11143"
+                                , "value": "35d5d3b947643920cfcf82f02d0c139a7c338c5a"
+
+                                                                    , "url": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2025-11143"
+                            }
+                        ],
+                        "location": {
+                            "file": "\/home\/runner\/.m2\/repository\/org\/eclipse\/jetty\/websocket\/websocket-common\/9.4.58.v20250814\/websocket-common-9.4.58.v20250814.jar",
+                            "dependency": {
+                                "package": {
+                                    "name": "org.eclipse.jetty.websocket:websocket-common"
+                                },
+                                "version": "9.4.58.v20250814"
+                                                                                                                                                                                                                                                                                                                                                                                                                            }
+                        },
+
+                                                "name": "CVE-2025-11143",
+                        "description": "The Jetty URI parser has some key differences to other common parsers when evaluating invalid or unusual URIs.\u00A0Differential parsing of URIs in systems using multiple components may result in security by-pass. For example a component that enforces a black list may interpret the URIs differently from one that generates a response.\u00A0At the very least, differential parsing may divulge implementation details.",
+                        "severity": "Medium",
+                                                "links": [
+                                    {
+                                                                                "name": "VENDOR_ADVISORY",
+                                        "url": "https:\/\/github.com\/jetty\/jetty.project\/security\/advisories\/GHSA-wjpw-4j6x-6rwh"
+                                    }
+                        ]
+                                                                                            }
     ],
     "dependency_files": [
                 {

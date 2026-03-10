@@ -4,16 +4,16 @@
         <engineVersion>12.2.0</engineVersion>
         <dataSource>
             <name>NVD API Last Checked</name>
-            <timestamp>2026-03-03T06:03:19Z</timestamp>
+            <timestamp>2026-03-10T04:55:13Z</timestamp>
         </dataSource>
         <dataSource>
             <name>NVD API Last Modified</name>
-            <timestamp>2026-03-03T05:17:25Z</timestamp>
+            <timestamp>2026-03-09T21:23:43Z</timestamp>
         </dataSource>
     </scanInfo>
     <projectInfo>
-        <name>com.github.pmonks/bvpbot 1.0.20260303</name>
-        <reportDate>2026-03-03T06:03:31.014420153Z</reportDate>
+        <name>com.github.pmonks/bvpbot 1.0.20260310</name>
+        <reportDate>2026-03-10T04:55:24.338653150Z</reportDate>
         <credits>This product uses the NVD API but is not endorsed or certified by the NVD. This report contains data retrieved from the National Vulnerability Database: https://nvd.nist.gov, Github Advisory Database (via NPM Audit API): https://github.com/advisories/, and the RetireJS community.</credits>
     </projectInfo>
     <dependencies>
@@ -6547,6 +6547,44 @@ encoded data using Jackson abstractions (streaming API, data binding, tree model
                     <url>https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Amortbay_jetty%3Ajetty%3A9.4.58%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A</url>
                 </vulnerabilityIds>
             </identifiers>
+            <vulnerabilities>
+                <vulnerability source="NVD">
+                    <name>CVE-2025-11143</name>
+                    <severity>MEDIUM</severity>
+                    <cvssV3>
+                        <baseScore>6.5</baseScore>
+                        <attackVector>NETWORK</attackVector>
+                        <attackComplexity>LOW</attackComplexity>
+                        <privilegesRequired>NONE</privilegesRequired>
+                        <userInteraction>NONE</userInteraction>
+                        <scope>UNCHANGED</scope>
+                        <confidentialityImpact>LOW</confidentialityImpact>
+                        <integrityImpact>LOW</integrityImpact>
+                        <availabilityImpact>NONE</availabilityImpact>
+                        <baseSeverity>MEDIUM</baseSeverity>
+<exploitabilityScore>3.9</exploitabilityScore><impactScore>2.5</impactScore><version>3.1</version>                    </cvssV3>
+                    <cwes>
+<cwe>CWE-20</cwe>                    </cwes>
+                    <description>The Jetty URI parser has some key differences to other common parsers when evaluating invalid or unusual URIs. Differential parsing of URIs in systems using multiple components may result in security by-pass. For example a component that enforces a black list may interpret the URIs differently from one that generates a response. At the very least, differential parsing may divulge implementation details.</description>
+                    <references>
+                        <reference>
+                            <source>emo@eclipse.org</source>
+<url>https://github.com/jetty/jetty.project/security/advisories/GHSA-wjpw-4j6x-6rwh</url><name>VENDOR_ADVISORY</name>                        </reference>
+                    </references>
+                    <vulnerableSoftware>
+                        <software
+ versionStartIncluding="10.0.0" versionEndIncluding="10.0.26"                        >cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*</software>
+                        <software
+ versionStartIncluding="11.0.0" versionEndIncluding="11.0.26"                        >cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*</software>
+                        <software
+ versionStartIncluding="12.0.0" versionEndExcluding="12.0.31"                        >cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*</software>
+                        <software
+ versionStartIncluding="12.1.0" versionEndExcluding="12.1.5"                        >cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*</software>
+                        <software vulnerabilityIdMatched="true"
+ versionStartIncluding="9.4.0" versionEndIncluding="9.4.58"                        >cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*</software>
+                    </vulnerableSoftware>
+                </vulnerability>
+            </vulnerabilities>
         </dependency>
         <dependency isVirtual="false">
             <fileName>jul-to-slf4j-2.0.17.jar</fileName>
@@ -8886,6 +8924,44 @@ encoded data using Jackson abstractions (streaming API, data binding, tree model
                     <url>https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Amortbay_jetty%3Ajetty%3A9.4.58%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A</url>
                 </vulnerabilityIds>
             </identifiers>
+            <vulnerabilities>
+                <vulnerability source="NVD">
+                    <name>CVE-2025-11143</name>
+                    <severity>MEDIUM</severity>
+                    <cvssV3>
+                        <baseScore>6.5</baseScore>
+                        <attackVector>NETWORK</attackVector>
+                        <attackComplexity>LOW</attackComplexity>
+                        <privilegesRequired>NONE</privilegesRequired>
+                        <userInteraction>NONE</userInteraction>
+                        <scope>UNCHANGED</scope>
+                        <confidentialityImpact>LOW</confidentialityImpact>
+                        <integrityImpact>LOW</integrityImpact>
+                        <availabilityImpact>NONE</availabilityImpact>
+                        <baseSeverity>MEDIUM</baseSeverity>
+<exploitabilityScore>3.9</exploitabilityScore><impactScore>2.5</impactScore><version>3.1</version>                    </cvssV3>
+                    <cwes>
+<cwe>CWE-20</cwe>                    </cwes>
+                    <description>The Jetty URI parser has some key differences to other common parsers when evaluating invalid or unusual URIs. Differential parsing of URIs in systems using multiple components may result in security by-pass. For example a component that enforces a black list may interpret the URIs differently from one that generates a response. At the very least, differential parsing may divulge implementation details.</description>
+                    <references>
+                        <reference>
+                            <source>emo@eclipse.org</source>
+<url>https://github.com/jetty/jetty.project/security/advisories/GHSA-wjpw-4j6x-6rwh</url><name>VENDOR_ADVISORY</name>                        </reference>
+                    </references>
+                    <vulnerableSoftware>
+                        <software
+ versionStartIncluding="10.0.0" versionEndIncluding="10.0.26"                        >cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*</software>
+                        <software
+ versionStartIncluding="11.0.0" versionEndIncluding="11.0.26"                        >cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*</software>
+                        <software
+ versionStartIncluding="12.0.0" versionEndExcluding="12.0.31"                        >cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*</software>
+                        <software
+ versionStartIncluding="12.1.0" versionEndExcluding="12.1.5"                        >cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*</software>
+                        <software vulnerabilityIdMatched="true"
+ versionStartIncluding="9.4.0" versionEndIncluding="9.4.58"                        >cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*</software>
+                    </vulnerableSoftware>
+                </vulnerability>
+            </vulnerabilities>
         </dependency>
         <dependency isVirtual="false">
             <fileName>websocket-common-9.4.58.v20250814.jar</fileName>
@@ -9117,6 +9193,44 @@ encoded data using Jackson abstractions (streaming API, data binding, tree model
                     <id>cpe:2.3:a:websocket-extensions_project:websocket-extensions:9.4.58:20250814:*:*:*:*:*:*</id>
                 </vulnerabilityIds>
             </identifiers>
+            <vulnerabilities>
+                <vulnerability source="NVD">
+                    <name>CVE-2025-11143</name>
+                    <severity>MEDIUM</severity>
+                    <cvssV3>
+                        <baseScore>6.5</baseScore>
+                        <attackVector>NETWORK</attackVector>
+                        <attackComplexity>LOW</attackComplexity>
+                        <privilegesRequired>NONE</privilegesRequired>
+                        <userInteraction>NONE</userInteraction>
+                        <scope>UNCHANGED</scope>
+                        <confidentialityImpact>LOW</confidentialityImpact>
+                        <integrityImpact>LOW</integrityImpact>
+                        <availabilityImpact>NONE</availabilityImpact>
+                        <baseSeverity>MEDIUM</baseSeverity>
+<exploitabilityScore>3.9</exploitabilityScore><impactScore>2.5</impactScore><version>3.1</version>                    </cvssV3>
+                    <cwes>
+<cwe>CWE-20</cwe>                    </cwes>
+                    <description>The Jetty URI parser has some key differences to other common parsers when evaluating invalid or unusual URIs. Differential parsing of URIs in systems using multiple components may result in security by-pass. For example a component that enforces a black list may interpret the URIs differently from one that generates a response. At the very least, differential parsing may divulge implementation details.</description>
+                    <references>
+                        <reference>
+                            <source>emo@eclipse.org</source>
+<url>https://github.com/jetty/jetty.project/security/advisories/GHSA-wjpw-4j6x-6rwh</url><name>VENDOR_ADVISORY</name>                        </reference>
+                    </references>
+                    <vulnerableSoftware>
+                        <software
+ versionStartIncluding="10.0.0" versionEndIncluding="10.0.26"                        >cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*</software>
+                        <software
+ versionStartIncluding="11.0.0" versionEndIncluding="11.0.26"                        >cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*</software>
+                        <software
+ versionStartIncluding="12.0.0" versionEndExcluding="12.0.31"                        >cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*</software>
+                        <software
+ versionStartIncluding="12.1.0" versionEndExcluding="12.1.5"                        >cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*</software>
+                        <software vulnerabilityIdMatched="true"
+ versionStartIncluding="9.4.0" versionEndIncluding="9.4.58"                        >cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*</software>
+                    </vulnerableSoftware>
+                </vulnerability>
+            </vulnerabilities>
         </dependency>
     </dependencies>
 </analysis>
