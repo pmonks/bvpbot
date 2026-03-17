@@ -43,8 +43,8 @@
           "npm": "This report may contain data retrieved from the the Github Advisory Database (via NPM Audit API): https://github.com/advisories/",
           "retirejs": "This report may contain data retrieved from the RetireJS community: https://retirejs.github.io/retire.js/",
           "ossindex": "This report may contain data retrieved from the Sonatype OSS Index: https://ossindex.sonatype.org"
-            ,"NVD API Last Checked": "2026-03-10T04:55:13Z"
-            ,"NVD API Last Modified": "2026-03-09T21:23:43Z"
+            ,"NVD API Last Checked": "2026-03-17T07:45:07Z"
+            ,"NVD API Last Modified": "2026-03-17T07:16:03Z"
           }
         }
       },
@@ -424,7 +424,8 @@
             "sha256": "bc0cf46075877201f8406ee7de2741ae7df6c066f5f0457bd80632a718c06e72"
           },          "properties": {
 "license": "The Apache Software License, Version 2.0: https:\/\/www.apache.org\/licenses\/LICENSE-2.0.txt",                    "id25": "pkg:maven\/com.fasterxml.jackson.core\/jackson-core@2.20.0"
-,                    "vid6": "cpe:2.3:a:fasterxml:jackson-modules-java8:2.20.0:*:*:*:*:*:*:*"
+,                    "vid6": "cpe:2.3:a:fasterxml:jackson-core:2.20.0:*:*:*:*:*:*:*"
+,                    "vid7": "cpe:2.3:a:fasterxml:jackson-modules-java8:2.20.0:*:*:*:*:*:*:*"
           }
         }
 ,{
@@ -440,7 +441,7 @@
             "sha256": "ab075616cbd67f5676f89825ec9c8bc7b54c84dbe934b162145b34172370b5d6"
           },          "properties": {
 "license": "The Apache Software License, Version 2.0: https:\/\/www.apache.org\/licenses\/LICENSE-2.0.txt",                    "id26": "pkg:maven\/com.fasterxml.jackson.dataformat\/jackson-dataformat-cbor@2.20.0"
-,                    "vid7": "cpe:2.3:a:fasterxml:jackson-dataformats-binary:2.20.0:*:*:*:*:*:*:*"
+,                    "vid8": "cpe:2.3:a:fasterxml:jackson-dataformats-binary:2.20.0:*:*:*:*:*:*:*"
           }
         }
 ,{
@@ -453,7 +454,7 @@
             "sha256": "690fa0d12668fbd2503324fc34eac2f1f7f23aff6109cd67c5054e1b38f9aa4d"
           },          "properties": {
                     "id27": "pkg:maven\/org.jline\/jansi-core@3.30.6"
-,                    "vid8": "cpe:2.3:a:jline:jline:3.30.6:*:*:*:*:*:*:*"
+,                    "vid9": "cpe:2.3:a:jline:jline:3.30.6:*:*:*:*:*:*:*"
           }
         }
 ,{
@@ -469,7 +470,7 @@
             "sha256": "d08b2580fd7d36c76f2b9785540e1cc546ace009c6721f5ba05159fbc87ed754"
           },          "properties": {
 "license": "The BSD License: https:\/\/opensource.org\/licenses\/BSD-3-Clause",                    "id28": "pkg:maven\/org.jline\/jansi@3.30.6"
-,                    "vid9": "cpe:2.3:a:jline:jline:3.30.6:*:*:*:*:*:*:*"
+,                    "vid10": "cpe:2.3:a:jline:jline:3.30.6:*:*:*:*:*:*:*"
           }
         }
 ,{
@@ -515,9 +516,9 @@
             "sha256": "f55b2cc7c05244fd7b1773e99979b740002b0186e45b8a688243d89c7006fe21"
           },          "properties": {
 "license": "http:\/\/www.apache.org\/licenses\/LICENSE-2.0, https:\/\/www.eclipse.org\/org\/documents\/epl-v10.php",                    "id31": "pkg:maven\/org.eclipse.jetty\/jetty-io@9.4.58.v20250814"
-,                    "vid10": "cpe:2.3:a:eclipse:jetty:9.4.58:20250814:*:*:*:*:*:*"
-,                    "vid11": "cpe:2.3:a:jetty:jetty:9.4.58:20250814:*:*:*:*:*:*"
-,                    "vid12": "cpe:2.3:a:mortbay_jetty:jetty:9.4.58:20250814:*:*:*:*:*:*"
+,                    "vid11": "cpe:2.3:a:eclipse:jetty:9.4.58:20250814:*:*:*:*:*:*"
+,                    "vid12": "cpe:2.3:a:jetty:jetty:9.4.58:20250814:*:*:*:*:*:*"
+,                    "vid13": "cpe:2.3:a:mortbay_jetty:jetty:9.4.58:20250814:*:*:*:*:*:*"
           }
         }
 ,{
@@ -578,7 +579,7 @@
             "sha256": "7561b7a525364612966ff3823f8c62a81a3262742d455301f479273ef55570b8"
           },          "properties": {
 "license": "http:\/\/www.eclipse.org\/legal\/epl-v10.html, http:\/\/www.gnu.org\/licenses\/old-licenses\/lgpl-2.1.html",                    "id35": "pkg:maven\/ch.qos.logback\/logback-core@1.5.22"
-,                    "vid13": "cpe:2.3:a:qos:logback:1.5.22:*:*:*:*:*:*:*"
+,                    "vid14": "cpe:2.3:a:qos:logback:1.5.22:*:*:*:*:*:*:*"
           }
         }
 ,{
@@ -738,7 +739,7 @@
             "sha256": "826969b78d9ada327de6b7da0f176457d95614fa38c280326610f31a6b515c91"
           },          "properties": {
                     "id46": "pkg:maven\/org.clojure\/tools.logging@1.3.0"
-,                    "vid14": "cpe:2.3:a:alex_project:alex:1.3.0:*:*:*:*:*:*:*"
+,                    "vid15": "cpe:2.3:a:alex_project:alex:1.3.0:*:*:*:*:*:*:*"
           }
         }
 ,{
@@ -769,7 +770,7 @@
             "sha256": "213d146065ebf2cbfa8a9c06b4cdfe79f94c0af3f93c15d9e67c0e3af015067f"
           },          "properties": {
 "license": "http:\/\/www.apache.org\/licenses\/LICENSE-2.0, https:\/\/www.eclipse.org\/org\/documents\/epl-v10.php",                    "id48": "pkg:maven\/org.eclipse.jetty.websocket\/websocket-api@9.4.58.v20250814"
-,                    "vid15": "cpe:2.3:a:mortbay_jetty:jetty:9.4.58:20250814:*:*:*:*:*:*"
+,                    "vid16": "cpe:2.3:a:mortbay_jetty:jetty:9.4.58:20250814:*:*:*:*:*:*"
           }
         }
 ,{
@@ -785,9 +786,9 @@
             "sha256": "fdb8648fb1139ab001c8d5ebc4f3ab5baf007f48bd86ec2969c504ac3011f878"
           },          "properties": {
 "license": "http:\/\/www.apache.org\/licenses\/LICENSE-2.0, https:\/\/www.eclipse.org\/org\/documents\/epl-v10.php",                    "id49": "pkg:maven\/org.eclipse.jetty.websocket\/websocket-client@9.4.58.v20250814"
-,                    "vid16": "cpe:2.3:a:eclipse:jetty:9.4.58:20250814:*:*:*:*:*:*"
-,                    "vid17": "cpe:2.3:a:jetty:jetty:9.4.58:20250814:*:*:*:*:*:*"
-,                    "vid18": "cpe:2.3:a:mortbay_jetty:jetty:9.4.58:20250814:*:*:*:*:*:*"
+,                    "vid17": "cpe:2.3:a:eclipse:jetty:9.4.58:20250814:*:*:*:*:*:*"
+,                    "vid18": "cpe:2.3:a:jetty:jetty:9.4.58:20250814:*:*:*:*:*:*"
+,                    "vid19": "cpe:2.3:a:mortbay_jetty:jetty:9.4.58:20250814:*:*:*:*:*:*"
           }
         }
 ,{
@@ -803,10 +804,10 @@
             "sha256": "07c62b7ceaff2d7160aff98b912f28da9f2c66ed7adec972e39af5176afec1ae"
           },          "properties": {
 "license": "http:\/\/www.apache.org\/licenses\/LICENSE-2.0, https:\/\/www.eclipse.org\/org\/documents\/epl-v10.php",                    "id50": "pkg:maven\/org.eclipse.jetty.websocket\/websocket-common@9.4.58.v20250814"
-,                    "vid19": "cpe:2.3:a:eclipse:jetty:9.4.58:20250814:*:*:*:*:*:*"
-,                    "vid20": "cpe:2.3:a:jetty:jetty:9.4.58:20250814:*:*:*:*:*:*"
-,                    "vid21": "cpe:2.3:a:mortbay_jetty:jetty:9.4.58:20250814:*:*:*:*:*:*"
-,                    "vid22": "cpe:2.3:a:websocket-extensions_project:websocket-extensions:9.4.58:20250814:*:*:*:*:*:*"
+,                    "vid20": "cpe:2.3:a:eclipse:jetty:9.4.58:20250814:*:*:*:*:*:*"
+,                    "vid21": "cpe:2.3:a:jetty:jetty:9.4.58:20250814:*:*:*:*:*:*"
+,                    "vid22": "cpe:2.3:a:mortbay_jetty:jetty:9.4.58:20250814:*:*:*:*:*:*"
+,                    "vid23": "cpe:2.3:a:websocket-extensions_project:websocket-extensions:9.4.58:20250814:*:*:*:*:*:*"
           }
         }
       ],
