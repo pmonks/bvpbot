@@ -4,16 +4,16 @@
         <engineVersion>12.2.0</engineVersion>
         <dataSource>
             <name>NVD API Last Checked</name>
-            <timestamp>2026-04-21T06:54:26Z</timestamp>
+            <timestamp>2026-04-28T05:42:27Z</timestamp>
         </dataSource>
         <dataSource>
             <name>NVD API Last Modified</name>
-            <timestamp>2026-04-21T04:16:13Z</timestamp>
+            <timestamp>2026-04-28T04:16:29Z</timestamp>
         </dataSource>
     </scanInfo>
     <projectInfo>
-        <name>com.github.pmonks/bvpbot 1.0.20260421</name>
-        <reportDate>2026-04-21T06:54:35.988018087Z</reportDate>
+        <name>com.github.pmonks/bvpbot 1.0.20260428</name>
+        <reportDate>2026-04-28T05:42:36.834697590Z</reportDate>
         <credits>This product uses the NVD API but is not endorsed or certified by the NVD. This report contains data retrieved from the National Vulnerability Database: https://nvd.nist.gov, Github Advisory Database (via NPM Audit API): https://github.com/advisories/, and the RetireJS community.</credits>
     </projectInfo>
     <dependencies>
@@ -6553,6 +6553,51 @@ encoded data using Jackson abstractions (streaming API, data binding, tree model
             </identifiers>
             <vulnerabilities>
                 <vulnerability source="NVD">
+                    <name>CVE-2026-5795</name>
+                    <severity>HIGH</severity>
+                    <cvssV3>
+                        <baseScore>7.4</baseScore>
+                        <attackVector>NETWORK</attackVector>
+                        <attackComplexity>HIGH</attackComplexity>
+                        <privilegesRequired>NONE</privilegesRequired>
+                        <userInteraction>NONE</userInteraction>
+                        <scope>UNCHANGED</scope>
+                        <confidentialityImpact>HIGH</confidentialityImpact>
+                        <integrityImpact>HIGH</integrityImpact>
+                        <availabilityImpact>NONE</availabilityImpact>
+                        <baseSeverity>HIGH</baseSeverity>
+<exploitabilityScore>2.2</exploitabilityScore><impactScore>5.2</impactScore><version>3.1</version>                    </cvssV3>
+                    <cwes>
+<cwe>CWE-226</cwe><cwe>CWE-287</cwe>                    </cwes>
+                    <description>In Eclipse Jetty, the class JASPIAuthenticator initiates the authentication checks, which set two ThreadLocal variable.
+
+
+Upon returning from the initial checks, there are conditions that cause an early return from the JASPIAuthenticator code without clearing those ThreadLocals.
+
+
+A subsequent request using the same thread inherits the ThreadLocal values, leading to a broken access control and privilege escalation.</description>
+                    <references>
+                        <reference>
+                            <source>emo@eclipse.org</source>
+<url>https://github.com/jetty/jetty.project/security/advisories/GHSA-r7p8-xq5m-436chttps://</url><name>BROKEN_LINK</name>                        </reference>
+                        <reference>
+                            <source>emo@eclipse.org</source>
+<url>https://gitlab.eclipse.org/security/cve-assignment/-/issues/92</url><name>BROKEN_LINK</name>                        </reference>
+                    </references>
+                    <vulnerableSoftware>
+                        <software
+ versionStartIncluding="10.0.0" versionEndIncluding="10.0.26"                        >cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*</software>
+                        <software
+ versionStartIncluding="11.0.0" versionEndIncluding="11.0.26"                        >cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*</software>
+                        <software
+ versionStartIncluding="12.0.0" versionEndExcluding="12.0.34"                        >cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*</software>
+                        <software
+ versionStartIncluding="12.1.0" versionEndExcluding="12.1.8"                        >cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*</software>
+                        <software vulnerabilityIdMatched="true"
+ versionStartIncluding="9.4.0" versionEndIncluding="9.4.58"                        >cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*</software>
+                    </vulnerableSoftware>
+                </vulnerability>
+                <vulnerability source="NVD">
                     <name>CVE-2025-11143</name>
                     <severity>MEDIUM</severity>
                     <cvssV3>
@@ -8930,6 +8975,51 @@ encoded data using Jackson abstractions (streaming API, data binding, tree model
             </identifiers>
             <vulnerabilities>
                 <vulnerability source="NVD">
+                    <name>CVE-2026-5795</name>
+                    <severity>HIGH</severity>
+                    <cvssV3>
+                        <baseScore>7.4</baseScore>
+                        <attackVector>NETWORK</attackVector>
+                        <attackComplexity>HIGH</attackComplexity>
+                        <privilegesRequired>NONE</privilegesRequired>
+                        <userInteraction>NONE</userInteraction>
+                        <scope>UNCHANGED</scope>
+                        <confidentialityImpact>HIGH</confidentialityImpact>
+                        <integrityImpact>HIGH</integrityImpact>
+                        <availabilityImpact>NONE</availabilityImpact>
+                        <baseSeverity>HIGH</baseSeverity>
+<exploitabilityScore>2.2</exploitabilityScore><impactScore>5.2</impactScore><version>3.1</version>                    </cvssV3>
+                    <cwes>
+<cwe>CWE-226</cwe><cwe>CWE-287</cwe>                    </cwes>
+                    <description>In Eclipse Jetty, the class JASPIAuthenticator initiates the authentication checks, which set two ThreadLocal variable.
+
+
+Upon returning from the initial checks, there are conditions that cause an early return from the JASPIAuthenticator code without clearing those ThreadLocals.
+
+
+A subsequent request using the same thread inherits the ThreadLocal values, leading to a broken access control and privilege escalation.</description>
+                    <references>
+                        <reference>
+                            <source>emo@eclipse.org</source>
+<url>https://github.com/jetty/jetty.project/security/advisories/GHSA-r7p8-xq5m-436chttps://</url><name>BROKEN_LINK</name>                        </reference>
+                        <reference>
+                            <source>emo@eclipse.org</source>
+<url>https://gitlab.eclipse.org/security/cve-assignment/-/issues/92</url><name>BROKEN_LINK</name>                        </reference>
+                    </references>
+                    <vulnerableSoftware>
+                        <software
+ versionStartIncluding="10.0.0" versionEndIncluding="10.0.26"                        >cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*</software>
+                        <software
+ versionStartIncluding="11.0.0" versionEndIncluding="11.0.26"                        >cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*</software>
+                        <software
+ versionStartIncluding="12.0.0" versionEndExcluding="12.0.34"                        >cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*</software>
+                        <software
+ versionStartIncluding="12.1.0" versionEndExcluding="12.1.8"                        >cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*</software>
+                        <software vulnerabilityIdMatched="true"
+ versionStartIncluding="9.4.0" versionEndIncluding="9.4.58"                        >cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*</software>
+                    </vulnerableSoftware>
+                </vulnerability>
+                <vulnerability source="NVD">
                     <name>CVE-2025-11143</name>
                     <severity>MEDIUM</severity>
                     <cvssV3>
@@ -9198,6 +9288,51 @@ encoded data using Jackson abstractions (streaming API, data binding, tree model
                 </vulnerabilityIds>
             </identifiers>
             <vulnerabilities>
+                <vulnerability source="NVD">
+                    <name>CVE-2026-5795</name>
+                    <severity>HIGH</severity>
+                    <cvssV3>
+                        <baseScore>7.4</baseScore>
+                        <attackVector>NETWORK</attackVector>
+                        <attackComplexity>HIGH</attackComplexity>
+                        <privilegesRequired>NONE</privilegesRequired>
+                        <userInteraction>NONE</userInteraction>
+                        <scope>UNCHANGED</scope>
+                        <confidentialityImpact>HIGH</confidentialityImpact>
+                        <integrityImpact>HIGH</integrityImpact>
+                        <availabilityImpact>NONE</availabilityImpact>
+                        <baseSeverity>HIGH</baseSeverity>
+<exploitabilityScore>2.2</exploitabilityScore><impactScore>5.2</impactScore><version>3.1</version>                    </cvssV3>
+                    <cwes>
+<cwe>CWE-226</cwe><cwe>CWE-287</cwe>                    </cwes>
+                    <description>In Eclipse Jetty, the class JASPIAuthenticator initiates the authentication checks, which set two ThreadLocal variable.
+
+
+Upon returning from the initial checks, there are conditions that cause an early return from the JASPIAuthenticator code without clearing those ThreadLocals.
+
+
+A subsequent request using the same thread inherits the ThreadLocal values, leading to a broken access control and privilege escalation.</description>
+                    <references>
+                        <reference>
+                            <source>emo@eclipse.org</source>
+<url>https://github.com/jetty/jetty.project/security/advisories/GHSA-r7p8-xq5m-436chttps://</url><name>BROKEN_LINK</name>                        </reference>
+                        <reference>
+                            <source>emo@eclipse.org</source>
+<url>https://gitlab.eclipse.org/security/cve-assignment/-/issues/92</url><name>BROKEN_LINK</name>                        </reference>
+                    </references>
+                    <vulnerableSoftware>
+                        <software
+ versionStartIncluding="10.0.0" versionEndIncluding="10.0.26"                        >cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*</software>
+                        <software
+ versionStartIncluding="11.0.0" versionEndIncluding="11.0.26"                        >cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*</software>
+                        <software
+ versionStartIncluding="12.0.0" versionEndExcluding="12.0.34"                        >cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*</software>
+                        <software
+ versionStartIncluding="12.1.0" versionEndExcluding="12.1.8"                        >cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*</software>
+                        <software vulnerabilityIdMatched="true"
+ versionStartIncluding="9.4.0" versionEndIncluding="9.4.58"                        >cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*</software>
+                    </vulnerableSoftware>
+                </vulnerability>
                 <vulnerability source="NVD">
                     <name>CVE-2025-11143</name>
                     <severity>MEDIUM</severity>

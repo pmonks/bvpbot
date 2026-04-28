@@ -672,21 +672,21 @@ arising out of or in connection with the use of this tool, the analysis performe
 <a href="https://dependency-check.github.io/DependencyCheck/general/suppression.html" target="_blank">Suppressing false positives</a> |
 Getting Help: <a href="https://github.com/dependency-check/DependencyCheck/issues" target="_blank">github issues</a></h3>
 
-            <h2 class="">Project:&nbsp;com.github.pmonks/bvpbot 1.0.20260421</h2>
+            <h2 class="">Project:&nbsp;com.github.pmonks/bvpbot 1.0.20260428</h2>
             <div class="">
 
                 Scan Information (<a href="#" title="Click to toggle display" id="scanInformationToggle">show all</a>):<br/>
                     <ul class="indent">
                         <li><i>dependency-check version</i>: 12.2.0</li>
-                        <li><i>Report Generated On</i>: Tue, 21 Apr 2026 06:54:35 GMT</li>
+                        <li><i>Report Generated On</i>: Tue, 28 Apr 2026 05:42:36 GMT</li>
                         <li><i>Dependencies Scanned</i>:&nbsp;58 (50 unique)</li>
                         <li><i>Vulnerable Dependencies</i>:&nbsp;<span id="vulnerableCount">3</span></li>
-                        <li><i>Vulnerabilities Found</i>:&nbsp;3</li>
+                        <li><i>Vulnerabilities Found</i>:&nbsp;6</li>
                         <li><i>Vulnerabilities Suppressed</i>:&nbsp;0
                         </li>
                         <li class="scaninfo">...</li>
-                        <li class="scaninfo hidden"><i>NVD API Last Checked</i>: 2026-04-21T06:54:26Z</li>
-                        <li class="scaninfo hidden"><i>NVD API Last Modified</i>: 2026-04-21T04:16:13Z</li>
+                        <li class="scaninfo hidden"><i>NVD API Last Checked</i>: 2026-04-28T05:42:27Z</li>
+                        <li class="scaninfo hidden"><i>NVD API Last Modified</i>: 2026-04-28T04:16:29Z</li>
                     </ul><br/>
 <h2>Summary</h2>
                 <p><span id="tablecaption-plain">Summary of Vulnerable Dependencies </span><a href="#" title="Click to toggle display" id="vulnerabilityDisplayToggle">(click to show all)</a></p>
@@ -1083,8 +1083,8 @@ Getting Help: <a href="https://github.com/dependency-check/DependencyCheck/issue
                         <td data-sort-value="pkg:maven/org.eclipse.jetty/jetty-io@9.4.58.v20250814">
                                 pkg:maven/org.eclipse.jetty/jetty-io@9.4.58.v20250814
 </td>
-                                                                                <td data-sort-value="65.0">MEDIUM</td>
-                        <td>1</td>
+                                                                                <td data-sort-value="74.0">HIGH</td>
+                        <td>2</td>
                         <td data-sort-value="0">Highest</td>
                         <td>36</td>
                     </tr>
@@ -1307,8 +1307,8 @@ Getting Help: <a href="https://github.com/dependency-check/DependencyCheck/issue
                         <td data-sort-value="pkg:maven/org.eclipse.jetty.websocket/websocket-client@9.4.58.v20250814">
                                 pkg:maven/org.eclipse.jetty.websocket/websocket-client@9.4.58.v20250814
 </td>
-                                                                                <td data-sort-value="65.0">MEDIUM</td>
-                        <td>1</td>
+                                                                                <td data-sort-value="74.0">HIGH</td>
+                        <td>2</td>
                         <td data-sort-value="0">Highest</td>
                         <td>38</td>
                     </tr>
@@ -1326,8 +1326,8 @@ Getting Help: <a href="https://github.com/dependency-check/DependencyCheck/issue
                         <td data-sort-value="pkg:maven/org.eclipse.jetty.websocket/websocket-common@9.4.58.v20250814">
                                 pkg:maven/org.eclipse.jetty.websocket/websocket-common@9.4.58.v20250814
 </td>
-                                                                                <td data-sort-value="65.0">MEDIUM</td>
-                        <td>1</td>
+                                                                                <td data-sort-value="74.0">HIGH</td>
+                        <td>2</td>
                         <td data-sort-value="0">Highest</td>
                         <td>40</td>
                     </tr>
@@ -3423,6 +3423,33 @@ encoded data using Jackson abstractions (streaming API, data binding, tree model
                         </div>
                     <h4 id="header66" class="subsectionheader collapsed collaspablesubsection white">Published Vulnerabilities</h4>
                     <div id="content66" class="subsectioncontent standardsubsection">
+                                <p><b><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2026-5795">CVE-2026-5795</a></b>&nbsp;&nbsp;<button class="copybutton" title="Generate Suppression XML for this CVE for this file" data-display-name="jetty-io-9.4.58.v20250814.jar" data-sha1="e198dae4d91fa79d9c1e2e039870d49c487c45cf" data-pkgurl="pkg:maven/org.eclipse.jetty/jetty-io@9.4.58.v20250814" data-type-to-suppress="cve" data-id-to-suppress="CVE-2026-5795">suppress</button></p>
+                            <p>                            <pre>In Eclipse Jetty, the class JASPIAuthenticator initiates the authentication checks, which set two ThreadLocal variable.
+
+
+Upon returning from the initial checks, there are conditions that cause an early return from the JASPIAuthenticator code without clearing those ThreadLocals.
+
+
+A subsequent request using the same thread inherits the ThreadLocal values, leading to a broken access control and privilege escalation.</pre>
+
+                                CWE-226 Sensitive Information in Resource Not Removed Before Reuse, CWE-287 Improper Authentication<br/><br/>
+                            CVSSv3:
+                            <ul><li>Base Score: HIGH (7.4)</li>
+                                <li>Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N/E:2.2/RC:R/MAV:A</li></ul>
+                                <br/>References:<ul>
+                                    <li>emo@eclipse.org - <a target="_blank" href="https://github.com/jetty/jetty.project/security/advisories/GHSA-r7p8-xq5m-436chttps://">BROKEN_LINK</a></li>
+                                    <li>emo@eclipse.org - <a target="_blank" href="https://gitlab.eclipse.org/security/cve-assignment/-/issues/92">BROKEN_LINK</a></li>
+                                </ul>
+                            </p>
+                                    <p>Vulnerable Software &amp; Versions:&nbsp;(<a href="#" class="versionToggle" data-toggle=".vs1">show all</a>)<ul>
+                                        <li class="vs1"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 9.4.0; versions up to (including) 9.4.58</a></li>
+                                        <li class="vs1">...</li>
+                                        <li class="vs1 hidden"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 10.0.0; versions up to (including) 10.0.26</a></li>
+                                        <li class="vs1 hidden"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 11.0.0; versions up to (including) 11.0.26</a></li>
+                                        <li class="vs1 hidden"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 12.0.0; versions up to (excluding) 12.0.34</a></li>
+                                        <li class="vs1 hidden"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 12.1.0; versions up to (excluding) 12.1.8</a></li>
+                                        <li class="vs1 hidden"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 9.4.0; versions up to (including) 9.4.58</a></li>
+                                    </ul></p>
                                 <p><b><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2025-11143">CVE-2025-11143</a></b>&nbsp;&nbsp;<button class="copybutton" title="Generate Suppression XML for this CVE for this file" data-display-name="jetty-io-9.4.58.v20250814.jar" data-sha1="e198dae4d91fa79d9c1e2e039870d49c487c45cf" data-pkgurl="pkg:maven/org.eclipse.jetty/jetty-io@9.4.58.v20250814" data-type-to-suppress="cve" data-id-to-suppress="CVE-2025-11143">suppress</button></p>
                             <p>                            <pre>The Jetty URI parser has some key differences to other common parsers when evaluating invalid or unusual URIs.&nbsp;Differential parsing of URIs in systems using multiple components may result in security by-pass. For example a component that enforces a black list may interpret the URIs differently from one that generates a response.&nbsp;At the very least, differential parsing may divulge implementation details.</pre>
 
@@ -3434,14 +3461,14 @@ encoded data using Jackson abstractions (streaming API, data binding, tree model
                                     <li>emo@eclipse.org - <a target="_blank" href="https://github.com/jetty/jetty.project/security/advisories/GHSA-wjpw-4j6x-6rwh">VENDOR_ADVISORY</a></li>
                                 </ul>
                             </p>
-                                    <p>Vulnerable Software &amp; Versions:&nbsp;(<a href="#" class="versionToggle" data-toggle=".vs1">show all</a>)<ul>
-                                        <li class="vs1"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 9.4.0; versions up to (including) 9.4.58</a></li>
-                                        <li class="vs1">...</li>
-                                        <li class="vs1 hidden"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 10.0.0; versions up to (including) 10.0.26</a></li>
-                                        <li class="vs1 hidden"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 11.0.0; versions up to (including) 11.0.26</a></li>
-                                        <li class="vs1 hidden"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 12.0.0; versions up to (excluding) 12.0.31</a></li>
-                                        <li class="vs1 hidden"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 12.1.0; versions up to (excluding) 12.1.5</a></li>
-                                        <li class="vs1 hidden"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 9.4.0; versions up to (including) 9.4.58</a></li>
+                                    <p>Vulnerable Software &amp; Versions:&nbsp;(<a href="#" class="versionToggle" data-toggle=".vs2">show all</a>)<ul>
+                                        <li class="vs2"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 9.4.0; versions up to (including) 9.4.58</a></li>
+                                        <li class="vs2">...</li>
+                                        <li class="vs2 hidden"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 10.0.0; versions up to (including) 10.0.26</a></li>
+                                        <li class="vs2 hidden"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 11.0.0; versions up to (including) 11.0.26</a></li>
+                                        <li class="vs2 hidden"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 12.0.0; versions up to (excluding) 12.0.31</a></li>
+                                        <li class="vs2 hidden"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 12.1.0; versions up to (excluding) 12.1.5</a></li>
+                                        <li class="vs2 hidden"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 9.4.0; versions up to (including) 9.4.58</a></li>
                                     </ul></p>
                     </div>
                 </div>
@@ -4332,6 +4359,33 @@ encoded data using Jackson abstractions (streaming API, data binding, tree model
                         </div>
                     <h4 id="header104" class="subsectionheader collapsed collaspablesubsection white">Published Vulnerabilities</h4>
                     <div id="content104" class="subsectioncontent standardsubsection">
+                                <p><b><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2026-5795">CVE-2026-5795</a></b>&nbsp;&nbsp;<button class="copybutton" title="Generate Suppression XML for this CVE for this file" data-display-name="websocket-client-9.4.58.v20250814.jar" data-sha1="def27af0dc52086738483191761bd8edd08ff625" data-pkgurl="pkg:maven/org.eclipse.jetty.websocket/websocket-client@9.4.58.v20250814" data-type-to-suppress="cve" data-id-to-suppress="CVE-2026-5795">suppress</button></p>
+                            <p>                            <pre>In Eclipse Jetty, the class JASPIAuthenticator initiates the authentication checks, which set two ThreadLocal variable.
+
+
+Upon returning from the initial checks, there are conditions that cause an early return from the JASPIAuthenticator code without clearing those ThreadLocals.
+
+
+A subsequent request using the same thread inherits the ThreadLocal values, leading to a broken access control and privilege escalation.</pre>
+
+                                CWE-226 Sensitive Information in Resource Not Removed Before Reuse, CWE-287 Improper Authentication<br/><br/>
+                            CVSSv3:
+                            <ul><li>Base Score: HIGH (7.4)</li>
+                                <li>Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N/E:2.2/RC:R/MAV:A</li></ul>
+                                <br/>References:<ul>
+                                    <li>emo@eclipse.org - <a target="_blank" href="https://github.com/jetty/jetty.project/security/advisories/GHSA-r7p8-xq5m-436chttps://">BROKEN_LINK</a></li>
+                                    <li>emo@eclipse.org - <a target="_blank" href="https://gitlab.eclipse.org/security/cve-assignment/-/issues/92">BROKEN_LINK</a></li>
+                                </ul>
+                            </p>
+                                    <p>Vulnerable Software &amp; Versions:&nbsp;(<a href="#" class="versionToggle" data-toggle=".vs3">show all</a>)<ul>
+                                        <li class="vs3"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 9.4.0; versions up to (including) 9.4.58</a></li>
+                                        <li class="vs3">...</li>
+                                        <li class="vs3 hidden"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 10.0.0; versions up to (including) 10.0.26</a></li>
+                                        <li class="vs3 hidden"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 11.0.0; versions up to (including) 11.0.26</a></li>
+                                        <li class="vs3 hidden"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 12.0.0; versions up to (excluding) 12.0.34</a></li>
+                                        <li class="vs3 hidden"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 12.1.0; versions up to (excluding) 12.1.8</a></li>
+                                        <li class="vs3 hidden"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 9.4.0; versions up to (including) 9.4.58</a></li>
+                                    </ul></p>
                                 <p><b><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2025-11143">CVE-2025-11143</a></b>&nbsp;&nbsp;<button class="copybutton" title="Generate Suppression XML for this CVE for this file" data-display-name="websocket-client-9.4.58.v20250814.jar" data-sha1="def27af0dc52086738483191761bd8edd08ff625" data-pkgurl="pkg:maven/org.eclipse.jetty.websocket/websocket-client@9.4.58.v20250814" data-type-to-suppress="cve" data-id-to-suppress="CVE-2025-11143">suppress</button></p>
                             <p>                            <pre>The Jetty URI parser has some key differences to other common parsers when evaluating invalid or unusual URIs.&nbsp;Differential parsing of URIs in systems using multiple components may result in security by-pass. For example a component that enforces a black list may interpret the URIs differently from one that generates a response.&nbsp;At the very least, differential parsing may divulge implementation details.</pre>
 
@@ -4343,14 +4397,14 @@ encoded data using Jackson abstractions (streaming API, data binding, tree model
                                     <li>emo@eclipse.org - <a target="_blank" href="https://github.com/jetty/jetty.project/security/advisories/GHSA-wjpw-4j6x-6rwh">VENDOR_ADVISORY</a></li>
                                 </ul>
                             </p>
-                                    <p>Vulnerable Software &amp; Versions:&nbsp;(<a href="#" class="versionToggle" data-toggle=".vs2">show all</a>)<ul>
-                                        <li class="vs2"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 9.4.0; versions up to (including) 9.4.58</a></li>
-                                        <li class="vs2">...</li>
-                                        <li class="vs2 hidden"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 10.0.0; versions up to (including) 10.0.26</a></li>
-                                        <li class="vs2 hidden"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 11.0.0; versions up to (including) 11.0.26</a></li>
-                                        <li class="vs2 hidden"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 12.0.0; versions up to (excluding) 12.0.31</a></li>
-                                        <li class="vs2 hidden"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 12.1.0; versions up to (excluding) 12.1.5</a></li>
-                                        <li class="vs2 hidden"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 9.4.0; versions up to (including) 9.4.58</a></li>
+                                    <p>Vulnerable Software &amp; Versions:&nbsp;(<a href="#" class="versionToggle" data-toggle=".vs4">show all</a>)<ul>
+                                        <li class="vs4"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 9.4.0; versions up to (including) 9.4.58</a></li>
+                                        <li class="vs4">...</li>
+                                        <li class="vs4 hidden"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 10.0.0; versions up to (including) 10.0.26</a></li>
+                                        <li class="vs4 hidden"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 11.0.0; versions up to (including) 11.0.26</a></li>
+                                        <li class="vs4 hidden"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 12.0.0; versions up to (excluding) 12.0.31</a></li>
+                                        <li class="vs4 hidden"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 12.1.0; versions up to (excluding) 12.1.5</a></li>
+                                        <li class="vs4 hidden"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 9.4.0; versions up to (including) 9.4.58</a></li>
                                     </ul></p>
                     </div>
                 </div>
@@ -4436,6 +4490,33 @@ encoded data using Jackson abstractions (streaming API, data binding, tree model
                         </div>
                     <h4 id="header107" class="subsectionheader collapsed collaspablesubsection white">Published Vulnerabilities</h4>
                     <div id="content107" class="subsectioncontent standardsubsection">
+                                <p><b><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2026-5795">CVE-2026-5795</a></b>&nbsp;&nbsp;<button class="copybutton" title="Generate Suppression XML for this CVE for this file" data-display-name="websocket-common-9.4.58.v20250814.jar" data-sha1="35d5d3b947643920cfcf82f02d0c139a7c338c5a" data-pkgurl="pkg:maven/org.eclipse.jetty.websocket/websocket-common@9.4.58.v20250814" data-type-to-suppress="cve" data-id-to-suppress="CVE-2026-5795">suppress</button></p>
+                            <p>                            <pre>In Eclipse Jetty, the class JASPIAuthenticator initiates the authentication checks, which set two ThreadLocal variable.
+
+
+Upon returning from the initial checks, there are conditions that cause an early return from the JASPIAuthenticator code without clearing those ThreadLocals.
+
+
+A subsequent request using the same thread inherits the ThreadLocal values, leading to a broken access control and privilege escalation.</pre>
+
+                                CWE-226 Sensitive Information in Resource Not Removed Before Reuse, CWE-287 Improper Authentication<br/><br/>
+                            CVSSv3:
+                            <ul><li>Base Score: HIGH (7.4)</li>
+                                <li>Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N/E:2.2/RC:R/MAV:A</li></ul>
+                                <br/>References:<ul>
+                                    <li>emo@eclipse.org - <a target="_blank" href="https://github.com/jetty/jetty.project/security/advisories/GHSA-r7p8-xq5m-436chttps://">BROKEN_LINK</a></li>
+                                    <li>emo@eclipse.org - <a target="_blank" href="https://gitlab.eclipse.org/security/cve-assignment/-/issues/92">BROKEN_LINK</a></li>
+                                </ul>
+                            </p>
+                                    <p>Vulnerable Software &amp; Versions:&nbsp;(<a href="#" class="versionToggle" data-toggle=".vs5">show all</a>)<ul>
+                                        <li class="vs5"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 9.4.0; versions up to (including) 9.4.58</a></li>
+                                        <li class="vs5">...</li>
+                                        <li class="vs5 hidden"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 10.0.0; versions up to (including) 10.0.26</a></li>
+                                        <li class="vs5 hidden"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 11.0.0; versions up to (including) 11.0.26</a></li>
+                                        <li class="vs5 hidden"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 12.0.0; versions up to (excluding) 12.0.34</a></li>
+                                        <li class="vs5 hidden"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 12.1.0; versions up to (excluding) 12.1.8</a></li>
+                                        <li class="vs5 hidden"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 9.4.0; versions up to (including) 9.4.58</a></li>
+                                    </ul></p>
                                 <p><b><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2025-11143">CVE-2025-11143</a></b>&nbsp;&nbsp;<button class="copybutton" title="Generate Suppression XML for this CVE for this file" data-display-name="websocket-common-9.4.58.v20250814.jar" data-sha1="35d5d3b947643920cfcf82f02d0c139a7c338c5a" data-pkgurl="pkg:maven/org.eclipse.jetty.websocket/websocket-common@9.4.58.v20250814" data-type-to-suppress="cve" data-id-to-suppress="CVE-2025-11143">suppress</button></p>
                             <p>                            <pre>The Jetty URI parser has some key differences to other common parsers when evaluating invalid or unusual URIs.&nbsp;Differential parsing of URIs in systems using multiple components may result in security by-pass. For example a component that enforces a black list may interpret the URIs differently from one that generates a response.&nbsp;At the very least, differential parsing may divulge implementation details.</pre>
 
@@ -4447,14 +4528,14 @@ encoded data using Jackson abstractions (streaming API, data binding, tree model
                                     <li>emo@eclipse.org - <a target="_blank" href="https://github.com/jetty/jetty.project/security/advisories/GHSA-wjpw-4j6x-6rwh">VENDOR_ADVISORY</a></li>
                                 </ul>
                             </p>
-                                    <p>Vulnerable Software &amp; Versions:&nbsp;(<a href="#" class="versionToggle" data-toggle=".vs3">show all</a>)<ul>
-                                        <li class="vs3"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 9.4.0; versions up to (including) 9.4.58</a></li>
-                                        <li class="vs3">...</li>
-                                        <li class="vs3 hidden"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 10.0.0; versions up to (including) 10.0.26</a></li>
-                                        <li class="vs3 hidden"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 11.0.0; versions up to (including) 11.0.26</a></li>
-                                        <li class="vs3 hidden"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 12.0.0; versions up to (excluding) 12.0.31</a></li>
-                                        <li class="vs3 hidden"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 12.1.0; versions up to (excluding) 12.1.5</a></li>
-                                        <li class="vs3 hidden"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 9.4.0; versions up to (including) 9.4.58</a></li>
+                                    <p>Vulnerable Software &amp; Versions:&nbsp;(<a href="#" class="versionToggle" data-toggle=".vs6">show all</a>)<ul>
+                                        <li class="vs6"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 9.4.0; versions up to (including) 9.4.58</a></li>
+                                        <li class="vs6">...</li>
+                                        <li class="vs6 hidden"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 10.0.0; versions up to (including) 10.0.26</a></li>
+                                        <li class="vs6 hidden"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 11.0.0; versions up to (including) 11.0.26</a></li>
+                                        <li class="vs6 hidden"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 12.0.0; versions up to (excluding) 12.0.31</a></li>
+                                        <li class="vs6 hidden"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 12.1.0; versions up to (excluding) 12.1.5</a></li>
+                                        <li class="vs6 hidden"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 9.4.0; versions up to (including) 9.4.58</a></li>
                                     </ul></p>
                     </div>
                 </div>

@@ -22,14 +22,51 @@
                         "url": "https://github.com/dependency-check/DependencyCheck/"
         },
 
-        "end_time": "2026-04-21T06:54:35",
-                "start_time": "2026-04-21T06:54:35",
+        "end_time": "2026-04-28T05:42:36",
+                "start_time": "2026-04-28T05:42:36",
                 "status":  "success"  ,
                 "type": "dependency_scanning"
 
                                     },
     "vulnerabilities": [
                                                             {
+                        "id": "CVE-2026-5795",
+                        "identifiers": [
+                            {
+                                "type": "NVD"
+                                    , "name": "CVE-2026-5795"
+                                , "value": "e198dae4d91fa79d9c1e2e039870d49c487c45cf"
+
+                                                                    , "url": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2026-5795"
+                            }
+                        ],
+                        "location": {
+                            "file": "\/home\/runner\/.m2\/repository\/org\/eclipse\/jetty\/jetty-io\/9.4.58.v20250814\/jetty-io-9.4.58.v20250814.jar",
+                            "dependency": {
+                                "package": {
+                                    "name": "org.eclipse.jetty:jetty-io"
+                                },
+                                "version": "9.4.58.v20250814"
+                                                                                                                                                                                                                                                                                                                                                                                                                            }
+                        },
+
+                                                "name": "CVE-2026-5795",
+                        "description": "In Eclipse Jetty, the class JASPIAuthenticator initiates the authentication checks, which set two ThreadLocal variable.\n\n\nUpon returning from the initial checks, there are conditions that cause an early return from the JASPIAuthenticator code without clearing those ThreadLocals.\n\n\nA subsequent request using the same thread inherits the ThreadLocal values, leading to a broken access control and privilege escalation.",
+                        "severity": "High",
+                                                "links": [
+                                    {
+                                                                                "name": "BROKEN_LINK",
+                                        "url": "https:\/\/github.com\/jetty\/jetty.project\/security\/advisories\/GHSA-r7p8-xq5m-436chttps:\/\/"
+                                    }
+                                        ,
+                                    {
+                                                                                "name": "BROKEN_LINK",
+                                        "url": "https:\/\/gitlab.eclipse.org\/security\/cve-assignment\/-\/issues\/92"
+                                    }
+                        ]
+                                                                                            }
+                                        ,
+                                        {
                         "id": "CVE-2025-11143",
                         "identifiers": [
                             {
@@ -62,6 +99,43 @@
                                                                                             }
                                         ,
                                         {
+                        "id": "CVE-2026-5795",
+                        "identifiers": [
+                            {
+                                "type": "NVD"
+                                    , "name": "CVE-2026-5795"
+                                , "value": "def27af0dc52086738483191761bd8edd08ff625"
+
+                                                                    , "url": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2026-5795"
+                            }
+                        ],
+                        "location": {
+                            "file": "\/home\/runner\/.m2\/repository\/org\/eclipse\/jetty\/websocket\/websocket-client\/9.4.58.v20250814\/websocket-client-9.4.58.v20250814.jar",
+                            "dependency": {
+                                "package": {
+                                    "name": "org.eclipse.jetty.websocket:websocket-client"
+                                },
+                                "version": "9.4.58.v20250814"
+                                                                                                                                                                                                                                                                                                                                                                                                                            }
+                        },
+
+                                                "name": "CVE-2026-5795",
+                        "description": "In Eclipse Jetty, the class JASPIAuthenticator initiates the authentication checks, which set two ThreadLocal variable.\n\n\nUpon returning from the initial checks, there are conditions that cause an early return from the JASPIAuthenticator code without clearing those ThreadLocals.\n\n\nA subsequent request using the same thread inherits the ThreadLocal values, leading to a broken access control and privilege escalation.",
+                        "severity": "High",
+                                                "links": [
+                                    {
+                                                                                "name": "BROKEN_LINK",
+                                        "url": "https:\/\/github.com\/jetty\/jetty.project\/security\/advisories\/GHSA-r7p8-xq5m-436chttps:\/\/"
+                                    }
+                                        ,
+                                    {
+                                                                                "name": "BROKEN_LINK",
+                                        "url": "https:\/\/gitlab.eclipse.org\/security\/cve-assignment\/-\/issues\/92"
+                                    }
+                        ]
+                                                                                            }
+                                        ,
+                                        {
                         "id": "CVE-2025-11143",
                         "identifiers": [
                             {
@@ -89,6 +163,43 @@
                                     {
                                                                                 "name": "VENDOR_ADVISORY",
                                         "url": "https:\/\/github.com\/jetty\/jetty.project\/security\/advisories\/GHSA-wjpw-4j6x-6rwh"
+                                    }
+                        ]
+                                                                                            }
+                                        ,
+                                        {
+                        "id": "CVE-2026-5795",
+                        "identifiers": [
+                            {
+                                "type": "NVD"
+                                    , "name": "CVE-2026-5795"
+                                , "value": "35d5d3b947643920cfcf82f02d0c139a7c338c5a"
+
+                                                                    , "url": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2026-5795"
+                            }
+                        ],
+                        "location": {
+                            "file": "\/home\/runner\/.m2\/repository\/org\/eclipse\/jetty\/websocket\/websocket-common\/9.4.58.v20250814\/websocket-common-9.4.58.v20250814.jar",
+                            "dependency": {
+                                "package": {
+                                    "name": "org.eclipse.jetty.websocket:websocket-common"
+                                },
+                                "version": "9.4.58.v20250814"
+                                                                                                                                                                                                                                                                                                                                                                                                                            }
+                        },
+
+                                                "name": "CVE-2026-5795",
+                        "description": "In Eclipse Jetty, the class JASPIAuthenticator initiates the authentication checks, which set two ThreadLocal variable.\n\n\nUpon returning from the initial checks, there are conditions that cause an early return from the JASPIAuthenticator code without clearing those ThreadLocals.\n\n\nA subsequent request using the same thread inherits the ThreadLocal values, leading to a broken access control and privilege escalation.",
+                        "severity": "High",
+                                                "links": [
+                                    {
+                                                                                "name": "BROKEN_LINK",
+                                        "url": "https:\/\/github.com\/jetty\/jetty.project\/security\/advisories\/GHSA-r7p8-xq5m-436chttps:\/\/"
+                                    }
+                                        ,
+                                    {
+                                                                                "name": "BROKEN_LINK",
+                                        "url": "https:\/\/gitlab.eclipse.org\/security\/cve-assignment\/-\/issues\/92"
                                     }
                         ]
                                                                                             }

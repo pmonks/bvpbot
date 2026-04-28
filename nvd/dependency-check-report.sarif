@@ -35,6 +35,32 @@
                     "cvssv3_baseSeverity": "MEDIUM",
 "cvssv3_exploitabilityScore": "3.9","cvssv3_impactScore": "2.5","cvssv3_version": "_3_1",                "source": "NVD"
               }
+            },{
+              "id": "CVE-2026-5795",
+              "shortDescription": {
+                 "text": "high severity - CVE-2026-5795 Sensitive Information in Resource Not Removed Before Reuse vulnerability in pkg:maven\/org.eclipse.jetty\/jetty-io@9.4.58.v20250814"
+              },
+              "fullDescription": {
+                "text": "In Eclipse Jetty, the class JASPIAuthenticator initiates the authentication checks, which set two ThreadLocal variable.\n\n\nUpon returning from the initial checks, there are conditions that cause an early return from the JASPIAuthenticator code without clearing those ThreadLocals.\n\n\nA subsequent request using the same thread inherits the ThreadLocal values, leading to a broken access control and privilege escalation."
+              },
+              "help": {
+                "text": "",
+                "markdown": "For more information see [CVE-2026-5795](https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2026-5795).\n\n\nIf this is a false positive - consider using the HTML report to generate a suppression file.\nFor more information see [How dependency-check works](https://dependency-check.github.io/DependencyCheck/general/internals.html),\n[How to read the HTML report](https://dependency-check.github.io/DependencyCheck/general/thereport.html), and\n[Suppressing false positives](https://dependency-check.github.io/DependencyCheck/general/suppression.html)."
+              },
+              "properties": {
+                    "cvssv3_baseScore": 7.4,
+                    "security-severity": "7.4",
+                    "cvssv3_attackVector": "NETWORK",
+                    "cvssv3_attackComplexity": "HIGH",
+                    "cvssv3_privilegesRequired": "NONE",
+                    "cvssv3_userInteraction": "NONE",
+                    "cvssv3_scope": "UNCHANGED",
+                    "cvssv3_confidentialityImpact": "HIGH",
+                    "cvssv3_integrityImpact": "HIGH",
+                    "cvssv3_availabilityImpact": "NONE",
+                    "cvssv3_baseSeverity": "HIGH",
+"cvssv3_exploitabilityScore": "2.2","cvssv3_impactScore": "5.2","cvssv3_version": "_3_1",                "source": "NVD"
+              }
             }          ],
         "properties": {
           "disclaimer": "Dependency-Check is an open source tool performing a best effort analysis of 3rd party dependencies; false positives and false negatives may exist in the analysis performed by the tool. Use of the tool and the reporting provided constitutes acceptance for use in an AS IS condition, and there are NO warranties, implied or otherwise, with regard to the analysis or its use. Any use of the tool and the reporting provided is at the user's risk. In no event shall the copyright holder or OWASP be held liable for any damages whatsoever arising out of or in connection with the use of this tool, the analysis performed, or the resulting report.",
@@ -43,8 +69,8 @@
           "npm": "This report may contain data retrieved from the the Github Advisory Database (via NPM Audit API): https://github.com/advisories/",
           "retirejs": "This report may contain data retrieved from the RetireJS community: https://retirejs.github.io/retire.js/",
           "ossindex": "This report may contain data retrieved from the Sonatype OSS Index: https://ossindex.sonatype.org"
-            ,"NVD API Last Checked": "2026-04-21T06:54:26Z"
-            ,"NVD API Last Modified": "2026-04-21T04:16:13Z"
+            ,"NVD API Last Checked": "2026-04-28T05:42:27Z"
+            ,"NVD API Last Modified": "2026-04-28T04:16:29Z"
           }
         }
       },
@@ -813,13 +839,13 @@
       ],
       "results": [
  {
-          "ruleId": "CVE-2025-11143",
+          "ruleId": "CVE-2026-5795",
           "level": "warning",
           "message": {
-            "text": "CVE-2025-11143 - The Jetty URI parser has some key differences to other common parsers when evaluating invalid or unusual URIs.\u00A0Differential parsing of URIs in systems using multiple components may result in security by-pass. For example a component that enforces a black list may interpret the URIs differently from one that generates a response.\u00A0At the very least, differential parsing may divulge implementation details."
+            "text": "CVE-2026-5795 - In Eclipse Jetty, the class JASPIAuthenticator initiates the authentication checks, which set two ThreadLocal variable.\n\n\nUpon returning from the initial checks, there are conditions that cause an early return from the JASPIAuthenticator code without clearing those ThreadLocals.\n\n\nA subsequent request using the same thread inherits the ThreadLocal values, leading to a broken access control and privilege escalation."
           },
           "partialFingerprints": {
-            "vulnerabilityHash": "68501c54bf242f80957e58b1f6c873ed"
+            "vulnerabilityHash": "c6ab9bee572eb1de94cfdc22cf1d5e1e"
           },
           "locations": [
             {
@@ -850,6 +876,31 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
+                  "uri": "file://\/home\/runner\/.m2\/repository\/org\/eclipse\/jetty\/jetty-io\/9.4.58.v20250814\/jetty-io-9.4.58.v20250814.jar"
+                  ,"index": 30
+                }
+              }
+                ,"logicalLocations": [
+                    {
+                    "fullyQualifiedName": "pkg:maven\/org.eclipse.jetty\/jetty-io@9.4.58.v20250814"
+                    }
+                ]
+              
+            }
+          ]
+          }, {
+          "ruleId": "CVE-2026-5795",
+          "level": "warning",
+          "message": {
+            "text": "CVE-2026-5795 - In Eclipse Jetty, the class JASPIAuthenticator initiates the authentication checks, which set two ThreadLocal variable.\n\n\nUpon returning from the initial checks, there are conditions that cause an early return from the JASPIAuthenticator code without clearing those ThreadLocals.\n\n\nA subsequent request using the same thread inherits the ThreadLocal values, leading to a broken access control and privilege escalation."
+          },
+          "partialFingerprints": {
+            "vulnerabilityHash": "c6ab9bee572eb1de94cfdc22cf1d5e1e"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
                   "uri": "file://\/home\/runner\/.m2\/repository\/org\/eclipse\/jetty\/websocket\/websocket-client\/9.4.58.v20250814\/websocket-client-9.4.58.v20250814.jar"
                   ,"index": 48
                 }
@@ -857,6 +908,56 @@
                 ,"logicalLocations": [
                     {
                     "fullyQualifiedName": "pkg:maven\/org.eclipse.jetty.websocket\/websocket-client@9.4.58.v20250814"
+                    }
+                ]
+              
+            }
+          ]
+          }, {
+          "ruleId": "CVE-2025-11143",
+          "level": "warning",
+          "message": {
+            "text": "CVE-2025-11143 - The Jetty URI parser has some key differences to other common parsers when evaluating invalid or unusual URIs.\u00A0Differential parsing of URIs in systems using multiple components may result in security by-pass. For example a component that enforces a black list may interpret the URIs differently from one that generates a response.\u00A0At the very least, differential parsing may divulge implementation details."
+          },
+          "partialFingerprints": {
+            "vulnerabilityHash": "68501c54bf242f80957e58b1f6c873ed"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file://\/home\/runner\/.m2\/repository\/org\/eclipse\/jetty\/websocket\/websocket-client\/9.4.58.v20250814\/websocket-client-9.4.58.v20250814.jar"
+                  ,"index": 48
+                }
+              }
+                ,"logicalLocations": [
+                    {
+                    "fullyQualifiedName": "pkg:maven\/org.eclipse.jetty.websocket\/websocket-client@9.4.58.v20250814"
+                    }
+                ]
+              
+            }
+          ]
+          }, {
+          "ruleId": "CVE-2026-5795",
+          "level": "warning",
+          "message": {
+            "text": "CVE-2026-5795 - In Eclipse Jetty, the class JASPIAuthenticator initiates the authentication checks, which set two ThreadLocal variable.\n\n\nUpon returning from the initial checks, there are conditions that cause an early return from the JASPIAuthenticator code without clearing those ThreadLocals.\n\n\nA subsequent request using the same thread inherits the ThreadLocal values, leading to a broken access control and privilege escalation."
+          },
+          "partialFingerprints": {
+            "vulnerabilityHash": "c6ab9bee572eb1de94cfdc22cf1d5e1e"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file://\/home\/runner\/.m2\/repository\/org\/eclipse\/jetty\/websocket\/websocket-common\/9.4.58.v20250814\/websocket-common-9.4.58.v20250814.jar"
+                  ,"index": 49
+                }
+              }
+                ,"logicalLocations": [
+                    {
+                    "fullyQualifiedName": "pkg:maven\/org.eclipse.jetty.websocket\/websocket-common@9.4.58.v20250814"
                     }
                 ]
               
