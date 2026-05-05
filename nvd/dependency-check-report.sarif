@@ -61,6 +61,32 @@
                     "cvssv3_baseSeverity": "HIGH",
 "cvssv3_exploitabilityScore": "2.2","cvssv3_impactScore": "5.2","cvssv3_version": "_3_1",                "source": "NVD"
               }
+            },{
+              "id": "CVE-2026-2332",
+              "shortDescription": {
+                 "text": "critical severity - CVE-2026-2332 Inconsistent Interpretation of HTTP Requests ('HTTP Request\/Response Smuggling') vulnerability in pkg:maven\/org.eclipse.jetty\/jetty-io@9.4.58.v20250814"
+              },
+              "fullDescription": {
+                "text": "In Eclipse Jetty, the HTTP\/1.1 parser is vulnerable to request smuggling when chunk extensions are used, similar to the \"funky chunks\" techniques outlined here:\n  *  https:\/\/w4ke.info\/2025\/06\/18\/funky-chunks.html\n\n  *  https:\/\/w4ke.info\/2025\/10\/29\/funky-chunks-2.html\n\n\nJetty terminates chunk extension parsing at\u00A0\\r\\n\u00A0inside quoted strings instead of treating this as an error.\n\n\nPOST \/ HTTP\/1.1\nHost: localhost\nTransfer-Encoding: chunked\n\n1;ext=\"val\nX\n0\n\nGET \/smuggled HTTP\/1.1\n...\n\n\n\n\n\nNote how the chunk extension does not close the double quotes, and it is able to inject a smuggled request."
+              },
+              "help": {
+                "text": "",
+                "markdown": "For more information see [CVE-2026-2332](https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2026-2332).\n\n\nIf this is a false positive - consider using the HTML report to generate a suppression file.\nFor more information see [How dependency-check works](https://dependency-check.github.io/DependencyCheck/general/internals.html),\n[How to read the HTML report](https://dependency-check.github.io/DependencyCheck/general/thereport.html), and\n[Suppressing false positives](https://dependency-check.github.io/DependencyCheck/general/suppression.html)."
+              },
+              "properties": {
+                    "cvssv3_baseScore": 9.1,
+                    "security-severity": "9.1",
+                    "cvssv3_attackVector": "NETWORK",
+                    "cvssv3_attackComplexity": "LOW",
+                    "cvssv3_privilegesRequired": "NONE",
+                    "cvssv3_userInteraction": "NONE",
+                    "cvssv3_scope": "UNCHANGED",
+                    "cvssv3_confidentialityImpact": "HIGH",
+                    "cvssv3_integrityImpact": "HIGH",
+                    "cvssv3_availabilityImpact": "NONE",
+                    "cvssv3_baseSeverity": "CRITICAL",
+"cvssv3_exploitabilityScore": "3.9","cvssv3_impactScore": "5.2","cvssv3_version": "_3_1",                "source": "NVD"
+              }
             }          ],
         "properties": {
           "disclaimer": "Dependency-Check is an open source tool performing a best effort analysis of 3rd party dependencies; false positives and false negatives may exist in the analysis performed by the tool. Use of the tool and the reporting provided constitutes acceptance for use in an AS IS condition, and there are NO warranties, implied or otherwise, with regard to the analysis or its use. Any use of the tool and the reporting provided is at the user's risk. In no event shall the copyright holder or OWASP be held liable for any damages whatsoever arising out of or in connection with the use of this tool, the analysis performed, or the resulting report.",
@@ -69,8 +95,8 @@
           "npm": "This report may contain data retrieved from the the Github Advisory Database (via NPM Audit API): https://github.com/advisories/",
           "retirejs": "This report may contain data retrieved from the RetireJS community: https://retirejs.github.io/retire.js/",
           "ossindex": "This report may contain data retrieved from the Sonatype OSS Index: https://ossindex.sonatype.org"
-            ,"NVD API Last Checked": "2026-04-28T05:42:27Z"
-            ,"NVD API Last Modified": "2026-04-28T04:16:29Z"
+            ,"NVD API Last Checked": "2026-05-05T05:39:10Z"
+            ,"NVD API Last Modified": "2026-05-05T05:16:01Z"
           }
         }
       },
@@ -839,6 +865,31 @@
       ],
       "results": [
  {
+          "ruleId": "CVE-2026-2332",
+          "level": "warning",
+          "message": {
+            "text": "CVE-2026-2332 - In Eclipse Jetty, the HTTP\/1.1 parser is vulnerable to request smuggling when chunk extensions are used, similar to the \"funky chunks\" techniques outlined here:\n  *  https:\/\/w4ke.info\/2025\/06\/18\/funky-chunks.html\n\n  *  https:\/\/w4ke.info\/2025\/10\/29\/funky-chunks-2.html\n\n\nJetty terminates chunk extension parsing at\u00A0\\r\\n\u00A0inside quoted strings instead of treating this as an error.\n\n\nPOST \/ HTTP\/1.1\nHost: localhost\nTransfer-Encoding: chunked\n\n1;ext=\"val\nX\n0\n\nGET \/smuggled HTTP\/1.1\n...\n\n\n\n\n\nNote how the chunk extension does not close the double quotes, and it is able to inject a smuggled request."
+          },
+          "partialFingerprints": {
+            "vulnerabilityHash": "5228c27a5d8f5f46f95cc3c163dff77a"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file://\/home\/runner\/.m2\/repository\/org\/eclipse\/jetty\/jetty-io\/9.4.58.v20250814\/jetty-io-9.4.58.v20250814.jar"
+                  ,"index": 30
+                }
+              }
+                ,"logicalLocations": [
+                    {
+                    "fullyQualifiedName": "pkg:maven\/org.eclipse.jetty\/jetty-io@9.4.58.v20250814"
+                    }
+                ]
+              
+            }
+          ]
+          }, {
           "ruleId": "CVE-2026-5795",
           "level": "warning",
           "message": {
@@ -889,6 +940,31 @@
             }
           ]
           }, {
+          "ruleId": "CVE-2026-2332",
+          "level": "warning",
+          "message": {
+            "text": "CVE-2026-2332 - In Eclipse Jetty, the HTTP\/1.1 parser is vulnerable to request smuggling when chunk extensions are used, similar to the \"funky chunks\" techniques outlined here:\n  *  https:\/\/w4ke.info\/2025\/06\/18\/funky-chunks.html\n\n  *  https:\/\/w4ke.info\/2025\/10\/29\/funky-chunks-2.html\n\n\nJetty terminates chunk extension parsing at\u00A0\\r\\n\u00A0inside quoted strings instead of treating this as an error.\n\n\nPOST \/ HTTP\/1.1\nHost: localhost\nTransfer-Encoding: chunked\n\n1;ext=\"val\nX\n0\n\nGET \/smuggled HTTP\/1.1\n...\n\n\n\n\n\nNote how the chunk extension does not close the double quotes, and it is able to inject a smuggled request."
+          },
+          "partialFingerprints": {
+            "vulnerabilityHash": "5228c27a5d8f5f46f95cc3c163dff77a"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file://\/home\/runner\/.m2\/repository\/org\/eclipse\/jetty\/websocket\/websocket-client\/9.4.58.v20250814\/websocket-client-9.4.58.v20250814.jar"
+                  ,"index": 48
+                }
+              }
+                ,"logicalLocations": [
+                    {
+                    "fullyQualifiedName": "pkg:maven\/org.eclipse.jetty.websocket\/websocket-client@9.4.58.v20250814"
+                    }
+                ]
+              
+            }
+          ]
+          }, {
           "ruleId": "CVE-2026-5795",
           "level": "warning",
           "message": {
@@ -933,6 +1009,31 @@
                 ,"logicalLocations": [
                     {
                     "fullyQualifiedName": "pkg:maven\/org.eclipse.jetty.websocket\/websocket-client@9.4.58.v20250814"
+                    }
+                ]
+              
+            }
+          ]
+          }, {
+          "ruleId": "CVE-2026-2332",
+          "level": "warning",
+          "message": {
+            "text": "CVE-2026-2332 - In Eclipse Jetty, the HTTP\/1.1 parser is vulnerable to request smuggling when chunk extensions are used, similar to the \"funky chunks\" techniques outlined here:\n  *  https:\/\/w4ke.info\/2025\/06\/18\/funky-chunks.html\n\n  *  https:\/\/w4ke.info\/2025\/10\/29\/funky-chunks-2.html\n\n\nJetty terminates chunk extension parsing at\u00A0\\r\\n\u00A0inside quoted strings instead of treating this as an error.\n\n\nPOST \/ HTTP\/1.1\nHost: localhost\nTransfer-Encoding: chunked\n\n1;ext=\"val\nX\n0\n\nGET \/smuggled HTTP\/1.1\n...\n\n\n\n\n\nNote how the chunk extension does not close the double quotes, and it is able to inject a smuggled request."
+          },
+          "partialFingerprints": {
+            "vulnerabilityHash": "5228c27a5d8f5f46f95cc3c163dff77a"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file://\/home\/runner\/.m2\/repository\/org\/eclipse\/jetty\/websocket\/websocket-common\/9.4.58.v20250814\/websocket-common-9.4.58.v20250814.jar"
+                  ,"index": 49
+                }
+              }
+                ,"logicalLocations": [
+                    {
+                    "fullyQualifiedName": "pkg:maven\/org.eclipse.jetty.websocket\/websocket-common@9.4.58.v20250814"
                     }
                 ]
               
