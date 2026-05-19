@@ -4,16 +4,16 @@
         <engineVersion>12.2.0</engineVersion>
         <dataSource>
             <name>NVD API Last Checked</name>
-            <timestamp>2026-05-05T05:39:10Z</timestamp>
+            <timestamp>2026-05-19T07:43:34Z</timestamp>
         </dataSource>
         <dataSource>
             <name>NVD API Last Modified</name>
-            <timestamp>2026-05-05T05:16:01Z</timestamp>
+            <timestamp>2026-05-19T07:16:30Z</timestamp>
         </dataSource>
     </scanInfo>
     <projectInfo>
-        <name>com.github.pmonks/bvpbot 1.0.20260505</name>
-        <reportDate>2026-05-05T05:39:19.742302057Z</reportDate>
+        <name>com.github.pmonks/bvpbot 1.0.20260519</name>
+        <reportDate>2026-05-19T07:43:44.911029702Z</reportDate>
         <credits>This product uses the NVD API but is not endorsed or certified by the NVD. This report contains data retrieved from the National Vulnerability Database: https://nvd.nist.gov, Github Advisory Database (via NPM Audit API): https://github.com/advisories/, and the RetireJS community.</credits>
     </projectInfo>
     <dependencies>
