@@ -425,16 +425,16 @@ arising out of or in connection with the use of this tool, the analysis performe
 <a href="https://dependency-check.github.io/DependencyCheck/general/suppression.html" target="_blank">Suppressing false positives</a> |
 Getting Help: <a href="https://github.com/dependency-check/DependencyCheck/issues" target="_blank">github issues</a></h3>
 
-            <h2 class="">Project:&nbsp;com.github.pmonks/bvpbot 1.0.20260707</h2>
+            <h2 class="">Project:&nbsp;com.github.pmonks/bvpbot 1.0.20260721</h2>
             <div class="">
 
                 Scan Information:<br/>
                     <ul class="indent">
                         <li><i>dependency-check version</i>: 12.2.0</li>
-                        <li><i>Report Generated On</i>: Tue, 7 Jul 2026 07:49:54 GMT</li>
+                        <li><i>Report Generated On</i>: Tue, 21 Jul 2026 05:54:21 GMT</li>
                         <li><i>Dependencies Scanned</i>:&nbsp;58 (50 unique)</li>
                         <li><i>Vulnerable Dependencies</i>:&nbsp;<span id="vulnerableCount">3</span></li>
-                        <li><i>Vulnerabilities Found</i>:&nbsp;9</li>
+                        <li><i>Vulnerabilities Found</i>:&nbsp;12</li>
                         <li><i>Vulnerabilities Suppressed</i>:&nbsp;0</li>
                     </ul><br/>
 <h2>Summary</h2>
@@ -461,7 +461,7 @@ Getting Help: <a href="https://github.com/dependency-check/DependencyCheck/issue
                                 pkg:maven/org.eclipse.jetty/jetty-io@9.4.58.v20250814
 </td>
                                                                                 <td data-sort-value="91.0">CRITICAL</td>
-                        <td>3</td>
+                        <td>4</td>
                         <td data-sort-value="0">Highest</td>
                         <td>36</td>
                     </tr>
@@ -478,7 +478,7 @@ Getting Help: <a href="https://github.com/dependency-check/DependencyCheck/issue
                                 pkg:maven/org.eclipse.jetty.websocket/websocket-client@9.4.58.v20250814
 </td>
                                                                                 <td data-sort-value="91.0">CRITICAL</td>
-                        <td>3</td>
+                        <td>4</td>
                         <td data-sort-value="0">Highest</td>
                         <td>38</td>
                     </tr>
@@ -497,7 +497,7 @@ Getting Help: <a href="https://github.com/dependency-check/DependencyCheck/issue
                                 pkg:maven/org.eclipse.jetty.websocket/websocket-common@9.4.58.v20250814
 </td>
                                                                                 <td data-sort-value="91.0">CRITICAL</td>
-                        <td>3</td>
+                        <td>4</td>
                         <td data-sort-value="0">Highest</td>
                         <td>40</td>
                     </tr>
@@ -699,6 +699,64 @@ A subsequent request using the same thread inherits the ThreadLocal values, lead
                                         <li class="vs3"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 12.1.0; versions up to (excluding) 12.1.5</a></li>
                                         <li class="vs3"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 9.4.0; versions up to (including) 9.4.58</a></li>
                                     </ul></p>
+                                <p><b><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2026-6790">CVE-2026-6790</a></b></p>
+                            <p>                            <pre>In Eclipse Jetty, for HTTP/1, HTTP/2 and HTTP/3 requests, there is no strict check that the request authority (host and port) matches what provided in the Host header (if present).
+
+
+
+
+This was not enforced in earlier HTTP RFC (for example, in RFC 2616), but it is in the latest RFC (9110 and 9112).
+
+
+
+
+This mismatch can cause a number of problems that may be classified as vulnerabilities such as:
+
+
+
+  *  
+        
+      URI constructions (for example, for redirects -- this is typical for login pages)
+
+  *  
+        
+      Virtual host selection
+
+  *  
+        
+      Reverse proxying
+
+  *  
+        
+      Misleading logs
+
+  *  
+        
+      Etc.
+
+
+
+
+
+
+Given that the latest RFCs require that request authority and Host header must match, Jetty should enforce this invariant.</pre>
+
+                                CWE-20 Improper Input Validation<br/><br/>
+                            CVSSv3:
+                            <ul><li>Base Score: MEDIUM (5.3)</li>
+                                <li>Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N/E:3.9/RC:R/MAV:A</li></ul>
+                                <br/>References:<ul>
+                                    <li>emo@eclipse.org - <a target="_blank" href="https://gitlab.eclipse.org/security/cve-assignment/-/work_items/99">VENDOR_ADVISORY</a></li>
+                                </ul>
+                            </p>
+                                    <p>Vulnerable Software &amp; Versions:<ul>
+                                        <li class="vs4"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 9.4.0; versions up to (excluding) 9.4.61</a></li>
+                                        <li class="vs4"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 10.0.0; versions up to (excluding) 10.0.29</a></li>
+                                        <li class="vs4"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 11.0.0; versions up to (excluding) 11.0.29</a></li>
+                                        <li class="vs4"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 12.0.0; versions up to (excluding) 12.0.35</a></li>
+                                        <li class="vs4"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 12.1.0; versions up to (excluding) 12.1.9</a></li>
+                                        <li class="vs4"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 9.4.0; versions up to (excluding) 9.4.61</a></li>
+                                    </ul></p>
                     </div>
                 </div>
                 </div>
@@ -794,12 +852,12 @@ Note how the chunk extension does not close the double quotes, and it is able to
                                 </ul>
                             </p>
                                     <p>Vulnerable Software &amp; Versions:<ul>
-                                        <li class="vs4"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 9.4.0; versions up to (excluding) 9.4.60</a></li>
-                                        <li class="vs4"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 10.0.0; versions up to (excluding) 10.0.28</a></li>
-                                        <li class="vs4"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 11.0.0; versions up to (excluding) 11.0.28</a></li>
-                                        <li class="vs4"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 12.0.0; versions up to (excluding) 12.0.33</a></li>
-                                        <li class="vs4"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 12.1.0; versions up to (excluding) 12.1.7</a></li>
-                                        <li class="vs4"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 9.4.0; versions up to (excluding) 9.4.60</a></li>
+                                        <li class="vs5"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 9.4.0; versions up to (excluding) 9.4.60</a></li>
+                                        <li class="vs5"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 10.0.0; versions up to (excluding) 10.0.28</a></li>
+                                        <li class="vs5"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 11.0.0; versions up to (excluding) 11.0.28</a></li>
+                                        <li class="vs5"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 12.0.0; versions up to (excluding) 12.0.33</a></li>
+                                        <li class="vs5"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 12.1.0; versions up to (excluding) 12.1.7</a></li>
+                                        <li class="vs5"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 9.4.0; versions up to (excluding) 9.4.60</a></li>
                                     </ul></p>
                                 <p><b><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2026-5795">CVE-2026-5795</a></b></p>
                             <p>                            <pre>In Eclipse Jetty, the class JASPIAuthenticator initiates the authentication checks, which set two ThreadLocal variable.
@@ -826,12 +884,12 @@ A subsequent request using the same thread inherits the ThreadLocal values, lead
                                 </ul>
                             </p>
                                     <p>Vulnerable Software &amp; Versions:<ul>
-                                        <li class="vs5"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 9.4.0; versions up to (including) 9.4.58</a></li>
-                                        <li class="vs5"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 10.0.0; versions up to (including) 10.0.26</a></li>
-                                        <li class="vs5"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 11.0.0; versions up to (including) 11.0.26</a></li>
-                                        <li class="vs5"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 12.0.0; versions up to (excluding) 12.0.34</a></li>
-                                        <li class="vs5"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 12.1.0; versions up to (excluding) 12.1.8</a></li>
-                                        <li class="vs5"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 9.4.0; versions up to (including) 9.4.58</a></li>
+                                        <li class="vs6"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 9.4.0; versions up to (including) 9.4.58</a></li>
+                                        <li class="vs6"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 10.0.0; versions up to (including) 10.0.26</a></li>
+                                        <li class="vs6"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 11.0.0; versions up to (including) 11.0.26</a></li>
+                                        <li class="vs6"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 12.0.0; versions up to (excluding) 12.0.34</a></li>
+                                        <li class="vs6"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 12.1.0; versions up to (excluding) 12.1.8</a></li>
+                                        <li class="vs6"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 9.4.0; versions up to (including) 9.4.58</a></li>
                                     </ul></p>
                                 <p><b><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2025-11143">CVE-2025-11143</a></b></p>
                             <p>                            <pre>The Jetty URI parser has some key differences to other common parsers when evaluating invalid or unusual URIs.&nbsp;Differential parsing of URIs in systems using multiple components may result in security by-pass. For example a component that enforces a black list may interpret the URIs differently from one that generates a response.&nbsp;At the very least, differential parsing may divulge implementation details.</pre>
@@ -845,12 +903,70 @@ A subsequent request using the same thread inherits the ThreadLocal values, lead
                                 </ul>
                             </p>
                                     <p>Vulnerable Software &amp; Versions:<ul>
-                                        <li class="vs6"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 9.4.0; versions up to (including) 9.4.58</a></li>
-                                        <li class="vs6"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 10.0.0; versions up to (including) 10.0.26</a></li>
-                                        <li class="vs6"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 11.0.0; versions up to (including) 11.0.26</a></li>
-                                        <li class="vs6"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 12.0.0; versions up to (excluding) 12.0.31</a></li>
-                                        <li class="vs6"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 12.1.0; versions up to (excluding) 12.1.5</a></li>
-                                        <li class="vs6"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 9.4.0; versions up to (including) 9.4.58</a></li>
+                                        <li class="vs7"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 9.4.0; versions up to (including) 9.4.58</a></li>
+                                        <li class="vs7"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 10.0.0; versions up to (including) 10.0.26</a></li>
+                                        <li class="vs7"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 11.0.0; versions up to (including) 11.0.26</a></li>
+                                        <li class="vs7"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 12.0.0; versions up to (excluding) 12.0.31</a></li>
+                                        <li class="vs7"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 12.1.0; versions up to (excluding) 12.1.5</a></li>
+                                        <li class="vs7"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 9.4.0; versions up to (including) 9.4.58</a></li>
+                                    </ul></p>
+                                <p><b><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2026-6790">CVE-2026-6790</a></b></p>
+                            <p>                            <pre>In Eclipse Jetty, for HTTP/1, HTTP/2 and HTTP/3 requests, there is no strict check that the request authority (host and port) matches what provided in the Host header (if present).
+
+
+
+
+This was not enforced in earlier HTTP RFC (for example, in RFC 2616), but it is in the latest RFC (9110 and 9112).
+
+
+
+
+This mismatch can cause a number of problems that may be classified as vulnerabilities such as:
+
+
+
+  *  
+        
+      URI constructions (for example, for redirects -- this is typical for login pages)
+
+  *  
+        
+      Virtual host selection
+
+  *  
+        
+      Reverse proxying
+
+  *  
+        
+      Misleading logs
+
+  *  
+        
+      Etc.
+
+
+
+
+
+
+Given that the latest RFCs require that request authority and Host header must match, Jetty should enforce this invariant.</pre>
+
+                                CWE-20 Improper Input Validation<br/><br/>
+                            CVSSv3:
+                            <ul><li>Base Score: MEDIUM (5.3)</li>
+                                <li>Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N/E:3.9/RC:R/MAV:A</li></ul>
+                                <br/>References:<ul>
+                                    <li>emo@eclipse.org - <a target="_blank" href="https://gitlab.eclipse.org/security/cve-assignment/-/work_items/99">VENDOR_ADVISORY</a></li>
+                                </ul>
+                            </p>
+                                    <p>Vulnerable Software &amp; Versions:<ul>
+                                        <li class="vs8"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 9.4.0; versions up to (excluding) 9.4.61</a></li>
+                                        <li class="vs8"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 10.0.0; versions up to (excluding) 10.0.29</a></li>
+                                        <li class="vs8"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 11.0.0; versions up to (excluding) 11.0.29</a></li>
+                                        <li class="vs8"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 12.0.0; versions up to (excluding) 12.0.35</a></li>
+                                        <li class="vs8"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 12.1.0; versions up to (excluding) 12.1.9</a></li>
+                                        <li class="vs8"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 9.4.0; versions up to (excluding) 9.4.61</a></li>
                                     </ul></p>
                     </div>
                 </div>
@@ -933,12 +1049,12 @@ Note how the chunk extension does not close the double quotes, and it is able to
                                 </ul>
                             </p>
                                     <p>Vulnerable Software &amp; Versions:<ul>
-                                        <li class="vs7"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 9.4.0; versions up to (excluding) 9.4.60</a></li>
-                                        <li class="vs7"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 10.0.0; versions up to (excluding) 10.0.28</a></li>
-                                        <li class="vs7"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 11.0.0; versions up to (excluding) 11.0.28</a></li>
-                                        <li class="vs7"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 12.0.0; versions up to (excluding) 12.0.33</a></li>
-                                        <li class="vs7"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 12.1.0; versions up to (excluding) 12.1.7</a></li>
-                                        <li class="vs7"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 9.4.0; versions up to (excluding) 9.4.60</a></li>
+                                        <li class="vs9"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 9.4.0; versions up to (excluding) 9.4.60</a></li>
+                                        <li class="vs9"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 10.0.0; versions up to (excluding) 10.0.28</a></li>
+                                        <li class="vs9"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 11.0.0; versions up to (excluding) 11.0.28</a></li>
+                                        <li class="vs9"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 12.0.0; versions up to (excluding) 12.0.33</a></li>
+                                        <li class="vs9"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 12.1.0; versions up to (excluding) 12.1.7</a></li>
+                                        <li class="vs9"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 9.4.0; versions up to (excluding) 9.4.60</a></li>
                                     </ul></p>
                                 <p><b><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2026-5795">CVE-2026-5795</a></b></p>
                             <p>                            <pre>In Eclipse Jetty, the class JASPIAuthenticator initiates the authentication checks, which set two ThreadLocal variable.
@@ -965,12 +1081,12 @@ A subsequent request using the same thread inherits the ThreadLocal values, lead
                                 </ul>
                             </p>
                                     <p>Vulnerable Software &amp; Versions:<ul>
-                                        <li class="vs8"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 9.4.0; versions up to (including) 9.4.58</a></li>
-                                        <li class="vs8"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 10.0.0; versions up to (including) 10.0.26</a></li>
-                                        <li class="vs8"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 11.0.0; versions up to (including) 11.0.26</a></li>
-                                        <li class="vs8"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 12.0.0; versions up to (excluding) 12.0.34</a></li>
-                                        <li class="vs8"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 12.1.0; versions up to (excluding) 12.1.8</a></li>
-                                        <li class="vs8"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 9.4.0; versions up to (including) 9.4.58</a></li>
+                                        <li class="vs10"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 9.4.0; versions up to (including) 9.4.58</a></li>
+                                        <li class="vs10"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 10.0.0; versions up to (including) 10.0.26</a></li>
+                                        <li class="vs10"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 11.0.0; versions up to (including) 11.0.26</a></li>
+                                        <li class="vs10"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 12.0.0; versions up to (excluding) 12.0.34</a></li>
+                                        <li class="vs10"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 12.1.0; versions up to (excluding) 12.1.8</a></li>
+                                        <li class="vs10"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 9.4.0; versions up to (including) 9.4.58</a></li>
                                     </ul></p>
                                 <p><b><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2025-11143">CVE-2025-11143</a></b></p>
                             <p>                            <pre>The Jetty URI parser has some key differences to other common parsers when evaluating invalid or unusual URIs.&nbsp;Differential parsing of URIs in systems using multiple components may result in security by-pass. For example a component that enforces a black list may interpret the URIs differently from one that generates a response.&nbsp;At the very least, differential parsing may divulge implementation details.</pre>
@@ -984,12 +1100,70 @@ A subsequent request using the same thread inherits the ThreadLocal values, lead
                                 </ul>
                             </p>
                                     <p>Vulnerable Software &amp; Versions:<ul>
-                                        <li class="vs9"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 9.4.0; versions up to (including) 9.4.58</a></li>
-                                        <li class="vs9"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 10.0.0; versions up to (including) 10.0.26</a></li>
-                                        <li class="vs9"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 11.0.0; versions up to (including) 11.0.26</a></li>
-                                        <li class="vs9"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 12.0.0; versions up to (excluding) 12.0.31</a></li>
-                                        <li class="vs9"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 12.1.0; versions up to (excluding) 12.1.5</a></li>
-                                        <li class="vs9"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 9.4.0; versions up to (including) 9.4.58</a></li>
+                                        <li class="vs11"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 9.4.0; versions up to (including) 9.4.58</a></li>
+                                        <li class="vs11"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 10.0.0; versions up to (including) 10.0.26</a></li>
+                                        <li class="vs11"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 11.0.0; versions up to (including) 11.0.26</a></li>
+                                        <li class="vs11"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 12.0.0; versions up to (excluding) 12.0.31</a></li>
+                                        <li class="vs11"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 12.1.0; versions up to (excluding) 12.1.5</a></li>
+                                        <li class="vs11"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 9.4.0; versions up to (including) 9.4.58</a></li>
+                                    </ul></p>
+                                <p><b><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2026-6790">CVE-2026-6790</a></b></p>
+                            <p>                            <pre>In Eclipse Jetty, for HTTP/1, HTTP/2 and HTTP/3 requests, there is no strict check that the request authority (host and port) matches what provided in the Host header (if present).
+
+
+
+
+This was not enforced in earlier HTTP RFC (for example, in RFC 2616), but it is in the latest RFC (9110 and 9112).
+
+
+
+
+This mismatch can cause a number of problems that may be classified as vulnerabilities such as:
+
+
+
+  *  
+        
+      URI constructions (for example, for redirects -- this is typical for login pages)
+
+  *  
+        
+      Virtual host selection
+
+  *  
+        
+      Reverse proxying
+
+  *  
+        
+      Misleading logs
+
+  *  
+        
+      Etc.
+
+
+
+
+
+
+Given that the latest RFCs require that request authority and Host header must match, Jetty should enforce this invariant.</pre>
+
+                                CWE-20 Improper Input Validation<br/><br/>
+                            CVSSv3:
+                            <ul><li>Base Score: MEDIUM (5.3)</li>
+                                <li>Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N/E:3.9/RC:R/MAV:A</li></ul>
+                                <br/>References:<ul>
+                                    <li>emo@eclipse.org - <a target="_blank" href="https://gitlab.eclipse.org/security/cve-assignment/-/work_items/99">VENDOR_ADVISORY</a></li>
+                                </ul>
+                            </p>
+                                    <p>Vulnerable Software &amp; Versions:<ul>
+                                        <li class="vs12"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 9.4.0; versions up to (excluding) 9.4.61</a></li>
+                                        <li class="vs12"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 10.0.0; versions up to (excluding) 10.0.29</a></li>
+                                        <li class="vs12"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 11.0.0; versions up to (excluding) 11.0.29</a></li>
+                                        <li class="vs12"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 12.0.0; versions up to (excluding) 12.0.35</a></li>
+                                        <li class="vs12"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 12.1.0; versions up to (excluding) 12.1.9</a></li>
+                                        <li class="vs12"><a target="_blank" href="https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&amp;sortDirection=2&amp;cpeFilterMode=applicability&amp;resultType=records&amp;cpeName=cpe%3A2.3%3Aa%3Aeclipse%3Ajetty%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A">cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:* versions from (including) 9.4.0; versions up to (excluding) 9.4.61</a></li>
                                     </ul></p>
                     </div>
                 </div>

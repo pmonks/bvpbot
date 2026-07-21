@@ -4,16 +4,16 @@
         <engineVersion>12.2.0</engineVersion>
         <dataSource>
             <name>NVD API Last Checked</name>
-            <timestamp>2026-07-07T07:49:44Z</timestamp>
+            <timestamp>2026-07-21T05:54:11Z</timestamp>
         </dataSource>
         <dataSource>
             <name>NVD API Last Modified</name>
-            <timestamp>2026-07-07T06:16:23Z</timestamp>
+            <timestamp>2026-07-21T05:16:34Z</timestamp>
         </dataSource>
     </scanInfo>
     <projectInfo>
-        <name>com.github.pmonks/bvpbot 1.0.20260707</name>
-        <reportDate>2026-07-07T07:49:54.441158164Z</reportDate>
+        <name>com.github.pmonks/bvpbot 1.0.20260721</name>
+        <reportDate>2026-07-21T05:54:21.881602670Z</reportDate>
         <credits>This product uses the NVD API but is not endorsed or certified by the NVD. This report contains data retrieved from the National Vulnerability Database: https://nvd.nist.gov, Github Advisory Database (via NPM Audit API): https://github.com/advisories/, and the RetireJS community.</credits>
     </projectInfo>
     <dependencies>
@@ -6744,6 +6744,81 @@ A subsequent request using the same thread inherits the ThreadLocal values, lead
  versionStartIncluding="9.4.0" versionEndIncluding="9.4.58"                        >cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*</software>
                     </vulnerableSoftware>
                 </vulnerability>
+                <vulnerability source="NVD">
+                    <name>CVE-2026-6790</name>
+                    <severity>MEDIUM</severity>
+                    <cvssV3>
+                        <baseScore>5.3</baseScore>
+                        <attackVector>NETWORK</attackVector>
+                        <attackComplexity>LOW</attackComplexity>
+                        <privilegesRequired>NONE</privilegesRequired>
+                        <userInteraction>NONE</userInteraction>
+                        <scope>UNCHANGED</scope>
+                        <confidentialityImpact>NONE</confidentialityImpact>
+                        <integrityImpact>LOW</integrityImpact>
+                        <availabilityImpact>NONE</availabilityImpact>
+                        <baseSeverity>MEDIUM</baseSeverity>
+<exploitabilityScore>3.9</exploitabilityScore><impactScore>1.4</impactScore><version>3.1</version>                    </cvssV3>
+                    <cwes>
+<cwe>CWE-20</cwe>                    </cwes>
+                    <description>In Eclipse Jetty, for HTTP/1, HTTP/2 and HTTP/3 requests, there is no strict check that the request authority (host and port) matches what provided in the Host header (if present).
+
+
+
+
+This was not enforced in earlier HTTP RFC (for example, in RFC 2616), but it is in the latest RFC (9110 and 9112).
+
+
+
+
+This mismatch can cause a number of problems that may be classified as vulnerabilities such as:
+
+
+
+  *  
+        
+      URI constructions (for example, for redirects -- this is typical for login pages)
+
+  *  
+        
+      Virtual host selection
+
+  *  
+        
+      Reverse proxying
+
+  *  
+        
+      Misleading logs
+
+  *  
+        
+      Etc.
+
+
+
+
+
+
+Given that the latest RFCs require that request authority and Host header must match, Jetty should enforce this invariant.</description>
+                    <references>
+                        <reference>
+                            <source>emo@eclipse.org</source>
+<url>https://gitlab.eclipse.org/security/cve-assignment/-/work_items/99</url><name>VENDOR_ADVISORY</name>                        </reference>
+                    </references>
+                    <vulnerableSoftware>
+                        <software
+ versionStartIncluding="10.0.0" versionEndExcluding="10.0.29"                        >cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*</software>
+                        <software
+ versionStartIncluding="11.0.0" versionEndExcluding="11.0.29"                        >cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*</software>
+                        <software
+ versionStartIncluding="12.0.0" versionEndExcluding="12.0.35"                        >cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*</software>
+                        <software
+ versionStartIncluding="12.1.0" versionEndExcluding="12.1.9"                        >cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*</software>
+                        <software vulnerabilityIdMatched="true"
+ versionStartIncluding="9.4.0" versionEndExcluding="9.4.61"                        >cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*</software>
+                    </vulnerableSoftware>
+                </vulnerability>
             </vulnerabilities>
         </dependency>
         <dependency isVirtual="false">
@@ -9277,6 +9352,81 @@ A subsequent request using the same thread inherits the ThreadLocal values, lead
  versionStartIncluding="9.4.0" versionEndIncluding="9.4.58"                        >cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*</software>
                     </vulnerableSoftware>
                 </vulnerability>
+                <vulnerability source="NVD">
+                    <name>CVE-2026-6790</name>
+                    <severity>MEDIUM</severity>
+                    <cvssV3>
+                        <baseScore>5.3</baseScore>
+                        <attackVector>NETWORK</attackVector>
+                        <attackComplexity>LOW</attackComplexity>
+                        <privilegesRequired>NONE</privilegesRequired>
+                        <userInteraction>NONE</userInteraction>
+                        <scope>UNCHANGED</scope>
+                        <confidentialityImpact>NONE</confidentialityImpact>
+                        <integrityImpact>LOW</integrityImpact>
+                        <availabilityImpact>NONE</availabilityImpact>
+                        <baseSeverity>MEDIUM</baseSeverity>
+<exploitabilityScore>3.9</exploitabilityScore><impactScore>1.4</impactScore><version>3.1</version>                    </cvssV3>
+                    <cwes>
+<cwe>CWE-20</cwe>                    </cwes>
+                    <description>In Eclipse Jetty, for HTTP/1, HTTP/2 and HTTP/3 requests, there is no strict check that the request authority (host and port) matches what provided in the Host header (if present).
+
+
+
+
+This was not enforced in earlier HTTP RFC (for example, in RFC 2616), but it is in the latest RFC (9110 and 9112).
+
+
+
+
+This mismatch can cause a number of problems that may be classified as vulnerabilities such as:
+
+
+
+  *  
+        
+      URI constructions (for example, for redirects -- this is typical for login pages)
+
+  *  
+        
+      Virtual host selection
+
+  *  
+        
+      Reverse proxying
+
+  *  
+        
+      Misleading logs
+
+  *  
+        
+      Etc.
+
+
+
+
+
+
+Given that the latest RFCs require that request authority and Host header must match, Jetty should enforce this invariant.</description>
+                    <references>
+                        <reference>
+                            <source>emo@eclipse.org</source>
+<url>https://gitlab.eclipse.org/security/cve-assignment/-/work_items/99</url><name>VENDOR_ADVISORY</name>                        </reference>
+                    </references>
+                    <vulnerableSoftware>
+                        <software
+ versionStartIncluding="10.0.0" versionEndExcluding="10.0.29"                        >cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*</software>
+                        <software
+ versionStartIncluding="11.0.0" versionEndExcluding="11.0.29"                        >cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*</software>
+                        <software
+ versionStartIncluding="12.0.0" versionEndExcluding="12.0.35"                        >cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*</software>
+                        <software
+ versionStartIncluding="12.1.0" versionEndExcluding="12.1.9"                        >cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*</software>
+                        <software vulnerabilityIdMatched="true"
+ versionStartIncluding="9.4.0" versionEndExcluding="9.4.61"                        >cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*</software>
+                    </vulnerableSoftware>
+                </vulnerability>
             </vulnerabilities>
         </dependency>
         <dependency isVirtual="false">
@@ -9700,6 +9850,81 @@ A subsequent request using the same thread inherits the ThreadLocal values, lead
  versionStartIncluding="12.1.0" versionEndExcluding="12.1.5"                        >cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*</software>
                         <software vulnerabilityIdMatched="true"
  versionStartIncluding="9.4.0" versionEndIncluding="9.4.58"                        >cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*</software>
+                    </vulnerableSoftware>
+                </vulnerability>
+                <vulnerability source="NVD">
+                    <name>CVE-2026-6790</name>
+                    <severity>MEDIUM</severity>
+                    <cvssV3>
+                        <baseScore>5.3</baseScore>
+                        <attackVector>NETWORK</attackVector>
+                        <attackComplexity>LOW</attackComplexity>
+                        <privilegesRequired>NONE</privilegesRequired>
+                        <userInteraction>NONE</userInteraction>
+                        <scope>UNCHANGED</scope>
+                        <confidentialityImpact>NONE</confidentialityImpact>
+                        <integrityImpact>LOW</integrityImpact>
+                        <availabilityImpact>NONE</availabilityImpact>
+                        <baseSeverity>MEDIUM</baseSeverity>
+<exploitabilityScore>3.9</exploitabilityScore><impactScore>1.4</impactScore><version>3.1</version>                    </cvssV3>
+                    <cwes>
+<cwe>CWE-20</cwe>                    </cwes>
+                    <description>In Eclipse Jetty, for HTTP/1, HTTP/2 and HTTP/3 requests, there is no strict check that the request authority (host and port) matches what provided in the Host header (if present).
+
+
+
+
+This was not enforced in earlier HTTP RFC (for example, in RFC 2616), but it is in the latest RFC (9110 and 9112).
+
+
+
+
+This mismatch can cause a number of problems that may be classified as vulnerabilities such as:
+
+
+
+  *  
+        
+      URI constructions (for example, for redirects -- this is typical for login pages)
+
+  *  
+        
+      Virtual host selection
+
+  *  
+        
+      Reverse proxying
+
+  *  
+        
+      Misleading logs
+
+  *  
+        
+      Etc.
+
+
+
+
+
+
+Given that the latest RFCs require that request authority and Host header must match, Jetty should enforce this invariant.</description>
+                    <references>
+                        <reference>
+                            <source>emo@eclipse.org</source>
+<url>https://gitlab.eclipse.org/security/cve-assignment/-/work_items/99</url><name>VENDOR_ADVISORY</name>                        </reference>
+                    </references>
+                    <vulnerableSoftware>
+                        <software
+ versionStartIncluding="10.0.0" versionEndExcluding="10.0.29"                        >cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*</software>
+                        <software
+ versionStartIncluding="11.0.0" versionEndExcluding="11.0.29"                        >cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*</software>
+                        <software
+ versionStartIncluding="12.0.0" versionEndExcluding="12.0.35"                        >cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*</software>
+                        <software
+ versionStartIncluding="12.1.0" versionEndExcluding="12.1.9"                        >cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*</software>
+                        <software vulnerabilityIdMatched="true"
+ versionStartIncluding="9.4.0" versionEndExcluding="9.4.61"                        >cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*</software>
                     </vulnerableSoftware>
                 </vulnerability>
             </vulnerabilities>

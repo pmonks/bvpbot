@@ -22,8 +22,8 @@
                         "url": "https://github.com/dependency-check/DependencyCheck/"
         },
 
-        "end_time": "2026-07-07T07:49:54",
-                "start_time": "2026-07-07T07:49:54",
+        "end_time": "2026-07-21T05:54:21",
+                "start_time": "2026-07-21T05:54:21",
                 "status":  "success"  ,
                 "type": "dependency_scanning"
 
@@ -200,6 +200,38 @@
                                                                                             }
                                         ,
                                         {
+                        "id": "CVE-2026-6790",
+                        "identifiers": [
+                            {
+                                "type": "NVD"
+                                    , "name": "CVE-2026-6790"
+                                , "value": "e198dae4d91fa79d9c1e2e039870d49c487c45cf"
+
+                                                                    , "url": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2026-6790"
+                            }
+                        ],
+                        "location": {
+                            "file": "\/home\/runner\/.m2\/repository\/org\/eclipse\/jetty\/jetty-io\/9.4.58.v20250814\/jetty-io-9.4.58.v20250814.jar",
+                            "dependency": {
+                                "package": {
+                                    "name": "org.eclipse.jetty:jetty-io"
+                                },
+                                "version": "9.4.58.v20250814"
+                                                                                                                                                                                                                                                                                                                                                                                                                            }
+                        },
+
+                                                "name": "CVE-2026-6790",
+                        "description": "In Eclipse Jetty, for HTTP\/1, HTTP\/2 and HTTP\/3 requests, there is no strict check that the request authority (host and port) matches what provided in the Host header (if present).\n\n\n\n\nThis was not enforced in earlier HTTP RFC (for example, in RFC 2616), but it is in the latest RFC (9110 and 9112).\n\n\n\n\nThis mismatch can cause a number of problems that may be classified as vulnerabilities such as:\n\n\n\n  *  \n        \n      URI constructions (for example, for redirects -- this is typical for login pages)\n\n  *  \n        \n      Virtual host selection\n\n  *  \n        \n      Reverse proxying\n\n  *  \n        \n      Misleading logs\n\n  *  \n        \n      Etc.\n\n\n\n\n\n\nGiven that the latest RFCs require that request authority and Host header must match, Jetty should enforce this invariant.",
+                        "severity": "Medium",
+                                                "links": [
+                                    {
+                                                                                "name": "VENDOR_ADVISORY",
+                                        "url": "https:\/\/gitlab.eclipse.org\/security\/cve-assignment\/-\/work_items\/99"
+                                    }
+                        ]
+                                                                                            }
+                                        ,
+                                        {
                         "id": "CVE-2026-2332",
                         "identifiers": [
                             {
@@ -370,6 +402,38 @@
                                                                                             }
                                         ,
                                         {
+                        "id": "CVE-2026-6790",
+                        "identifiers": [
+                            {
+                                "type": "NVD"
+                                    , "name": "CVE-2026-6790"
+                                , "value": "def27af0dc52086738483191761bd8edd08ff625"
+
+                                                                    , "url": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2026-6790"
+                            }
+                        ],
+                        "location": {
+                            "file": "\/home\/runner\/.m2\/repository\/org\/eclipse\/jetty\/websocket\/websocket-client\/9.4.58.v20250814\/websocket-client-9.4.58.v20250814.jar",
+                            "dependency": {
+                                "package": {
+                                    "name": "org.eclipse.jetty.websocket:websocket-client"
+                                },
+                                "version": "9.4.58.v20250814"
+                                                                                                                                                                                                                                                                                                                                                                                                                            }
+                        },
+
+                                                "name": "CVE-2026-6790",
+                        "description": "In Eclipse Jetty, for HTTP\/1, HTTP\/2 and HTTP\/3 requests, there is no strict check that the request authority (host and port) matches what provided in the Host header (if present).\n\n\n\n\nThis was not enforced in earlier HTTP RFC (for example, in RFC 2616), but it is in the latest RFC (9110 and 9112).\n\n\n\n\nThis mismatch can cause a number of problems that may be classified as vulnerabilities such as:\n\n\n\n  *  \n        \n      URI constructions (for example, for redirects -- this is typical for login pages)\n\n  *  \n        \n      Virtual host selection\n\n  *  \n        \n      Reverse proxying\n\n  *  \n        \n      Misleading logs\n\n  *  \n        \n      Etc.\n\n\n\n\n\n\nGiven that the latest RFCs require that request authority and Host header must match, Jetty should enforce this invariant.",
+                        "severity": "Medium",
+                                                "links": [
+                                    {
+                                                                                "name": "VENDOR_ADVISORY",
+                                        "url": "https:\/\/gitlab.eclipse.org\/security\/cve-assignment\/-\/work_items\/99"
+                                    }
+                        ]
+                                                                                            }
+                                        ,
+                                        {
                         "id": "CVE-2026-2332",
                         "identifiers": [
                             {
@@ -535,6 +599,38 @@
                                     {
                                                                                 "name": "VENDOR_ADVISORY",
                                         "url": "https:\/\/github.com\/jetty\/jetty.project\/security\/advisories\/GHSA-wjpw-4j6x-6rwh"
+                                    }
+                        ]
+                                                                                            }
+                                        ,
+                                        {
+                        "id": "CVE-2026-6790",
+                        "identifiers": [
+                            {
+                                "type": "NVD"
+                                    , "name": "CVE-2026-6790"
+                                , "value": "35d5d3b947643920cfcf82f02d0c139a7c338c5a"
+
+                                                                    , "url": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2026-6790"
+                            }
+                        ],
+                        "location": {
+                            "file": "\/home\/runner\/.m2\/repository\/org\/eclipse\/jetty\/websocket\/websocket-common\/9.4.58.v20250814\/websocket-common-9.4.58.v20250814.jar",
+                            "dependency": {
+                                "package": {
+                                    "name": "org.eclipse.jetty.websocket:websocket-common"
+                                },
+                                "version": "9.4.58.v20250814"
+                                                                                                                                                                                                                                                                                                                                                                                                                            }
+                        },
+
+                                                "name": "CVE-2026-6790",
+                        "description": "In Eclipse Jetty, for HTTP\/1, HTTP\/2 and HTTP\/3 requests, there is no strict check that the request authority (host and port) matches what provided in the Host header (if present).\n\n\n\n\nThis was not enforced in earlier HTTP RFC (for example, in RFC 2616), but it is in the latest RFC (9110 and 9112).\n\n\n\n\nThis mismatch can cause a number of problems that may be classified as vulnerabilities such as:\n\n\n\n  *  \n        \n      URI constructions (for example, for redirects -- this is typical for login pages)\n\n  *  \n        \n      Virtual host selection\n\n  *  \n        \n      Reverse proxying\n\n  *  \n        \n      Misleading logs\n\n  *  \n        \n      Etc.\n\n\n\n\n\n\nGiven that the latest RFCs require that request authority and Host header must match, Jetty should enforce this invariant.",
+                        "severity": "Medium",
+                                                "links": [
+                                    {
+                                                                                "name": "VENDOR_ADVISORY",
+                                        "url": "https:\/\/gitlab.eclipse.org\/security\/cve-assignment\/-\/work_items\/99"
                                     }
                         ]
                                                                                             }

@@ -10,6 +10,32 @@
           "informationUri": "https://dependency-check.github.io/DependencyCheck/",
         "rules": [
 {
+              "id": "CVE-2026-6790",
+              "shortDescription": {
+                 "text": "medium severity - CVE-2026-6790 Improper Input Validation vulnerability in pkg:maven\/org.eclipse.jetty\/jetty-io@9.4.58.v20250814"
+              },
+              "fullDescription": {
+                "text": "In Eclipse Jetty, for HTTP\/1, HTTP\/2 and HTTP\/3 requests, there is no strict check that the request authority (host and port) matches what provided in the Host header (if present).\n\n\n\n\nThis was not enforced in earlier HTTP RFC (for example, in RFC 2616), but it is in the latest RFC (9110 and 9112).\n\n\n\n\nThis mismatch can cause a number of problems that may be classified as vulnerabilities such as:\n\n\n\n  *  \n        \n      URI constructions (for example, for redirects -- this is typical for login pages)\n\n  *  \n        \n      Virtual host selection\n\n  *  \n        \n      Reverse proxying\n\n  *  \n        \n      Misleading logs\n\n  *  \n        \n      Etc.\n\n\n\n\n\n\nGiven that the latest RFCs require that request authority and Host header must match, Jetty should enforce this invariant."
+              },
+              "help": {
+                "text": "",
+                "markdown": "For more information see [CVE-2026-6790](https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2026-6790).\n\n\nIf this is a false positive - consider using the HTML report to generate a suppression file.\nFor more information see [How dependency-check works](https://dependency-check.github.io/DependencyCheck/general/internals.html),\n[How to read the HTML report](https://dependency-check.github.io/DependencyCheck/general/thereport.html), and\n[Suppressing false positives](https://dependency-check.github.io/DependencyCheck/general/suppression.html)."
+              },
+              "properties": {
+                    "cvssv3_baseScore": 5.3,
+                    "security-severity": "5.3",
+                    "cvssv3_attackVector": "NETWORK",
+                    "cvssv3_attackComplexity": "LOW",
+                    "cvssv3_privilegesRequired": "NONE",
+                    "cvssv3_userInteraction": "NONE",
+                    "cvssv3_scope": "UNCHANGED",
+                    "cvssv3_confidentialityImpact": "NONE",
+                    "cvssv3_integrityImpact": "LOW",
+                    "cvssv3_availabilityImpact": "NONE",
+                    "cvssv3_baseSeverity": "MEDIUM",
+"cvssv3_exploitabilityScore": "3.9","cvssv3_impactScore": "1.4","cvssv3_version": "_3_1",                "source": "NVD"
+              }
+            },{
               "id": "CVE-2025-11143",
               "shortDescription": {
                  "text": "medium severity - CVE-2025-11143 Improper Input Validation vulnerability in pkg:maven\/org.eclipse.jetty\/jetty-io@9.4.58.v20250814"
@@ -95,8 +121,8 @@
           "npm": "This report may contain data retrieved from the the Github Advisory Database (via NPM Audit API): https://github.com/advisories/",
           "retirejs": "This report may contain data retrieved from the RetireJS community: https://retirejs.github.io/retire.js/",
           "ossindex": "This report may contain data retrieved from the Sonatype OSS Index: https://ossindex.sonatype.org"
-            ,"NVD API Last Checked": "2026-07-07T07:49:44Z"
-            ,"NVD API Last Modified": "2026-07-07T06:16:23Z"
+            ,"NVD API Last Checked": "2026-07-21T05:54:11Z"
+            ,"NVD API Last Modified": "2026-07-21T05:16:34Z"
           }
         }
       },
@@ -940,6 +966,31 @@
             }
           ]
           }, {
+          "ruleId": "CVE-2026-6790",
+          "level": "warning",
+          "message": {
+            "text": "CVE-2026-6790 - In Eclipse Jetty, for HTTP\/1, HTTP\/2 and HTTP\/3 requests, there is no strict check that the request authority (host and port) matches what provided in the Host header (if present).\n\n\n\n\nThis was not enforced in earlier HTTP RFC (for example, in RFC 2616), but it is in the latest RFC (9110 and 9112).\n\n\n\n\nThis mismatch can cause a number of problems that may be classified as vulnerabilities such as:\n\n\n\n  *  \n        \n      URI constructions (for example, for redirects -- this is typical for login pages)\n\n  *  \n        \n      Virtual host selection\n\n  *  \n        \n      Reverse proxying\n\n  *  \n        \n      Misleading logs\n\n  *  \n        \n      Etc.\n\n\n\n\n\n\nGiven that the latest RFCs require that request authority and Host header must match, Jetty should enforce this invariant."
+          },
+          "partialFingerprints": {
+            "vulnerabilityHash": "648ef0d2853ebcbde47bee9234f249bf"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file://\/home\/runner\/.m2\/repository\/org\/eclipse\/jetty\/jetty-io\/9.4.58.v20250814\/jetty-io-9.4.58.v20250814.jar"
+                  ,"index": 30
+                }
+              }
+                ,"logicalLocations": [
+                    {
+                    "fullyQualifiedName": "pkg:maven\/org.eclipse.jetty\/jetty-io@9.4.58.v20250814"
+                    }
+                ]
+              
+            }
+          ]
+          }, {
           "ruleId": "CVE-2026-2332",
           "level": "warning",
           "message": {
@@ -1015,6 +1066,31 @@
             }
           ]
           }, {
+          "ruleId": "CVE-2026-6790",
+          "level": "warning",
+          "message": {
+            "text": "CVE-2026-6790 - In Eclipse Jetty, for HTTP\/1, HTTP\/2 and HTTP\/3 requests, there is no strict check that the request authority (host and port) matches what provided in the Host header (if present).\n\n\n\n\nThis was not enforced in earlier HTTP RFC (for example, in RFC 2616), but it is in the latest RFC (9110 and 9112).\n\n\n\n\nThis mismatch can cause a number of problems that may be classified as vulnerabilities such as:\n\n\n\n  *  \n        \n      URI constructions (for example, for redirects -- this is typical for login pages)\n\n  *  \n        \n      Virtual host selection\n\n  *  \n        \n      Reverse proxying\n\n  *  \n        \n      Misleading logs\n\n  *  \n        \n      Etc.\n\n\n\n\n\n\nGiven that the latest RFCs require that request authority and Host header must match, Jetty should enforce this invariant."
+          },
+          "partialFingerprints": {
+            "vulnerabilityHash": "648ef0d2853ebcbde47bee9234f249bf"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file://\/home\/runner\/.m2\/repository\/org\/eclipse\/jetty\/websocket\/websocket-client\/9.4.58.v20250814\/websocket-client-9.4.58.v20250814.jar"
+                  ,"index": 48
+                }
+              }
+                ,"logicalLocations": [
+                    {
+                    "fullyQualifiedName": "pkg:maven\/org.eclipse.jetty.websocket\/websocket-client@9.4.58.v20250814"
+                    }
+                ]
+              
+            }
+          ]
+          }, {
           "ruleId": "CVE-2026-2332",
           "level": "warning",
           "message": {
@@ -1072,6 +1148,31 @@
           },
           "partialFingerprints": {
             "vulnerabilityHash": "68501c54bf242f80957e58b1f6c873ed"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file://\/home\/runner\/.m2\/repository\/org\/eclipse\/jetty\/websocket\/websocket-common\/9.4.58.v20250814\/websocket-common-9.4.58.v20250814.jar"
+                  ,"index": 49
+                }
+              }
+                ,"logicalLocations": [
+                    {
+                    "fullyQualifiedName": "pkg:maven\/org.eclipse.jetty.websocket\/websocket-common@9.4.58.v20250814"
+                    }
+                ]
+              
+            }
+          ]
+          }, {
+          "ruleId": "CVE-2026-6790",
+          "level": "warning",
+          "message": {
+            "text": "CVE-2026-6790 - In Eclipse Jetty, for HTTP\/1, HTTP\/2 and HTTP\/3 requests, there is no strict check that the request authority (host and port) matches what provided in the Host header (if present).\n\n\n\n\nThis was not enforced in earlier HTTP RFC (for example, in RFC 2616), but it is in the latest RFC (9110 and 9112).\n\n\n\n\nThis mismatch can cause a number of problems that may be classified as vulnerabilities such as:\n\n\n\n  *  \n        \n      URI constructions (for example, for redirects -- this is typical for login pages)\n\n  *  \n        \n      Virtual host selection\n\n  *  \n        \n      Reverse proxying\n\n  *  \n        \n      Misleading logs\n\n  *  \n        \n      Etc.\n\n\n\n\n\n\nGiven that the latest RFCs require that request authority and Host header must match, Jetty should enforce this invariant."
+          },
+          "partialFingerprints": {
+            "vulnerabilityHash": "648ef0d2853ebcbde47bee9234f249bf"
           },
           "locations": [
             {
