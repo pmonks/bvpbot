@@ -4,16 +4,16 @@
         <engineVersion>12.2.0</engineVersion>
         <dataSource>
             <name>NVD API Last Checked</name>
-            <timestamp>2026-08-04T07:11:02Z</timestamp>
+            <timestamp>2026-08-11T04:45:50Z</timestamp>
         </dataSource>
         <dataSource>
             <name>NVD API Last Modified</name>
-            <timestamp>2026-08-04T06:16:30Z</timestamp>
+            <timestamp>2026-08-11T04:17:31Z</timestamp>
         </dataSource>
     </scanInfo>
     <projectInfo>
-        <name>com.github.pmonks/bvpbot 1.0.20260804</name>
-        <reportDate>2026-08-04T07:11:11.919424222Z</reportDate>
+        <name>com.github.pmonks/bvpbot 1.0.20260811</name>
+        <reportDate>2026-08-11T04:45:59.861544077Z</reportDate>
         <credits>This product uses the NVD API but is not endorsed or certified by the NVD. This report contains data retrieved from the National Vulnerability Database: https://nvd.nist.gov, Github Advisory Database (via NPM Audit API): https://github.com/advisories/, and the RetireJS community.</credits>
     </projectInfo>
     <dependencies>
@@ -6615,10 +6615,19 @@ Note how the chunk extension does not close the double quotes, and it is able to
 <url>https://access.redhat.com/errata/RHSA-2026:22453</url>                        </reference>
                         <reference>
                             <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
+<url>https://access.redhat.com/errata/RHSA-2026:50263</url>                        </reference>
+                        <reference>
+                            <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
+<url>https://access.redhat.com/errata/RHSA-2026:50222</url>                        </reference>
+                        <reference>
+                            <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
 <url>https://security.access.redhat.com/data/csaf/v2/vex/2026/cve-2026-2332.json</url>                        </reference>
                         <reference>
                             <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
 <url>https://access.redhat.com/errata/RHSA-2026:25089</url>                        </reference>
+                        <reference>
+                            <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
+<url>https://access.redhat.com/errata/RHSA-2026:50221</url>                        </reference>
                         <reference>
                             <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
 <url>https://access.redhat.com/security/cve/CVE-2026-2332</url>                        </reference>
@@ -6631,6 +6640,9 @@ Note how the chunk extension does not close the double quotes, and it is able to
                         <reference>
                             <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
 <url>https://access.redhat.com/errata/RHSA-2026:10175</url>                        </reference>
+                        <reference>
+                            <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
+<url>https://access.redhat.com/errata/RHSA-2026:50223</url>                        </reference>
                     </references>
                     <vulnerableSoftware>
                         <software
@@ -6643,6 +6655,105 @@ Note how the chunk extension does not close the double quotes, and it is able to
  versionStartIncluding="12.1.0" versionEndExcluding="12.1.7"                        >cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*</software>
                         <software vulnerabilityIdMatched="true"
  versionStartIncluding="9.4.0" versionEndExcluding="9.4.60"                        >cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*</software>
+                    </vulnerableSoftware>
+                </vulnerability>
+                <vulnerability source="NVD">
+                    <name>CVE-2026-10050</name>
+    <severity>HIGH</severity>
+                    <cvssV3>
+                        <baseScore>9.1</baseScore>
+                        <attackVector>NETWORK</attackVector>
+                        <attackComplexity>LOW</attackComplexity>
+                        <privilegesRequired>NONE</privilegesRequired>
+                        <userInteraction>NONE</userInteraction>
+                        <scope>UNCHANGED</scope>
+                        <confidentialityImpact>HIGH</confidentialityImpact>
+                        <integrityImpact>NONE</integrityImpact>
+                        <availabilityImpact>HIGH</availabilityImpact>
+                        <baseSeverity>CRITICAL</baseSeverity>
+<exploitabilityScore>3.9</exploitabilityScore><impactScore>5.2</impactScore><version>3.1</version>                    </cvssV3>
+                    <cvssV4>
+                            <source>emo@eclipse.org</source>
+                            <type>Secondary</type>
+                            <version>4.0</version>
+                            <vectorString>CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:N/V:X/RE:X/U:X</vectorString>
+                            <attackVector>NETWORK</attackVector>
+                            <attackComplexity>LOW</attackComplexity>
+                            <attackRequirements>NONE</attackRequirements>
+                            <privilegesRequired>NONE</privilegesRequired>
+                            <userInteraction>NONE</userInteraction>
+                            <vulnerableSystemConfidentiality>HIGH</vulnerableSystemConfidentiality>
+                            <vulnerableSystemIntegrity>NONE</vulnerableSystemIntegrity>
+                            <vulnerableSystemAvailability>NONE</vulnerableSystemAvailability>
+                            <subsequentSystemConfidentiality>NONE</subsequentSystemConfidentiality>
+)
+                            <subsequentSystemIntegrity>NONE</subsequentSystemIntegrity>
+                            <subsequentSystemAvailability>NONE</subsequentSystemAvailability>
+                            <exploitMaturity>NOT_DEFINED</exploitMaturity>
+                            <confidentialityRequirements>NOT_DEFINED</confidentialityRequirements>
+                            <integrityRequirements>NOT_DEFINED</integrityRequirements>
+                            <availabilityRequirements>NOT_DEFINED</availabilityRequirements>
+                            <modifiedAttackVector>NOT_DEFINED</modifiedAttackVector>
+                            <modifiedAttackComplexity>NOT_DEFINED</modifiedAttackComplexity>
+                            <modifiedAttackRequirements>NOT_DEFINED</modifiedAttackRequirements>
+                            <modifiedPrivilegesRequired>NOT_DEFINED</modifiedPrivilegesRequired>
+                            <modifiedUserInteraction>NOT_DEFINED</modifiedUserInteraction>
+                            <modifiedVulnerableSystemConfidentiality>NOT_DEFINED</modifiedVulnerableSystemConfidentiality>
+                            <modifiedVulnerableSystemIntegrity>NOT_DEFINED</modifiedVulnerableSystemIntegrity>
+                            <modifiedVulnerableSystemAvailability>NOT_DEFINED</modifiedVulnerableSystemAvailability>
+                            <modifiedSubsequentSystemConfidentiality>NOT_DEFINED</modifiedSubsequentSystemConfidentiality>
+                            <modifiedSubsequentSystemIntegrity>NOT_DEFINED</modifiedSubsequentSystemIntegrity>
+                            <modifiedSubsequentSystemAvailability>NOT_DEFINED</modifiedSubsequentSystemAvailability>
+                            <safety>NOT_DEFINED</safety>
+                            <automatable>NOT_DEFINED</automatable>
+                            <recovery>NOT_DEFINED</recovery>
+                            <valueDensity>NOT_DEFINED</valueDensity>
+                            <vulnerabilityResponseEffort>NOT_DEFINED</vulnerabilityResponseEffort>
+                            <providerUrgency>NOT_DEFINED</providerUrgency>
+                            <baseScore>8.7</baseScore>
+                            <baseSeverity>HIGH</baseSeverity>
+                    </cvssV4>
+                    <cwes>
+<cwe>CWE-303</cwe><cwe>CWE-173</cwe>                    </cwes>
+                    <description>In Eclipse Jetty, the Digest authentication server-side component uses ISO-8859-1 to encode the password as bytes.
+
+
+
+This was done because the initial specification for HTTP did not specify explicitly a charset, and it was assumed to be ISO-8859-1 for historical reasons.
+
+
+
+If the password contains characters that cannot be represented in ISO-8859-1, they are silently replaced by `?`. This happens with passwords that contain Chinese, Cyrillic or Greek characters, for example: `αβ123` converts to `??123`.
+
+
+
+An attacker can send a request with a digest `Authorization` header crafted with a password made of only `?` characters; the server would match any password of the same length that contains non-ISO-8859-1 characters.
+
+
+
+Recent HTTP Digest [RFC-7616](https://datatracker.ietf.org/doc/html/rfc7616) supports a `charset` parameters that defaults to UTF-8 that allows for correct encoding/decoding of passwords.</description>
+                    <references>
+                        <reference>
+                            <source>134c704f-9b21-4f2e-91b3-4a467353bcc0</source>
+<url>https://github.com/jetty/jetty.project/security/advisories/GHSA-2fvj-hgj9-j2gr</url><name>EXPLOIT,VENDOR_ADVISORY</name>                        </reference>
+                        <reference>
+                            <source>emo@eclipse.org</source>
+<url>https://github.com/jetty/jetty.project/security/advisories/GHSA-2fvj-hgj9-j2gr</url><name>EXPLOIT,VENDOR_ADVISORY</name>                        </reference>
+                        <reference>
+                            <source>emo@eclipse.org</source>
+<url>https://gitlab.eclipse.org/security/cve-assignment/-/work_items/120</url><name>ISSUE_TRACKING</name>                        </reference>
+                    </references>
+                    <vulnerableSoftware>
+                        <software
+ versionStartIncluding="10.0.0" versionEndExcluding="10.0.31"                        >cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*</software>
+                        <software
+ versionStartIncluding="11.0.0" versionEndExcluding="11.0.31"                        >cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*</software>
+                        <software
+ versionStartIncluding="12.0.0" versionEndExcluding="12.0.36"                        >cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*</software>
+                        <software
+ versionStartIncluding="12.1.0" versionEndExcluding="12.1.10"                        >cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*</software>
+                        <software vulnerabilityIdMatched="true"
+ versionStartIncluding="9.4.0" versionEndExcluding="9.4.63"                        >cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*</software>
                     </vulnerableSoftware>
                 </vulnerability>
                 <vulnerability source="NVD">
@@ -9223,10 +9334,19 @@ Note how the chunk extension does not close the double quotes, and it is able to
 <url>https://access.redhat.com/errata/RHSA-2026:22453</url>                        </reference>
                         <reference>
                             <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
+<url>https://access.redhat.com/errata/RHSA-2026:50263</url>                        </reference>
+                        <reference>
+                            <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
+<url>https://access.redhat.com/errata/RHSA-2026:50222</url>                        </reference>
+                        <reference>
+                            <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
 <url>https://security.access.redhat.com/data/csaf/v2/vex/2026/cve-2026-2332.json</url>                        </reference>
                         <reference>
                             <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
 <url>https://access.redhat.com/errata/RHSA-2026:25089</url>                        </reference>
+                        <reference>
+                            <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
+<url>https://access.redhat.com/errata/RHSA-2026:50221</url>                        </reference>
                         <reference>
                             <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
 <url>https://access.redhat.com/security/cve/CVE-2026-2332</url>                        </reference>
@@ -9239,6 +9359,9 @@ Note how the chunk extension does not close the double quotes, and it is able to
                         <reference>
                             <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
 <url>https://access.redhat.com/errata/RHSA-2026:10175</url>                        </reference>
+                        <reference>
+                            <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
+<url>https://access.redhat.com/errata/RHSA-2026:50223</url>                        </reference>
                     </references>
                     <vulnerableSoftware>
                         <software
@@ -9251,6 +9374,105 @@ Note how the chunk extension does not close the double quotes, and it is able to
  versionStartIncluding="12.1.0" versionEndExcluding="12.1.7"                        >cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*</software>
                         <software vulnerabilityIdMatched="true"
  versionStartIncluding="9.4.0" versionEndExcluding="9.4.60"                        >cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*</software>
+                    </vulnerableSoftware>
+                </vulnerability>
+                <vulnerability source="NVD">
+                    <name>CVE-2026-10050</name>
+    <severity>HIGH</severity>
+                    <cvssV3>
+                        <baseScore>9.1</baseScore>
+                        <attackVector>NETWORK</attackVector>
+                        <attackComplexity>LOW</attackComplexity>
+                        <privilegesRequired>NONE</privilegesRequired>
+                        <userInteraction>NONE</userInteraction>
+                        <scope>UNCHANGED</scope>
+                        <confidentialityImpact>HIGH</confidentialityImpact>
+                        <integrityImpact>NONE</integrityImpact>
+                        <availabilityImpact>HIGH</availabilityImpact>
+                        <baseSeverity>CRITICAL</baseSeverity>
+<exploitabilityScore>3.9</exploitabilityScore><impactScore>5.2</impactScore><version>3.1</version>                    </cvssV3>
+                    <cvssV4>
+                            <source>emo@eclipse.org</source>
+                            <type>Secondary</type>
+                            <version>4.0</version>
+                            <vectorString>CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:N/V:X/RE:X/U:X</vectorString>
+                            <attackVector>NETWORK</attackVector>
+                            <attackComplexity>LOW</attackComplexity>
+                            <attackRequirements>NONE</attackRequirements>
+                            <privilegesRequired>NONE</privilegesRequired>
+                            <userInteraction>NONE</userInteraction>
+                            <vulnerableSystemConfidentiality>HIGH</vulnerableSystemConfidentiality>
+                            <vulnerableSystemIntegrity>NONE</vulnerableSystemIntegrity>
+                            <vulnerableSystemAvailability>NONE</vulnerableSystemAvailability>
+                            <subsequentSystemConfidentiality>NONE</subsequentSystemConfidentiality>
+)
+                            <subsequentSystemIntegrity>NONE</subsequentSystemIntegrity>
+                            <subsequentSystemAvailability>NONE</subsequentSystemAvailability>
+                            <exploitMaturity>NOT_DEFINED</exploitMaturity>
+                            <confidentialityRequirements>NOT_DEFINED</confidentialityRequirements>
+                            <integrityRequirements>NOT_DEFINED</integrityRequirements>
+                            <availabilityRequirements>NOT_DEFINED</availabilityRequirements>
+                            <modifiedAttackVector>NOT_DEFINED</modifiedAttackVector>
+                            <modifiedAttackComplexity>NOT_DEFINED</modifiedAttackComplexity>
+                            <modifiedAttackRequirements>NOT_DEFINED</modifiedAttackRequirements>
+                            <modifiedPrivilegesRequired>NOT_DEFINED</modifiedPrivilegesRequired>
+                            <modifiedUserInteraction>NOT_DEFINED</modifiedUserInteraction>
+                            <modifiedVulnerableSystemConfidentiality>NOT_DEFINED</modifiedVulnerableSystemConfidentiality>
+                            <modifiedVulnerableSystemIntegrity>NOT_DEFINED</modifiedVulnerableSystemIntegrity>
+                            <modifiedVulnerableSystemAvailability>NOT_DEFINED</modifiedVulnerableSystemAvailability>
+                            <modifiedSubsequentSystemConfidentiality>NOT_DEFINED</modifiedSubsequentSystemConfidentiality>
+                            <modifiedSubsequentSystemIntegrity>NOT_DEFINED</modifiedSubsequentSystemIntegrity>
+                            <modifiedSubsequentSystemAvailability>NOT_DEFINED</modifiedSubsequentSystemAvailability>
+                            <safety>NOT_DEFINED</safety>
+                            <automatable>NOT_DEFINED</automatable>
+                            <recovery>NOT_DEFINED</recovery>
+                            <valueDensity>NOT_DEFINED</valueDensity>
+                            <vulnerabilityResponseEffort>NOT_DEFINED</vulnerabilityResponseEffort>
+                            <providerUrgency>NOT_DEFINED</providerUrgency>
+                            <baseScore>8.7</baseScore>
+                            <baseSeverity>HIGH</baseSeverity>
+                    </cvssV4>
+                    <cwes>
+<cwe>CWE-303</cwe><cwe>CWE-173</cwe>                    </cwes>
+                    <description>In Eclipse Jetty, the Digest authentication server-side component uses ISO-8859-1 to encode the password as bytes.
+
+
+
+This was done because the initial specification for HTTP did not specify explicitly a charset, and it was assumed to be ISO-8859-1 for historical reasons.
+
+
+
+If the password contains characters that cannot be represented in ISO-8859-1, they are silently replaced by `?`. This happens with passwords that contain Chinese, Cyrillic or Greek characters, for example: `αβ123` converts to `??123`.
+
+
+
+An attacker can send a request with a digest `Authorization` header crafted with a password made of only `?` characters; the server would match any password of the same length that contains non-ISO-8859-1 characters.
+
+
+
+Recent HTTP Digest [RFC-7616](https://datatracker.ietf.org/doc/html/rfc7616) supports a `charset` parameters that defaults to UTF-8 that allows for correct encoding/decoding of passwords.</description>
+                    <references>
+                        <reference>
+                            <source>134c704f-9b21-4f2e-91b3-4a467353bcc0</source>
+<url>https://github.com/jetty/jetty.project/security/advisories/GHSA-2fvj-hgj9-j2gr</url><name>EXPLOIT,VENDOR_ADVISORY</name>                        </reference>
+                        <reference>
+                            <source>emo@eclipse.org</source>
+<url>https://github.com/jetty/jetty.project/security/advisories/GHSA-2fvj-hgj9-j2gr</url><name>EXPLOIT,VENDOR_ADVISORY</name>                        </reference>
+                        <reference>
+                            <source>emo@eclipse.org</source>
+<url>https://gitlab.eclipse.org/security/cve-assignment/-/work_items/120</url><name>ISSUE_TRACKING</name>                        </reference>
+                    </references>
+                    <vulnerableSoftware>
+                        <software
+ versionStartIncluding="10.0.0" versionEndExcluding="10.0.31"                        >cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*</software>
+                        <software
+ versionStartIncluding="11.0.0" versionEndExcluding="11.0.31"                        >cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*</software>
+                        <software
+ versionStartIncluding="12.0.0" versionEndExcluding="12.0.36"                        >cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*</software>
+                        <software
+ versionStartIncluding="12.1.0" versionEndExcluding="12.1.10"                        >cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*</software>
+                        <software vulnerabilityIdMatched="true"
+ versionStartIncluding="9.4.0" versionEndExcluding="9.4.63"                        >cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*</software>
                     </vulnerableSoftware>
                 </vulnerability>
                 <vulnerability source="NVD">
@@ -9723,10 +9945,19 @@ Note how the chunk extension does not close the double quotes, and it is able to
 <url>https://access.redhat.com/errata/RHSA-2026:22453</url>                        </reference>
                         <reference>
                             <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
+<url>https://access.redhat.com/errata/RHSA-2026:50263</url>                        </reference>
+                        <reference>
+                            <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
+<url>https://access.redhat.com/errata/RHSA-2026:50222</url>                        </reference>
+                        <reference>
+                            <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
 <url>https://security.access.redhat.com/data/csaf/v2/vex/2026/cve-2026-2332.json</url>                        </reference>
                         <reference>
                             <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
 <url>https://access.redhat.com/errata/RHSA-2026:25089</url>                        </reference>
+                        <reference>
+                            <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
+<url>https://access.redhat.com/errata/RHSA-2026:50221</url>                        </reference>
                         <reference>
                             <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
 <url>https://access.redhat.com/security/cve/CVE-2026-2332</url>                        </reference>
@@ -9739,6 +9970,9 @@ Note how the chunk extension does not close the double quotes, and it is able to
                         <reference>
                             <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
 <url>https://access.redhat.com/errata/RHSA-2026:10175</url>                        </reference>
+                        <reference>
+                            <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
+<url>https://access.redhat.com/errata/RHSA-2026:50223</url>                        </reference>
                     </references>
                     <vulnerableSoftware>
                         <software
@@ -9751,6 +9985,105 @@ Note how the chunk extension does not close the double quotes, and it is able to
  versionStartIncluding="12.1.0" versionEndExcluding="12.1.7"                        >cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*</software>
                         <software vulnerabilityIdMatched="true"
  versionStartIncluding="9.4.0" versionEndExcluding="9.4.60"                        >cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*</software>
+                    </vulnerableSoftware>
+                </vulnerability>
+                <vulnerability source="NVD">
+                    <name>CVE-2026-10050</name>
+    <severity>HIGH</severity>
+                    <cvssV3>
+                        <baseScore>9.1</baseScore>
+                        <attackVector>NETWORK</attackVector>
+                        <attackComplexity>LOW</attackComplexity>
+                        <privilegesRequired>NONE</privilegesRequired>
+                        <userInteraction>NONE</userInteraction>
+                        <scope>UNCHANGED</scope>
+                        <confidentialityImpact>HIGH</confidentialityImpact>
+                        <integrityImpact>NONE</integrityImpact>
+                        <availabilityImpact>HIGH</availabilityImpact>
+                        <baseSeverity>CRITICAL</baseSeverity>
+<exploitabilityScore>3.9</exploitabilityScore><impactScore>5.2</impactScore><version>3.1</version>                    </cvssV3>
+                    <cvssV4>
+                            <source>emo@eclipse.org</source>
+                            <type>Secondary</type>
+                            <version>4.0</version>
+                            <vectorString>CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:N/V:X/RE:X/U:X</vectorString>
+                            <attackVector>NETWORK</attackVector>
+                            <attackComplexity>LOW</attackComplexity>
+                            <attackRequirements>NONE</attackRequirements>
+                            <privilegesRequired>NONE</privilegesRequired>
+                            <userInteraction>NONE</userInteraction>
+                            <vulnerableSystemConfidentiality>HIGH</vulnerableSystemConfidentiality>
+                            <vulnerableSystemIntegrity>NONE</vulnerableSystemIntegrity>
+                            <vulnerableSystemAvailability>NONE</vulnerableSystemAvailability>
+                            <subsequentSystemConfidentiality>NONE</subsequentSystemConfidentiality>
+)
+                            <subsequentSystemIntegrity>NONE</subsequentSystemIntegrity>
+                            <subsequentSystemAvailability>NONE</subsequentSystemAvailability>
+                            <exploitMaturity>NOT_DEFINED</exploitMaturity>
+                            <confidentialityRequirements>NOT_DEFINED</confidentialityRequirements>
+                            <integrityRequirements>NOT_DEFINED</integrityRequirements>
+                            <availabilityRequirements>NOT_DEFINED</availabilityRequirements>
+                            <modifiedAttackVector>NOT_DEFINED</modifiedAttackVector>
+                            <modifiedAttackComplexity>NOT_DEFINED</modifiedAttackComplexity>
+                            <modifiedAttackRequirements>NOT_DEFINED</modifiedAttackRequirements>
+                            <modifiedPrivilegesRequired>NOT_DEFINED</modifiedPrivilegesRequired>
+                            <modifiedUserInteraction>NOT_DEFINED</modifiedUserInteraction>
+                            <modifiedVulnerableSystemConfidentiality>NOT_DEFINED</modifiedVulnerableSystemConfidentiality>
+                            <modifiedVulnerableSystemIntegrity>NOT_DEFINED</modifiedVulnerableSystemIntegrity>
+                            <modifiedVulnerableSystemAvailability>NOT_DEFINED</modifiedVulnerableSystemAvailability>
+                            <modifiedSubsequentSystemConfidentiality>NOT_DEFINED</modifiedSubsequentSystemConfidentiality>
+                            <modifiedSubsequentSystemIntegrity>NOT_DEFINED</modifiedSubsequentSystemIntegrity>
+                            <modifiedSubsequentSystemAvailability>NOT_DEFINED</modifiedSubsequentSystemAvailability>
+                            <safety>NOT_DEFINED</safety>
+                            <automatable>NOT_DEFINED</automatable>
+                            <recovery>NOT_DEFINED</recovery>
+                            <valueDensity>NOT_DEFINED</valueDensity>
+                            <vulnerabilityResponseEffort>NOT_DEFINED</vulnerabilityResponseEffort>
+                            <providerUrgency>NOT_DEFINED</providerUrgency>
+                            <baseScore>8.7</baseScore>
+                            <baseSeverity>HIGH</baseSeverity>
+                    </cvssV4>
+                    <cwes>
+<cwe>CWE-303</cwe><cwe>CWE-173</cwe>                    </cwes>
+                    <description>In Eclipse Jetty, the Digest authentication server-side component uses ISO-8859-1 to encode the password as bytes.
+
+
+
+This was done because the initial specification for HTTP did not specify explicitly a charset, and it was assumed to be ISO-8859-1 for historical reasons.
+
+
+
+If the password contains characters that cannot be represented in ISO-8859-1, they are silently replaced by `?`. This happens with passwords that contain Chinese, Cyrillic or Greek characters, for example: `αβ123` converts to `??123`.
+
+
+
+An attacker can send a request with a digest `Authorization` header crafted with a password made of only `?` characters; the server would match any password of the same length that contains non-ISO-8859-1 characters.
+
+
+
+Recent HTTP Digest [RFC-7616](https://datatracker.ietf.org/doc/html/rfc7616) supports a `charset` parameters that defaults to UTF-8 that allows for correct encoding/decoding of passwords.</description>
+                    <references>
+                        <reference>
+                            <source>134c704f-9b21-4f2e-91b3-4a467353bcc0</source>
+<url>https://github.com/jetty/jetty.project/security/advisories/GHSA-2fvj-hgj9-j2gr</url><name>EXPLOIT,VENDOR_ADVISORY</name>                        </reference>
+                        <reference>
+                            <source>emo@eclipse.org</source>
+<url>https://github.com/jetty/jetty.project/security/advisories/GHSA-2fvj-hgj9-j2gr</url><name>EXPLOIT,VENDOR_ADVISORY</name>                        </reference>
+                        <reference>
+                            <source>emo@eclipse.org</source>
+<url>https://gitlab.eclipse.org/security/cve-assignment/-/work_items/120</url><name>ISSUE_TRACKING</name>                        </reference>
+                    </references>
+                    <vulnerableSoftware>
+                        <software
+ versionStartIncluding="10.0.0" versionEndExcluding="10.0.31"                        >cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*</software>
+                        <software
+ versionStartIncluding="11.0.0" versionEndExcluding="11.0.31"                        >cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*</software>
+                        <software
+ versionStartIncluding="12.0.0" versionEndExcluding="12.0.36"                        >cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*</software>
+                        <software
+ versionStartIncluding="12.1.0" versionEndExcluding="12.1.10"                        >cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*</software>
+                        <software vulnerabilityIdMatched="true"
+ versionStartIncluding="9.4.0" versionEndExcluding="9.4.63"                        >cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*</software>
                     </vulnerableSoftware>
                 </vulnerability>
                 <vulnerability source="NVD">

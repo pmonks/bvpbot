@@ -22,8 +22,8 @@
                         "url": "https://github.com/dependency-check/DependencyCheck/"
         },
 
-        "end_time": "2026-08-04T07:11:11",
-                "start_time": "2026-08-04T07:11:11",
+        "end_time": "2026-08-11T04:45:59",
+                "start_time": "2026-08-11T04:45:59",
                 "status":  "success"  ,
                 "type": "dependency_scanning"
 
@@ -83,6 +83,22 @@
                                     }
                                         ,
                                     {
+                                        "url": "https:\/\/access.redhat.com\/errata\/RHSA-2026:50221"
+                                    }
+                                        ,
+                                    {
+                                        "url": "https:\/\/access.redhat.com\/errata\/RHSA-2026:50222"
+                                    }
+                                        ,
+                                    {
+                                        "url": "https:\/\/access.redhat.com\/errata\/RHSA-2026:50223"
+                                    }
+                                        ,
+                                    {
+                                        "url": "https:\/\/access.redhat.com\/errata\/RHSA-2026:50263"
+                                    }
+                                        ,
+                                    {
                                         "url": "https:\/\/access.redhat.com\/security\/cve\/CVE-2026-2332"
                                     }
                                         ,
@@ -102,6 +118,48 @@
                                     {
                                                                                 "name": "ISSUE_TRACKING,VENDOR_ADVISORY",
                                         "url": "https:\/\/gitlab.eclipse.org\/security\/cve-assignment\/-\/issues\/89"
+                                    }
+                        ]
+                                                                                            }
+                                        ,
+                                        {
+                        "id": "CVE-2026-10050",
+                        "identifiers": [
+                            {
+                                "type": "NVD"
+                                    , "name": "CVE-2026-10050"
+                                , "value": "e198dae4d91fa79d9c1e2e039870d49c487c45cf"
+
+                                                                    , "url": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2026-10050"
+                            }
+                        ],
+                        "location": {
+                            "file": "\/home\/runner\/.m2\/repository\/org\/eclipse\/jetty\/jetty-io\/9.4.58.v20250814\/jetty-io-9.4.58.v20250814.jar",
+                            "dependency": {
+                                "package": {
+                                    "name": "org.eclipse.jetty:jetty-io"
+                                },
+                                "version": "9.4.58.v20250814"
+                                                                                                                                                                                                                                                                                                                                                                                                                            }
+                        },
+
+                                                "name": "CVE-2026-10050",
+                        "description": "In Eclipse Jetty, the Digest authentication server-side component uses ISO-8859-1 to encode the password as bytes.\n\n\n\nThis was done because the initial specification for HTTP did not specify explicitly a charset, and it was assumed to be ISO-8859-1 for historical reasons.\n\n\n\nIf the password contains characters that cannot be represented in ISO-8859-1, they are silently replaced by `?`. This happens with passwords that contain Chinese, Cyrillic or Greek characters, for example: `\u03B1\u03B2123` converts to `??123`.\n\n\n\nAn attacker can send a request with a digest `Authorization` header crafted with a password made of only `?` characters; the server would match any password of the same length that contains non-ISO-8859-1 characters.\n\n\n\nRecent HTTP Digest [RFC-7616](https:\/\/datatracker.ietf.org\/doc\/html\/rfc7616) supports a `charset` parameters that defaults to UTF-8 that allows for correct encoding\/decoding of passwords.",
+                        "severity": "High",
+                                                "links": [
+                                    {
+                                                                                "name": "EXPLOIT,VENDOR_ADVISORY",
+                                        "url": "https:\/\/github.com\/jetty\/jetty.project\/security\/advisories\/GHSA-2fvj-hgj9-j2gr"
+                                    }
+                                        ,
+                                    {
+                                                                                "name": "EXPLOIT,VENDOR_ADVISORY",
+                                        "url": "https:\/\/github.com\/jetty\/jetty.project\/security\/advisories\/GHSA-2fvj-hgj9-j2gr"
+                                    }
+                                        ,
+                                    {
+                                                                                "name": "ISSUE_TRACKING",
+                                        "url": "https:\/\/gitlab.eclipse.org\/security\/cve-assignment\/-\/work_items\/120"
                                     }
                         ]
                                                                                             }
@@ -285,6 +343,22 @@
                                     }
                                         ,
                                     {
+                                        "url": "https:\/\/access.redhat.com\/errata\/RHSA-2026:50221"
+                                    }
+                                        ,
+                                    {
+                                        "url": "https:\/\/access.redhat.com\/errata\/RHSA-2026:50222"
+                                    }
+                                        ,
+                                    {
+                                        "url": "https:\/\/access.redhat.com\/errata\/RHSA-2026:50223"
+                                    }
+                                        ,
+                                    {
+                                        "url": "https:\/\/access.redhat.com\/errata\/RHSA-2026:50263"
+                                    }
+                                        ,
+                                    {
                                         "url": "https:\/\/access.redhat.com\/security\/cve\/CVE-2026-2332"
                                     }
                                         ,
@@ -304,6 +378,48 @@
                                     {
                                                                                 "name": "ISSUE_TRACKING,VENDOR_ADVISORY",
                                         "url": "https:\/\/gitlab.eclipse.org\/security\/cve-assignment\/-\/issues\/89"
+                                    }
+                        ]
+                                                                                            }
+                                        ,
+                                        {
+                        "id": "CVE-2026-10050",
+                        "identifiers": [
+                            {
+                                "type": "NVD"
+                                    , "name": "CVE-2026-10050"
+                                , "value": "def27af0dc52086738483191761bd8edd08ff625"
+
+                                                                    , "url": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2026-10050"
+                            }
+                        ],
+                        "location": {
+                            "file": "\/home\/runner\/.m2\/repository\/org\/eclipse\/jetty\/websocket\/websocket-client\/9.4.58.v20250814\/websocket-client-9.4.58.v20250814.jar",
+                            "dependency": {
+                                "package": {
+                                    "name": "org.eclipse.jetty.websocket:websocket-client"
+                                },
+                                "version": "9.4.58.v20250814"
+                                                                                                                                                                                                                                                                                                                                                                                                                            }
+                        },
+
+                                                "name": "CVE-2026-10050",
+                        "description": "In Eclipse Jetty, the Digest authentication server-side component uses ISO-8859-1 to encode the password as bytes.\n\n\n\nThis was done because the initial specification for HTTP did not specify explicitly a charset, and it was assumed to be ISO-8859-1 for historical reasons.\n\n\n\nIf the password contains characters that cannot be represented in ISO-8859-1, they are silently replaced by `?`. This happens with passwords that contain Chinese, Cyrillic or Greek characters, for example: `\u03B1\u03B2123` converts to `??123`.\n\n\n\nAn attacker can send a request with a digest `Authorization` header crafted with a password made of only `?` characters; the server would match any password of the same length that contains non-ISO-8859-1 characters.\n\n\n\nRecent HTTP Digest [RFC-7616](https:\/\/datatracker.ietf.org\/doc\/html\/rfc7616) supports a `charset` parameters that defaults to UTF-8 that allows for correct encoding\/decoding of passwords.",
+                        "severity": "High",
+                                                "links": [
+                                    {
+                                                                                "name": "EXPLOIT,VENDOR_ADVISORY",
+                                        "url": "https:\/\/github.com\/jetty\/jetty.project\/security\/advisories\/GHSA-2fvj-hgj9-j2gr"
+                                    }
+                                        ,
+                                    {
+                                                                                "name": "EXPLOIT,VENDOR_ADVISORY",
+                                        "url": "https:\/\/github.com\/jetty\/jetty.project\/security\/advisories\/GHSA-2fvj-hgj9-j2gr"
+                                    }
+                                        ,
+                                    {
+                                                                                "name": "ISSUE_TRACKING",
+                                        "url": "https:\/\/gitlab.eclipse.org\/security\/cve-assignment\/-\/work_items\/120"
                                     }
                         ]
                                                                                             }
@@ -487,6 +603,22 @@
                                     }
                                         ,
                                     {
+                                        "url": "https:\/\/access.redhat.com\/errata\/RHSA-2026:50221"
+                                    }
+                                        ,
+                                    {
+                                        "url": "https:\/\/access.redhat.com\/errata\/RHSA-2026:50222"
+                                    }
+                                        ,
+                                    {
+                                        "url": "https:\/\/access.redhat.com\/errata\/RHSA-2026:50223"
+                                    }
+                                        ,
+                                    {
+                                        "url": "https:\/\/access.redhat.com\/errata\/RHSA-2026:50263"
+                                    }
+                                        ,
+                                    {
                                         "url": "https:\/\/access.redhat.com\/security\/cve\/CVE-2026-2332"
                                     }
                                         ,
@@ -506,6 +638,48 @@
                                     {
                                                                                 "name": "ISSUE_TRACKING,VENDOR_ADVISORY",
                                         "url": "https:\/\/gitlab.eclipse.org\/security\/cve-assignment\/-\/issues\/89"
+                                    }
+                        ]
+                                                                                            }
+                                        ,
+                                        {
+                        "id": "CVE-2026-10050",
+                        "identifiers": [
+                            {
+                                "type": "NVD"
+                                    , "name": "CVE-2026-10050"
+                                , "value": "35d5d3b947643920cfcf82f02d0c139a7c338c5a"
+
+                                                                    , "url": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2026-10050"
+                            }
+                        ],
+                        "location": {
+                            "file": "\/home\/runner\/.m2\/repository\/org\/eclipse\/jetty\/websocket\/websocket-common\/9.4.58.v20250814\/websocket-common-9.4.58.v20250814.jar",
+                            "dependency": {
+                                "package": {
+                                    "name": "org.eclipse.jetty.websocket:websocket-common"
+                                },
+                                "version": "9.4.58.v20250814"
+                                                                                                                                                                                                                                                                                                                                                                                                                            }
+                        },
+
+                                                "name": "CVE-2026-10050",
+                        "description": "In Eclipse Jetty, the Digest authentication server-side component uses ISO-8859-1 to encode the password as bytes.\n\n\n\nThis was done because the initial specification for HTTP did not specify explicitly a charset, and it was assumed to be ISO-8859-1 for historical reasons.\n\n\n\nIf the password contains characters that cannot be represented in ISO-8859-1, they are silently replaced by `?`. This happens with passwords that contain Chinese, Cyrillic or Greek characters, for example: `\u03B1\u03B2123` converts to `??123`.\n\n\n\nAn attacker can send a request with a digest `Authorization` header crafted with a password made of only `?` characters; the server would match any password of the same length that contains non-ISO-8859-1 characters.\n\n\n\nRecent HTTP Digest [RFC-7616](https:\/\/datatracker.ietf.org\/doc\/html\/rfc7616) supports a `charset` parameters that defaults to UTF-8 that allows for correct encoding\/decoding of passwords.",
+                        "severity": "High",
+                                                "links": [
+                                    {
+                                                                                "name": "EXPLOIT,VENDOR_ADVISORY",
+                                        "url": "https:\/\/github.com\/jetty\/jetty.project\/security\/advisories\/GHSA-2fvj-hgj9-j2gr"
+                                    }
+                                        ,
+                                    {
+                                                                                "name": "EXPLOIT,VENDOR_ADVISORY",
+                                        "url": "https:\/\/github.com\/jetty\/jetty.project\/security\/advisories\/GHSA-2fvj-hgj9-j2gr"
+                                    }
+                                        ,
+                                    {
+                                                                                "name": "ISSUE_TRACKING",
+                                        "url": "https:\/\/gitlab.eclipse.org\/security\/cve-assignment\/-\/work_items\/120"
                                     }
                         ]
                                                                                             }
