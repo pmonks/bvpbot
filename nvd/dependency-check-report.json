@@ -5,19 +5,19 @@
         "dataSource": [
 {
                 "name": "NVD API Last Checked",
-                "timestamp": "2026-08-11T04:45:50Z"
+                "timestamp": "2026-08-18T03:12:58Z"
             }
 ,{
                 "name": "NVD API Last Modified",
-                "timestamp": "2026-08-11T04:17:31Z"
+                "timestamp": "2026-08-18T02:17:30Z"
             }
         ]
 
 
     },
     "projectInfo": {
-        "name": "com.github.pmonks\/bvpbot 1.0.20260811",
-        "reportDate": "2026-08-11T04:45:59.861544077Z",
+        "name": "com.github.pmonks\/bvpbot 1.0.20260818",
+        "reportDate": "2026-08-18T03:13:08.240200836Z",
         "credits": {
             "NVD": "This product uses the NVD API but is not endorsed or certified by the NVD. This report contains data retrieved from the National Vulnerability Database: https://nvd.nist.gov",
             "CISA": "This report may contain data retrieved from the CISA Known Exploited Vulnerability Catalog: https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
@@ -9034,7 +9034,7 @@
 ,"exploitabilityScore": "3.9","impactScore": "5.2","version": "3.1"                    },
                     "cwes": [
                         "CWE-444"                    ],
-                "description": "In Eclipse Jetty, the HTTP\/1.1 parser is vulnerable to request smuggling when chunk extensions are used, similar to the \"funky chunks\" techniques outlined here:\n  *  https:\/\/w4ke.info\/2025\/06\/18\/funky-chunks.html\n\n  *  https:\/\/w4ke.info\/2025\/10\/29\/funky-chunks-2.html\n\n\nJetty terminates chunk extension parsing at\u00A0\\r\\n\u00A0inside quoted strings instead of treating this as an error.\n\n\nPOST \/ HTTP\/1.1\nHost: localhost\nTransfer-Encoding: chunked\n\n1;ext=\"val\nX\n0\n\nGET \/smuggled HTTP\/1.1\n...\n\n\n\n\n\nNote how the chunk extension does not close the double quotes, and it is able to inject a smuggled request.",
+                "description": "In Eclipse Jetty, the HTTP\/1.1 parser is vulnerable to request smuggling when chunk extensions are used, similar to the \"funky chunks\" techniques outlined here:\n  *  https:\/\/w4ke.info\/2025\/06\/18\/funky-chunks.html\n\n  *  https:\/\/w4ke.info\/2025\/10\/29\/funky-chunks-2.html\n\n\nJetty terminates chunk extension parsing at\u00A0\\r\\n\u00A0inside quoted strings instead of treating this as an error.\n\n\n\n\nPOST \/ HTTP\/1.1\nHost: localhost\nTransfer-Encoding: chunked\n\n1;ext=\"val\nX\n0\n\nGET \/smuggled HTTP\/1.1\n...\n\n\n\n\n\nNote how the chunk extension does not close the double quotes, and it is able to inject a smuggled request.",
                 "notes": "",
                 "references": [
  {
@@ -12560,7 +12560,7 @@
 ,"exploitabilityScore": "3.9","impactScore": "5.2","version": "3.1"                    },
                     "cwes": [
                         "CWE-444"                    ],
-                "description": "In Eclipse Jetty, the HTTP\/1.1 parser is vulnerable to request smuggling when chunk extensions are used, similar to the \"funky chunks\" techniques outlined here:\n  *  https:\/\/w4ke.info\/2025\/06\/18\/funky-chunks.html\n\n  *  https:\/\/w4ke.info\/2025\/10\/29\/funky-chunks-2.html\n\n\nJetty terminates chunk extension parsing at\u00A0\\r\\n\u00A0inside quoted strings instead of treating this as an error.\n\n\nPOST \/ HTTP\/1.1\nHost: localhost\nTransfer-Encoding: chunked\n\n1;ext=\"val\nX\n0\n\nGET \/smuggled HTTP\/1.1\n...\n\n\n\n\n\nNote how the chunk extension does not close the double quotes, and it is able to inject a smuggled request.",
+                "description": "In Eclipse Jetty, the HTTP\/1.1 parser is vulnerable to request smuggling when chunk extensions are used, similar to the \"funky chunks\" techniques outlined here:\n  *  https:\/\/w4ke.info\/2025\/06\/18\/funky-chunks.html\n\n  *  https:\/\/w4ke.info\/2025\/10\/29\/funky-chunks-2.html\n\n\nJetty terminates chunk extension parsing at\u00A0\\r\\n\u00A0inside quoted strings instead of treating this as an error.\n\n\n\n\nPOST \/ HTTP\/1.1\nHost: localhost\nTransfer-Encoding: chunked\n\n1;ext=\"val\nX\n0\n\nGET \/smuggled HTTP\/1.1\n...\n\n\n\n\n\nNote how the chunk extension does not close the double quotes, and it is able to inject a smuggled request.",
                 "notes": "",
                 "references": [
  {
@@ -13191,7 +13191,7 @@
 ,"exploitabilityScore": "3.9","impactScore": "5.2","version": "3.1"                    },
                     "cwes": [
                         "CWE-444"                    ],
-                "description": "In Eclipse Jetty, the HTTP\/1.1 parser is vulnerable to request smuggling when chunk extensions are used, similar to the \"funky chunks\" techniques outlined here:\n  *  https:\/\/w4ke.info\/2025\/06\/18\/funky-chunks.html\n\n  *  https:\/\/w4ke.info\/2025\/10\/29\/funky-chunks-2.html\n\n\nJetty terminates chunk extension parsing at\u00A0\\r\\n\u00A0inside quoted strings instead of treating this as an error.\n\n\nPOST \/ HTTP\/1.1\nHost: localhost\nTransfer-Encoding: chunked\n\n1;ext=\"val\nX\n0\n\nGET \/smuggled HTTP\/1.1\n...\n\n\n\n\n\nNote how the chunk extension does not close the double quotes, and it is able to inject a smuggled request.",
+                "description": "In Eclipse Jetty, the HTTP\/1.1 parser is vulnerable to request smuggling when chunk extensions are used, similar to the \"funky chunks\" techniques outlined here:\n  *  https:\/\/w4ke.info\/2025\/06\/18\/funky-chunks.html\n\n  *  https:\/\/w4ke.info\/2025\/10\/29\/funky-chunks-2.html\n\n\nJetty terminates chunk extension parsing at\u00A0\\r\\n\u00A0inside quoted strings instead of treating this as an error.\n\n\n\n\nPOST \/ HTTP\/1.1\nHost: localhost\nTransfer-Encoding: chunked\n\n1;ext=\"val\nX\n0\n\nGET \/smuggled HTTP\/1.1\n...\n\n\n\n\n\nNote how the chunk extension does not close the double quotes, and it is able to inject a smuggled request.",
                 "notes": "",
                 "references": [
  {
