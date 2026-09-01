@@ -4,16 +4,16 @@
         <engineVersion>12.2.0</engineVersion>
         <dataSource>
             <name>NVD API Last Checked</name>
-            <timestamp>2026-08-25T05:01:48Z</timestamp>
+            <timestamp>2026-09-01T08:46:29Z</timestamp>
         </dataSource>
         <dataSource>
             <name>NVD API Last Modified</name>
-            <timestamp>2026-08-25T04:18:21Z</timestamp>
+            <timestamp>2026-09-01T08:17:01Z</timestamp>
         </dataSource>
     </scanInfo>
     <projectInfo>
-        <name>com.github.pmonks/bvpbot 1.0.20260825</name>
-        <reportDate>2026-08-25T05:01:58.065156755Z</reportDate>
+        <name>com.github.pmonks/bvpbot 1.0.20260901</name>
+        <reportDate>2026-09-01T08:46:39.403711900Z</reportDate>
         <credits>This product uses the NVD API but is not endorsed or certified by the NVD. This report contains data retrieved from the National Vulnerability Database: https://nvd.nist.gov, Github Advisory Database (via NPM Audit API): https://github.com/advisories/, and the RetireJS community.</credits>
     </projectInfo>
     <dependencies>
@@ -6829,26 +6829,23 @@ Note how the chunk extension does not close the double quotes, and it is able to
                             <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
 <url>https://access.redhat.com/errata/RHSA-2026:20568</url>                        </reference>
                         <reference>
-                            <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
-<url>https://access.redhat.com/errata/RHSA-2026:17668</url>                        </reference>
-                        <reference>
                             <source>emo@eclipse.org</source>
 <url>https://gitlab.eclipse.org/security/cve-assignment/-/issues/89</url><name>ISSUE_TRACKING,VENDOR_ADVISORY</name>                        </reference>
-                        <reference>
-                            <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
-<url>https://access.redhat.com/errata/RHSA-2026:14272</url>                        </reference>
                         <reference>
                             <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
 <url>https://access.redhat.com/errata/RHSA-2026:21773</url>                        </reference>
                         <reference>
                             <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
-<url>https://access.redhat.com/errata/RHSA-2026:22453</url>                        </reference>
+<url>https://access.redhat.com/errata/RHSA-2026:60247</url>                        </reference>
                         <reference>
                             <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
-<url>https://access.redhat.com/errata/RHSA-2026:50263</url>                        </reference>
+<url>https://access.redhat.com/errata/RHSA-2026:60246</url>                        </reference>
                         <reference>
                             <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
-<url>https://access.redhat.com/errata/RHSA-2026:50222</url>                        </reference>
+<url>https://access.redhat.com/errata/RHSA-2026:60249</url>                        </reference>
+                        <reference>
+                            <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
+<url>https://access.redhat.com/errata/RHSA-2026:60248</url>                        </reference>
                         <reference>
                             <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
 <url>https://security.access.redhat.com/data/csaf/v2/vex/2026/cve-2026-2332.json</url>                        </reference>
@@ -6857,19 +6854,55 @@ Note how the chunk extension does not close the double quotes, and it is able to
 <url>https://access.redhat.com/errata/RHSA-2026:25089</url>                        </reference>
                         <reference>
                             <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
-<url>https://access.redhat.com/errata/RHSA-2026:50221</url>                        </reference>
+<url>https://access.redhat.com/security/cve/CVE-2026-2332</url>                        </reference>
                         <reference>
                             <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
-<url>https://access.redhat.com/security/cve/CVE-2026-2332</url>                        </reference>
+<url>https://access.redhat.com/errata/RHSA-2026:10175</url>                        </reference>
+                        <reference>
+                            <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
+<url>https://access.redhat.com/errata/RHSA-2026:60250</url>                        </reference>
+                        <reference>
+                            <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
+<url>https://access.redhat.com/errata/RHSA-2026:17668</url>                        </reference>
+                        <reference>
+                            <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
+<url>https://access.redhat.com/errata/RHSA-2026:60254</url>                        </reference>
+                        <reference>
+                            <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
+<url>https://access.redhat.com/errata/RHSA-2026:14272</url>                        </reference>
+                        <reference>
+                            <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
+<url>https://access.redhat.com/errata/RHSA-2026:60252</url>                        </reference>
+                        <reference>
+                            <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
+<url>https://access.redhat.com/errata/RHSA-2026:60251</url>                        </reference>
+                        <reference>
+                            <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
+<url>https://access.redhat.com/errata/RHSA-2026:60256</url>                        </reference>
+                        <reference>
+                            <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
+<url>https://access.redhat.com/errata/RHSA-2026:60239</url>                        </reference>
+                        <reference>
+                            <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
+<url>https://access.redhat.com/errata/RHSA-2026:22453</url>                        </reference>
+                        <reference>
+                            <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
+<url>https://access.redhat.com/errata/RHSA-2026:60259</url>                        </reference>
+                        <reference>
+                            <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
+<url>https://access.redhat.com/errata/RHSA-2026:50263</url>                        </reference>
+                        <reference>
+                            <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
+<url>https://access.redhat.com/errata/RHSA-2026:50222</url>                        </reference>
+                        <reference>
+                            <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
+<url>https://access.redhat.com/errata/RHSA-2026:50221</url>                        </reference>
                         <reference>
                             <source>emo@eclipse.org</source>
 <url>https://github.com/jetty/jetty.project/security/advisories/GHSA-355h-qmc2-wpwf</url><name>EXPLOIT,MITIGATION,VENDOR_ADVISORY</name>                        </reference>
                         <reference>
                             <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
 <url>https://bugzilla.redhat.com/show_bug.cgi?id=2458187</url>                        </reference>
-                        <reference>
-                            <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
-<url>https://access.redhat.com/errata/RHSA-2026:10175</url>                        </reference>
                         <reference>
                             <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
 <url>https://access.redhat.com/errata/RHSA-2026:50223</url>                        </reference>
@@ -9550,26 +9583,23 @@ Note how the chunk extension does not close the double quotes, and it is able to
                             <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
 <url>https://access.redhat.com/errata/RHSA-2026:20568</url>                        </reference>
                         <reference>
-                            <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
-<url>https://access.redhat.com/errata/RHSA-2026:17668</url>                        </reference>
-                        <reference>
                             <source>emo@eclipse.org</source>
 <url>https://gitlab.eclipse.org/security/cve-assignment/-/issues/89</url><name>ISSUE_TRACKING,VENDOR_ADVISORY</name>                        </reference>
-                        <reference>
-                            <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
-<url>https://access.redhat.com/errata/RHSA-2026:14272</url>                        </reference>
                         <reference>
                             <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
 <url>https://access.redhat.com/errata/RHSA-2026:21773</url>                        </reference>
                         <reference>
                             <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
-<url>https://access.redhat.com/errata/RHSA-2026:22453</url>                        </reference>
+<url>https://access.redhat.com/errata/RHSA-2026:60247</url>                        </reference>
                         <reference>
                             <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
-<url>https://access.redhat.com/errata/RHSA-2026:50263</url>                        </reference>
+<url>https://access.redhat.com/errata/RHSA-2026:60246</url>                        </reference>
                         <reference>
                             <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
-<url>https://access.redhat.com/errata/RHSA-2026:50222</url>                        </reference>
+<url>https://access.redhat.com/errata/RHSA-2026:60249</url>                        </reference>
+                        <reference>
+                            <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
+<url>https://access.redhat.com/errata/RHSA-2026:60248</url>                        </reference>
                         <reference>
                             <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
 <url>https://security.access.redhat.com/data/csaf/v2/vex/2026/cve-2026-2332.json</url>                        </reference>
@@ -9578,19 +9608,55 @@ Note how the chunk extension does not close the double quotes, and it is able to
 <url>https://access.redhat.com/errata/RHSA-2026:25089</url>                        </reference>
                         <reference>
                             <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
-<url>https://access.redhat.com/errata/RHSA-2026:50221</url>                        </reference>
+<url>https://access.redhat.com/security/cve/CVE-2026-2332</url>                        </reference>
                         <reference>
                             <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
-<url>https://access.redhat.com/security/cve/CVE-2026-2332</url>                        </reference>
+<url>https://access.redhat.com/errata/RHSA-2026:10175</url>                        </reference>
+                        <reference>
+                            <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
+<url>https://access.redhat.com/errata/RHSA-2026:60250</url>                        </reference>
+                        <reference>
+                            <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
+<url>https://access.redhat.com/errata/RHSA-2026:17668</url>                        </reference>
+                        <reference>
+                            <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
+<url>https://access.redhat.com/errata/RHSA-2026:60254</url>                        </reference>
+                        <reference>
+                            <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
+<url>https://access.redhat.com/errata/RHSA-2026:14272</url>                        </reference>
+                        <reference>
+                            <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
+<url>https://access.redhat.com/errata/RHSA-2026:60252</url>                        </reference>
+                        <reference>
+                            <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
+<url>https://access.redhat.com/errata/RHSA-2026:60251</url>                        </reference>
+                        <reference>
+                            <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
+<url>https://access.redhat.com/errata/RHSA-2026:60256</url>                        </reference>
+                        <reference>
+                            <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
+<url>https://access.redhat.com/errata/RHSA-2026:60239</url>                        </reference>
+                        <reference>
+                            <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
+<url>https://access.redhat.com/errata/RHSA-2026:22453</url>                        </reference>
+                        <reference>
+                            <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
+<url>https://access.redhat.com/errata/RHSA-2026:60259</url>                        </reference>
+                        <reference>
+                            <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
+<url>https://access.redhat.com/errata/RHSA-2026:50263</url>                        </reference>
+                        <reference>
+                            <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
+<url>https://access.redhat.com/errata/RHSA-2026:50222</url>                        </reference>
+                        <reference>
+                            <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
+<url>https://access.redhat.com/errata/RHSA-2026:50221</url>                        </reference>
                         <reference>
                             <source>emo@eclipse.org</source>
 <url>https://github.com/jetty/jetty.project/security/advisories/GHSA-355h-qmc2-wpwf</url><name>EXPLOIT,MITIGATION,VENDOR_ADVISORY</name>                        </reference>
                         <reference>
                             <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
 <url>https://bugzilla.redhat.com/show_bug.cgi?id=2458187</url>                        </reference>
-                        <reference>
-                            <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
-<url>https://access.redhat.com/errata/RHSA-2026:10175</url>                        </reference>
                         <reference>
                             <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
 <url>https://access.redhat.com/errata/RHSA-2026:50223</url>                        </reference>
@@ -10163,26 +10229,23 @@ Note how the chunk extension does not close the double quotes, and it is able to
                             <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
 <url>https://access.redhat.com/errata/RHSA-2026:20568</url>                        </reference>
                         <reference>
-                            <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
-<url>https://access.redhat.com/errata/RHSA-2026:17668</url>                        </reference>
-                        <reference>
                             <source>emo@eclipse.org</source>
 <url>https://gitlab.eclipse.org/security/cve-assignment/-/issues/89</url><name>ISSUE_TRACKING,VENDOR_ADVISORY</name>                        </reference>
-                        <reference>
-                            <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
-<url>https://access.redhat.com/errata/RHSA-2026:14272</url>                        </reference>
                         <reference>
                             <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
 <url>https://access.redhat.com/errata/RHSA-2026:21773</url>                        </reference>
                         <reference>
                             <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
-<url>https://access.redhat.com/errata/RHSA-2026:22453</url>                        </reference>
+<url>https://access.redhat.com/errata/RHSA-2026:60247</url>                        </reference>
                         <reference>
                             <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
-<url>https://access.redhat.com/errata/RHSA-2026:50263</url>                        </reference>
+<url>https://access.redhat.com/errata/RHSA-2026:60246</url>                        </reference>
                         <reference>
                             <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
-<url>https://access.redhat.com/errata/RHSA-2026:50222</url>                        </reference>
+<url>https://access.redhat.com/errata/RHSA-2026:60249</url>                        </reference>
+                        <reference>
+                            <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
+<url>https://access.redhat.com/errata/RHSA-2026:60248</url>                        </reference>
                         <reference>
                             <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
 <url>https://security.access.redhat.com/data/csaf/v2/vex/2026/cve-2026-2332.json</url>                        </reference>
@@ -10191,19 +10254,55 @@ Note how the chunk extension does not close the double quotes, and it is able to
 <url>https://access.redhat.com/errata/RHSA-2026:25089</url>                        </reference>
                         <reference>
                             <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
-<url>https://access.redhat.com/errata/RHSA-2026:50221</url>                        </reference>
+<url>https://access.redhat.com/security/cve/CVE-2026-2332</url>                        </reference>
                         <reference>
                             <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
-<url>https://access.redhat.com/security/cve/CVE-2026-2332</url>                        </reference>
+<url>https://access.redhat.com/errata/RHSA-2026:10175</url>                        </reference>
+                        <reference>
+                            <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
+<url>https://access.redhat.com/errata/RHSA-2026:60250</url>                        </reference>
+                        <reference>
+                            <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
+<url>https://access.redhat.com/errata/RHSA-2026:17668</url>                        </reference>
+                        <reference>
+                            <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
+<url>https://access.redhat.com/errata/RHSA-2026:60254</url>                        </reference>
+                        <reference>
+                            <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
+<url>https://access.redhat.com/errata/RHSA-2026:14272</url>                        </reference>
+                        <reference>
+                            <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
+<url>https://access.redhat.com/errata/RHSA-2026:60252</url>                        </reference>
+                        <reference>
+                            <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
+<url>https://access.redhat.com/errata/RHSA-2026:60251</url>                        </reference>
+                        <reference>
+                            <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
+<url>https://access.redhat.com/errata/RHSA-2026:60256</url>                        </reference>
+                        <reference>
+                            <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
+<url>https://access.redhat.com/errata/RHSA-2026:60239</url>                        </reference>
+                        <reference>
+                            <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
+<url>https://access.redhat.com/errata/RHSA-2026:22453</url>                        </reference>
+                        <reference>
+                            <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
+<url>https://access.redhat.com/errata/RHSA-2026:60259</url>                        </reference>
+                        <reference>
+                            <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
+<url>https://access.redhat.com/errata/RHSA-2026:50263</url>                        </reference>
+                        <reference>
+                            <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
+<url>https://access.redhat.com/errata/RHSA-2026:50222</url>                        </reference>
+                        <reference>
+                            <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
+<url>https://access.redhat.com/errata/RHSA-2026:50221</url>                        </reference>
                         <reference>
                             <source>emo@eclipse.org</source>
 <url>https://github.com/jetty/jetty.project/security/advisories/GHSA-355h-qmc2-wpwf</url><name>EXPLOIT,MITIGATION,VENDOR_ADVISORY</name>                        </reference>
                         <reference>
                             <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
 <url>https://bugzilla.redhat.com/show_bug.cgi?id=2458187</url>                        </reference>
-                        <reference>
-                            <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
-<url>https://access.redhat.com/errata/RHSA-2026:10175</url>                        </reference>
                         <reference>
                             <source>0b0ca135-0b70-47e7-9f44-1890c2a1c46c</source>
 <url>https://access.redhat.com/errata/RHSA-2026:50223</url>                        </reference>

@@ -22,8 +22,8 @@
                         "url": "https://github.com/dependency-check/DependencyCheck/"
         },
 
-        "end_time": "2026-08-25T05:01:58",
-                "start_time": "2026-08-25T05:01:58",
+        "end_time": "2026-09-01T08:46:39",
+                "start_time": "2026-09-01T08:46:39",
                 "status":  "success"  ,
                 "type": "dependency_scanning"
 
@@ -387,6 +387,50 @@
                                     }
                                         ,
                                     {
+                                        "url": "https:\/\/access.redhat.com\/errata\/RHSA-2026:60239"
+                                    }
+                                        ,
+                                    {
+                                        "url": "https:\/\/access.redhat.com\/errata\/RHSA-2026:60246"
+                                    }
+                                        ,
+                                    {
+                                        "url": "https:\/\/access.redhat.com\/errata\/RHSA-2026:60247"
+                                    }
+                                        ,
+                                    {
+                                        "url": "https:\/\/access.redhat.com\/errata\/RHSA-2026:60248"
+                                    }
+                                        ,
+                                    {
+                                        "url": "https:\/\/access.redhat.com\/errata\/RHSA-2026:60249"
+                                    }
+                                        ,
+                                    {
+                                        "url": "https:\/\/access.redhat.com\/errata\/RHSA-2026:60250"
+                                    }
+                                        ,
+                                    {
+                                        "url": "https:\/\/access.redhat.com\/errata\/RHSA-2026:60251"
+                                    }
+                                        ,
+                                    {
+                                        "url": "https:\/\/access.redhat.com\/errata\/RHSA-2026:60252"
+                                    }
+                                        ,
+                                    {
+                                        "url": "https:\/\/access.redhat.com\/errata\/RHSA-2026:60254"
+                                    }
+                                        ,
+                                    {
+                                        "url": "https:\/\/access.redhat.com\/errata\/RHSA-2026:60256"
+                                    }
+                                        ,
+                                    {
+                                        "url": "https:\/\/access.redhat.com\/errata\/RHSA-2026:60259"
+                                    }
+                                        ,
+                                    {
                                         "url": "https:\/\/access.redhat.com\/security\/cve\/CVE-2026-2332"
                                     }
                                         ,
@@ -644,6 +688,50 @@
                                         ,
                                     {
                                         "url": "https:\/\/access.redhat.com\/errata\/RHSA-2026:50263"
+                                    }
+                                        ,
+                                    {
+                                        "url": "https:\/\/access.redhat.com\/errata\/RHSA-2026:60239"
+                                    }
+                                        ,
+                                    {
+                                        "url": "https:\/\/access.redhat.com\/errata\/RHSA-2026:60246"
+                                    }
+                                        ,
+                                    {
+                                        "url": "https:\/\/access.redhat.com\/errata\/RHSA-2026:60247"
+                                    }
+                                        ,
+                                    {
+                                        "url": "https:\/\/access.redhat.com\/errata\/RHSA-2026:60248"
+                                    }
+                                        ,
+                                    {
+                                        "url": "https:\/\/access.redhat.com\/errata\/RHSA-2026:60249"
+                                    }
+                                        ,
+                                    {
+                                        "url": "https:\/\/access.redhat.com\/errata\/RHSA-2026:60250"
+                                    }
+                                        ,
+                                    {
+                                        "url": "https:\/\/access.redhat.com\/errata\/RHSA-2026:60251"
+                                    }
+                                        ,
+                                    {
+                                        "url": "https:\/\/access.redhat.com\/errata\/RHSA-2026:60252"
+                                    }
+                                        ,
+                                    {
+                                        "url": "https:\/\/access.redhat.com\/errata\/RHSA-2026:60254"
+                                    }
+                                        ,
+                                    {
+                                        "url": "https:\/\/access.redhat.com\/errata\/RHSA-2026:60256"
+                                    }
+                                        ,
+                                    {
+                                        "url": "https:\/\/access.redhat.com\/errata\/RHSA-2026:60259"
                                     }
                                         ,
                                     {
@@ -904,6 +992,50 @@
                                         ,
                                     {
                                         "url": "https:\/\/access.redhat.com\/errata\/RHSA-2026:50263"
+                                    }
+                                        ,
+                                    {
+                                        "url": "https:\/\/access.redhat.com\/errata\/RHSA-2026:60239"
+                                    }
+                                        ,
+                                    {
+                                        "url": "https:\/\/access.redhat.com\/errata\/RHSA-2026:60246"
+                                    }
+                                        ,
+                                    {
+                                        "url": "https:\/\/access.redhat.com\/errata\/RHSA-2026:60247"
+                                    }
+                                        ,
+                                    {
+                                        "url": "https:\/\/access.redhat.com\/errata\/RHSA-2026:60248"
+                                    }
+                                        ,
+                                    {
+                                        "url": "https:\/\/access.redhat.com\/errata\/RHSA-2026:60249"
+                                    }
+                                        ,
+                                    {
+                                        "url": "https:\/\/access.redhat.com\/errata\/RHSA-2026:60250"
+                                    }
+                                        ,
+                                    {
+                                        "url": "https:\/\/access.redhat.com\/errata\/RHSA-2026:60251"
+                                    }
+                                        ,
+                                    {
+                                        "url": "https:\/\/access.redhat.com\/errata\/RHSA-2026:60252"
+                                    }
+                                        ,
+                                    {
+                                        "url": "https:\/\/access.redhat.com\/errata\/RHSA-2026:60254"
+                                    }
+                                        ,
+                                    {
+                                        "url": "https:\/\/access.redhat.com\/errata\/RHSA-2026:60256"
+                                    }
+                                        ,
+                                    {
+                                        "url": "https:\/\/access.redhat.com\/errata\/RHSA-2026:60259"
                                     }
                                         ,
                                     {
